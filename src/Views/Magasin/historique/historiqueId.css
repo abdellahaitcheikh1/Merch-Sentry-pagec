@@ -1,0 +1,58 @@
+.produit{
+    justify-content: space-between;
+    display: flex;
+    height: 200px;
+    padding: 10px;
+
+}
+.produit img{
+    background-color: rgb(249, 249, 249);
+    margin-top: -8px;
+    width: 220px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid rgb(233, 233, 233);
+}
+.card{
+    border: 1px solid black;
+}
+.items{
+    display: flex;
+}
+.items h4{
+    font-size: 28px;
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.items h6{
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+    font-size: 22px;
+    margin-left: -90px;
+    margin-top: 70px;
+}
+.items .quantite{
+    margin-top: 120px;
+    margin-left: -120px;
+}
+.items .quantite input{
+    border: none;
+    padding: 3px;
+    border-radius: 7px;
+    background-color: rgb(221, 219, 219);
+}*
+.choix{
+    margin-top: 50px;
+}
+.Echanger{
+    color: #7fa87e;
+    font-size: 20px;
+    padding: 10px 80px;
+}
+.rembourser{
+    font-size: 20px;
+    color:rgb(59, 59, 59) ;
+    padding: 10px 60px;
+}

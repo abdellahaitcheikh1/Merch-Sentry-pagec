@@ -1,0 +1,85 @@
+#allItems{
+    margin-left: 40px;
+    border: 1px solid rgb(222, 222, 222);
+    margin-top: -100px;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 120px;
+    border-radius: 15px;
+}
+.contentMagasinP{
+    display: flex;
+    cursor: pointer;
+}
+.Itemimg{
+    border: solid 1px rgb(234, 234, 234);
+}
+.Itemimg span{
+    color: white;
+    height: 35px;
+    background-color: #7fa87e;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+.infoPM{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.txN{
+    text-decoration: none;
+}
+.infoPM p{
+    
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.infoPM span{
+    position: absolute;
+    margin-top: -40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #63a362;
+
+}
+
+.contentMagasinP img{
+    width: 200px;
+}
+.iconPoint{
+    margin-right: 10px;
+    color: #4e4e4e;
+    font-size: 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnVP{
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnVP a{
+    color: #7fa87e;
+
+}
+.btnAjouteM{
+    border: none;
+    padding: 8px;
+    color: #ffffff;
+    font-weight: 600px;
+    border-radius: 10px;
+    background-color: #7fa87e;
+    width: 180px;
+    transition: 0.1s ease ;
+    text-decoration: none;
+
+}
+.btnAjouteM:hover{
+    transition: 0.2s ease ;
+    background-color: #63a362;
+
+}

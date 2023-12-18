@@ -1,0 +1,66 @@
+.container .item{
+    display: flex;
+    margin-left: 200px;
+}
+.container #h3{
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.container #h5{
+    margin-left: 250px;
+    font-size: 14px;
+}
+.container #h5 b{
+    font-size: 25px;
+    
+}
+.container #h1{
+    margin-left: 50px;
+    font-size: 26px;
+}
+.container .image{
+    margin-top: -170px;
+}
+.container .image img{
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 10px;
+    margin: 10px;
+}
+.container .image #i2{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    border: 1px solid rgb(234, 234, 234);
+    margin: 10px;
+    width: 140px;
+    margin-left: -130px;
+    margin-top: 70px;
+}
+.container .image #i3{
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    border: 1px solid rgb(234, 234, 234);
+    margin: 10px;
+    width: 140px;
+    margin-left: -240px;
+    margin-top: -65px;
+}
+.container .recupere{
+    margin-left: 250px;
+    text-decoration: none;
+    color: aliceblue;
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: #7fa87e;
+}
+.item #voirPlus{
+    margin-left: 30px;
+    color: #7fa87e;
+
+}

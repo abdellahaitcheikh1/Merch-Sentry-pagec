@@ -1,0 +1,51 @@
+.spandesc{
+    padding-bottom: 10px;
+}
+.photoC{
+    display: flex;
+    margin-top: -20px;
+}
+#ImportPhotos{
+    display: none;   
+}
+.col .spanPP{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -230px;
+}
+.photoIploade1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 200px;
+    padding: 10px;
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+    border: 1px solid rgb(181, 181, 181);
+
+}
+.photoIploadeF{
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 450px;
+    height: 120px;
+    border: 1px solid rgb(181, 181, 181);
+}
+.photoIploadeF i{
+    color: rgb(173, 173, 173);
+    font-size: 33px;
+}
+
+.photoIploade1 i{
+    color: rgb(173, 173, 173);
+    font-size: 33px;
+}
+.photoIploadeF{
+    color: rgb(173, 173, 173);
+    font-size: 14px;
+}

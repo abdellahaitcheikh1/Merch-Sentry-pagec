@@ -1,0 +1,23 @@
+.container form{
+    margin-left: 50px;
+
+}
+.marque{
+    margin-bottom: 80px;
+}
+form .row input{
+    height: 43px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+.btnAjouteCommercial{
+    text-align: center;
+}
+.btnAjouteCommercial .buttonAjouter{
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    background-color: #7fa87e;
+    color: aliceblue;
+}

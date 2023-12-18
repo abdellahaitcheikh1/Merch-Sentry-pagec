@@ -1,0 +1,12 @@
+.tableInfo .table th{
+    height: 50px;
+    text-align: center;
+    margin-top: -30px;
+    background-color: rgb(224, 224, 224);
+}
+.tableInfo .table tbody tr td{
+    text-align: center;
+}
+.tableInfo{
+    margin-top: -80px;
+}

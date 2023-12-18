@@ -1,0 +1,62 @@
+import "./connexion.css"
+export default function Connexion(){
+    return <>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />	{/* My CSS */}
+
+<div>
+<title>Merchsenrty</title>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <div className="limiter">
+    <div className="container-login100">
+      <div className="wrap-login100">
+        <form className="login100-form validate-form">
+          <span className="login100-form-title p-b-43">
+            Connexion 
+            <i className="line bi bi-dash-lg"></i>
+                      </span>
+          <label htmlFor="" className="mb-3">Pseudo</label>
+          <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+            <input className="input100" type="text" name="email" />
+            <span className="focus-input100" />
+          </div>
+          <label htmlFor="" className="mb-3">Mot de passe</label>
+          <div className="wrap-input100 validate-input" data-validate="Password is required">
+            <input className="input100" type="password" name="pass" />
+            <span className="focus-input100" />
+          </div>
+          <div className="container-login100-form-btn">
+            <button className="login100-form-btn">
+              Entrer
+            </button>
+          </div>
+          <div className="text-center mt-3 p-t-46 p-b-20">
+            <span className="txt2">
+              <a href="">
+                Rejoindre comme visiteur <i className="bi bi-arrow-right-circle-fill" />
+              </a>
+            </span>
+          </div>
+          <div className="login100-form-social flex-c-m">
+            <a href="#" className="login100-form-social-item flex-c-m bg1 m-r-5">
+              <i className="fa fa-facebook-f" aria-hidden="true" />
+            </a>
+            <a href="#" className="login100-form-social-item flex-c-m bg2 m-r-5">
+              <i className="fa fa-twitter" aria-hidden="true" />
+            </a>
+          </div>
+        </form>
+        <div className="login100-more" style={{backgroundImage: 'url("./imagebackground.png")'}}>
+          <div className="merch">
+            <h1 className="apptitle">MERCHSENTRY</h1> <br /><br />
+          </div>
+          <p className="desc">libérer l'efficacité : la ou la précision <br /> mécanique rencontre le contrôle numérique</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </>
+}

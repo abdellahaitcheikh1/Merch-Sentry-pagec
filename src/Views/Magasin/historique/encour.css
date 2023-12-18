@@ -1,0 +1,52 @@
+.content{
+    display: flex;
+}
+.container .h3{
+    font-weight: 600;
+    font-size: 30px;
+}
+.items1{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.items1 #pencour{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.items1 .button{
+    background-color: #7fa87e;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+.items1 .btn{
+    margin-top: 30px;
+}
+.items1 .ncom{
+    margin-top: 30px
+}
+.items2{
+    margin-left: 100px;
+    margin-top: -180px;
+}
+.items2 .prencour{
+    margin-left: 250px;
+}
+.ncom h4{
+    font-weight: 600;
+}
+.ncom h6{
+    margin-left: 30px;
+    font-size: 22px;
+}
+.items2 .prencour h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.items2 .prencour h4{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 10px;
+}

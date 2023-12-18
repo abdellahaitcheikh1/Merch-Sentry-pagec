@@ -1,0 +1,142 @@
+.form{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 140%;
+}
+.height{
+    width: 1700px;
+    height: 30vh;
+}
+.form .form-control {
+    flex: 1; 
+    margin-right: 10px; 
+}
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+        position: relative;
+    right: 37px;
+    /* top: 13px; */
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 5px;
+   cursor: pointer;
+}
+
+.form-input{
+    height: 50px;
+    text-indent: 33px;
+    border-radius: 20px;
+}
+
+.form-input:focus{
+    
+    box-shadow: none;
+    border:none;
+}
+.btnAjoute{
+    border: none;
+    padding: 8px;
+    color: #ffffff;
+    font-weight: 600px;
+    border-radius: 10px;
+    width: 180px;
+    transition: 0.1s ease ;
+    text-decoration: none;
+
+}
+.btnAjoute:hover{
+    transition: 0.2s ease ;
+    background-color: #54d754;
+
+}
+.panier i{
+    font-size: 28px;
+    padding: 8px 7px 5px 17px;
+    margin-right: 10px;
+
+}
+.overlay{
+    background-color: #9ca3af;
+    display: flex;
+    float: right;
+}
+.detailBoxMagasin .type i{
+    margin-left: 157px;
+    font-size: 18px;
+    background-color: #282828;
+    color: #e3e2e2;
+    padding: 6px 8px 6px 15px;
+    border-radius: 15px 0px 0px 15px ;
+    position: absolute;
+    margin-top: -35px;
+    /* position: absolute;
+    margin-top: -160px; */
+}
+.panier{
+    background-color: #7fa87e;
+    border-radius: 25px;
+    display: flex;
+    margin-right: 30px;
+    float: right;
+    color: #e3e2e2;
+    cursor: pointer;
+}
+.panier .num{
+    margin-top: 40px;
+    margin-left: -10px;
+    background-color: #000000;
+    color: white;
+    height: 17px;
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    border-radius: 100%;
+}
+#ProductSlide{
+    margin-top: -100px;
+}
+@media screen and (max-width: 600px) {
+	.height{
+        width: 380px;
+        height: 30vh;
+    }
+    .btnAjoute{
+        margin-bottom: 110px;
+        position: absolute;
+        border: none;
+        padding: 7px;
+        color: #ffffff;
+        font-weight: 600px;
+        border-radius: 10px;
+        background-color: #46992d;
+        width: 130px;
+        transition: 0.1s ease ;
+    
+    }
+	#ProductSlide{
+		margin-left: -5px;
+	}
+    .categ{
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+  }
