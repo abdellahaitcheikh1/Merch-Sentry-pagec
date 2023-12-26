@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9be2607b.css",
-    "main.js": "/static/js/main.fa019de4.js",
-    "static/media/swoosh-nike-logo-nike-logo-png-png": "/static/media/swoosh-nike-logo-nike-logo-png-5ae4c95bb3ca9d158becf5ba9aa8b9e8.8bf2bf2e85c6dae16bde.png",
-    "static/media/cap-hat-adidas-cap-png-hd-png": "/static/media/cap-hat-adidas-cap-png-hd-6dba9558659261a0e0db21f9fcd22894.9b266a50564602f0617c.png",
-    "static/media/nike-air-max-sneakers-shoe-air-jordan-men-shoes-png": "/static/media/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.ae4b1c3e8c95d46b36d5.png",
-    "static/media/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png": "/static/media/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.cfa29e1be179786dc6f7.png",
-    "static/media/5bbc5e00c4c36-png": "/static/media/5bbc5e00c4c36-fcc258155d3a899ae16bf71910ea56be.9441aa24b52868e4cea7.png",
-    "index.html": "/index.html",
-    "main.9be2607b.css.map": "/static/css/main.9be2607b.css.map",
-    "main.fa019de4.js.map": "/static/js/main.fa019de4.js.map"
+    "main.css": "/Merch-Sentry-pagec/static/css/main.9be2607b.css",
+    "main.js": "/Merch-Sentry-pagec/static/js/main.8a29271d.js",
+    "static/media/swoosh-nike-logo-nike-logo-png-png": "/Merch-Sentry-pagec/static/media/swoosh-nike-logo-nike-logo-png-5ae4c95bb3ca9d158becf5ba9aa8b9e8.8bf2bf2e85c6dae16bde.png",
+    "static/media/cap-hat-adidas-cap-png-hd-png": "/Merch-Sentry-pagec/static/media/cap-hat-adidas-cap-png-hd-6dba9558659261a0e0db21f9fcd22894.9b266a50564602f0617c.png",
+    "static/media/nike-air-max-sneakers-shoe-air-jordan-men-shoes-png": "/Merch-Sentry-pagec/static/media/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.ae4b1c3e8c95d46b36d5.png",
+    "static/media/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png": "/Merch-Sentry-pagec/static/media/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.cfa29e1be179786dc6f7.png",
+    "static/media/5bbc5e00c4c36-png": "/Merch-Sentry-pagec/static/media/5bbc5e00c4c36-fcc258155d3a899ae16bf71910ea56be.9441aa24b52868e4cea7.png",
+    "index.html": "/Merch-Sentry-pagec/index.html",
+    "main.9be2607b.css.map": "/Merch-Sentry-pagec/static/css/main.9be2607b.css.map",
+    "main.8a29271d.js.map": "/Merch-Sentry-pagec/static/js/main.8a29271d.js.map"
   },
   "entrypoints": [
     "static/css/main.9be2607b.css",
-    "static/js/main.fa019de4.js"
+    "static/js/main.8a29271d.js"
   ]
 }
