@@ -41,7 +41,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
 
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
     <Route path='/' index element={<Home/>}/>
     <Route path='/categories' index element={<Categories/>}/>
@@ -97,5 +97,5 @@ root.render(
 
 
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
 );
