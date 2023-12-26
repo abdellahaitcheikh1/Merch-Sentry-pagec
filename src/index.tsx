@@ -34,10 +34,13 @@ import Remboureser from "./Views/Magasin/historique/Remboureser";
 import PanierPrecedent from "./Views/Magasin/panierMagasin/PanierPrecedent";
 import Encour from "./Views/Magasin/historique/Encour";
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
+
     <BrowserRouter>
     <Routes>
     <Route path='/' index element={<Home/>}/>
