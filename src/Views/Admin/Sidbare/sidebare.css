@@ -52,7 +52,6 @@ body {
 
 
 
-/* SIDEBAR */
 #sidebar {
 	position: fixed;
 	top: 0;
@@ -65,9 +64,6 @@ body {
 	transition: .3s ease;
 	overflow-x: hidden;
 	scrollbar-width: none;
-}
-#sidebar::--webkit-scrollbar {
-	display: none;
 }
 #sidebar.hide {
 	width: 60px;
@@ -684,7 +680,7 @@ body {
 		width: auto;
 		height: auto;
 		background: transparent;
-		border-radius: none;
+		border-radius: 0;
 		color: var(--dark);
 	}
 

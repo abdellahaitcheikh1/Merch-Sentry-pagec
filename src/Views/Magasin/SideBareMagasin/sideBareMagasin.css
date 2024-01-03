@@ -63,9 +63,9 @@ body {
 	overflow-x: hidden;
 	scrollbar-width: none;
 }
-#sidebar::--webkit-scrollbar {
+/* #sidebar::--webkit-scrollbar {
 	display: none;
-}
+} */
 #sidebar.hide {
 	width: 60px;
 }
@@ -660,7 +660,7 @@ body {
 		width: auto;
 		height: auto;
 		background: transparent;
-		border-radius: none;
+		border-radius: 0;
 		color: var(--dark);
 	}
 
