@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
-import produitIMG from  "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import produitIMG from  "../../Admin/IMG/3.png"
+import produitIMGa from  "../../Admin/IMG/e1.png"
+
 import "./historiqueId.css"
 export default function HistoriqueId(){
     return<>
@@ -34,7 +36,7 @@ export default function HistoriqueId(){
             <div className="card mt-3">
                 <div className="produit">
                 <div className="items">
-                    <img src={produitIMG} alt="" />
+                    <img src={produitIMGa} alt="" />
                         <h4>Nike Max</h4>
                         <h6>100.00 MAD</h6>
                         <div className="quantite">

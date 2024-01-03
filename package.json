@@ -1,8 +1,8 @@
 {
   "name": "matjar-app",
   "version": "0.1.0",
+  "homepage" : "https://mekouar-ayoub.github.io/Merch-Sentry-pagec/",
   "private": true,
-  "homepage": "https://mekouar-ayoub.github.io/Merch-Sentry-pagec/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -27,11 +27,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +51,6 @@
     ]
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.25",
-    "gh-pages": "^6.1.1"
+    "@types/jquery": "^3.5.25"
   }
 }

@@ -10,9 +10,9 @@ export default function Commercial(){
       <div className="col-md-6">
         <div className="form ">
           <i className="fa fa-search" />
-          <input type="text" className="form-control form-input" placeholder="Recherch un produit , ref .." />
+          <input type="text" className="form-control form-input" placeholder="Recherchez un commercial, ..." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
-          <Link to="/ajouter-commercial"><button className="btnAjouteC">Ajouter Commercial</button></Link>
+          <Link to="/ajouter-commercial"><button className="btnAjouteC">Ajouter un Commercial</button></Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
-import img from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import img from "../../Admin/IMG/3.png"
 import "./encour.css"
 export default function Encour(){
     return <>

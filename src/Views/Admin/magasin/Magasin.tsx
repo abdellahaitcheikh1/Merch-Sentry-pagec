@@ -1,6 +1,6 @@
 import Sidebare from "../Sidbare/Sidebare";
 import "../categories/Categories"
-import logoMagasin from "../IMG/swoosh-nike-logo-nike-logo-png-5ae4c95bb3ca9d158becf5ba9aa8b9e8.png"
+import logoMagasin from "../IMG/s1.png"
 import "./magasin.css"
 import { Link } from "react-router-dom";
 export default function Magasin(){

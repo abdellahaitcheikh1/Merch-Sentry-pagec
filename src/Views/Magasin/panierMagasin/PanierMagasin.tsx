@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
 import "./PanierMagasin.css"
-import produit from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import produit from "../../Admin/IMG/4.png"
+import produit1 from "../../Admin/IMG/3.png"
+
 export default function PanierMagasin(){
     return <>
     <SideBareMagasin/>
@@ -31,7 +33,7 @@ export default function PanierMagasin(){
                 <h4>100.00 MAD</h4>
             </div>
             <div className="infoPP">
-            <img src={produit} alt="" />
+            <img src={produit1} alt="" />
             <h5>Shoes Nike</h5>
             <div className="quantite">
 
