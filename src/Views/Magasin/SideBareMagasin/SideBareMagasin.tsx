@@ -1,9 +1,21 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import"./sideBareMagasin.css"
-import logo from "../../Admin/IMG/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png"
-import Minilogo from "../../Admin/IMG/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png"
-
+// import logo from "../../Admin/IMG/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png"
+import logomagasine from "../../Admin/IMG/cropped-favicon-mylittlegarage-32x32 1.png"
+import { useEffect, useState } from "react";
+import LOGO from "../../Admin/IMG/Logo.png"
+import { act } from "react-dom/test-utils";
 export default function SideBareMagasin(){
+  const location = useLocation();
+  const [activeItem, setActiveItem] = useState<string | null>(null);
+
+  useEffect(() => {
+    const path = location.pathname;
+
+    // Set the active item based on the current path
+    setActiveItem(path);
+  }, [location.pathname]);
+
     return<>
 <div>
   <meta charSet="UTF-8" />
@@ -15,85 +27,87 @@ export default function SideBareMagasin(){
 
 <body>
 <section id="sidebar">
+  <br />
   <a href="#" className="brand">
-    <img className="mt-3" width="100px" src={logo}  />			
+    <img className="mt-3" width="47px" style={{marginLeft:"28px" , marginBottom:"20px"}} src={LOGO} />			
   </a>
-  <ul className="side-menu top">
-        <Link to="/magasine">
-    <li className="active">
+  <img id="logoMagasin" src={logomagasine}  />			
+  <ul id = "side" className="sidee-menu top">
+    <li className={activeItem === "/magasine" || activeItem==="/panier" ? "active" : "" }>
+        <Link to="/magasine" className="active">
       <a href="#">
         <i className="bi bi-menu-button-wide-fill" />
       </a>
-    </li>
       </Link>
+    </li>
+    <li className={activeItem === "/produits" || activeItem==="/changeInfo" || activeItem==="/magasin/ajouter-produit" ? "active" : "" }>
     <Link to="/produits">
-    <li>
 
       <a href="#">
         <i className="bi bi-box-seam" />
       </a>
 
-    </li>
       </Link>
-    <Link to="/commercial">
-    <li>
+    </li>
+    <li className={activeItem === "/magasin/commercial" || activeItem==="/ajouter-commercial" ? "active" : "" }>
+    <Link to="/magasin/commercial">
 
       <a href="#">
       <i className="bi bi-headset"></i>
       </a>
 
-    </li>
       </Link>
+    </li>
+    <li className={activeItem === "/magasin/client" || activeItem==="/magasin/client/ajouter" ? "active" : "" }>
       <Link to="/magasin/client">
-    <li>
 
       <a href="#">
       <i className="bi bi-people"></i>
       </a>
 
-    </li>
       </Link>
+    </li>
+    <li className={activeItem === "/magasin/historique" || activeItem==="/magasin/historique/id" ? "active" : "" }>
       <Link to="/magasin/historique">
-    <li>
 
       <a href="#">
       <i className="bi bi-clock"></i>
             </a>
 
-    </li>
       </Link>
+    </li>
   </ul>
   <div className="menu-down">
     <ul className="side-menu top ">
+    <li className={activeItem === "/magasin/notification" || activeItem==="/magasin/notification/confirme" ? "active" : "" }>
     <Link to="/magasin/notification">
-    <li>
 
       <a href="#">
       <i className="bi bi-bell"></i>
             </a>
 
-    </li>
       </Link>
+    </li>
+      <li className={activeItem === "/" || activeItem==="/produit" ? "active" : "" }>
       <Link to="">
-      <li>
 
         <a href="#">
           <i className="bi bi-gear" />
         </a>
 
-      </li>
       </Link>
+      </li>
     </ul>
     <ul className="logout">
+      <li className={activeItem === "/" || activeItem==="/produit" ? "active" : "" }>
       <Link to="">
-      <li>
 
         <a href="#" className="logout">
           <i className="bi bi-box-arrow-left" />
         </a>
 
-      </li>
       </Link>
+      </li>
     </ul>
   </div>
 </section>

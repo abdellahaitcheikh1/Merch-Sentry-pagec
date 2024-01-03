@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
-import imge from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import imge from "../../Admin/IMG/e2.png"
 import "./panierPrecedent.css"
 export default function PanierPrecedent(){
     return <>

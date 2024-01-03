@@ -1,8 +1,13 @@
 import Sidebare from "../Sidbare/Sidebare";
-import categoryimg from "../IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
 import {Swiper , SwiperSlide} from"swiper/react"
 import "./categories.css"
-import logoecathlon from "../IMG/5bbc5e00c4c36-fcc258155d3a899ae16bf71910ea56be.png"
+import catProduit from "../IMG/1.png"
+import catProduit1 from "../IMG/11.png"
+import catProduit2 from "../IMG/111.png"
+import ImageProduit1 from "../IMG/e2.png"
+import ImageProduit2 from "../IMG/e1.png"
+import ImageProduit3 from "../IMG/3.png"
+import ImageProduit4 from "../IMG/e3.png"
 import { Link } from "react-router-dom";
 export default function Categories(){
     return <>
@@ -14,7 +19,7 @@ export default function Categories(){
       <div className="col-md-6">
         <div className="form ">
           <i className="fa fa-search" />
-          <input type="text" className="form-control form-input" placeholder="Recherch un produit , ref .." />
+          <input type="text" className="form-control form-input" placeholder="Recherchez un produit , ref .." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
           <Link to="/ajouter-produit"><button className="btnAjoutee">Ajouter Produit</button></Link>
         </div>
@@ -49,15 +54,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit3} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>I-FLUX 200</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">15 120 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -65,15 +70,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit2} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>DPF FLUSH</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">7 720 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -81,15 +86,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>AT-FLUX 3</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">75 038 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -97,15 +102,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>4-WAY Flux </p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">4 092 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -113,15 +118,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>AT-FLUX 3</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">15 120 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -129,15 +134,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>AT-FLUX 3</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">15 120 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -145,15 +150,15 @@ export default function Categories(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+              <p>AT-FLUX 3</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">15 120 MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
@@ -186,70 +191,111 @@ export default function Categories(){
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgcategori">
+          <img src={catProduit} alt="" />
             <div className="overlay">
             </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>Chain Pro</p>
+            </div>
+            <p className="price">100 MAD</p>
+          </div>
           </div>
         </div>
         </SwiperSlide>
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgcategori">
+          <img src={catProduit1} alt="" />
             <div className="overlay">
             </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>Deblock SHOCK</p>
+            </div>
+            <p className="price">100 MAD</p>
+          </div>
+          </div>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="boxSponsore">
+          <div className="slideImgcategori">
+          <img src={catProduit2} alt="" />
+            <div className="overlay">
+            </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>SUPER 5.1</p>
+            </div>
+            <p className="price">100 MAD</p>
+          </div>
           </div>
         </div>
         </SwiperSlide>
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgcategori">
+          <img src={catProduit} alt="" />
             <div className="overlay">
             </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>C1200+</p>
+            </div>
+            <p className="price">100 MAD</p>
+          </div>
           </div>
         </div>
         </SwiperSlide>
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgcategori">
+          <img src={catProduit2} alt="" />
             <div className="overlay">
             </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>SUPER 5.1</p>
+            </div>
+            <p className="price">100 MAD</p>
+          </div>
           </div>
         </div>
         </SwiperSlide>
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgcategori">
+          <img src={catProduit1} alt="" />
             <div className="overlay">
             </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>SUPER 5.1</p>
+            </div>
+            <p className="price">100 MAD</p>
+          </div>
           </div>
         </div>
         </SwiperSlide>
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgcategori">
+          <img src={catProduit} alt="" />
             <div className="overlay">
             </div>
+            <div className="detailBox">
+            <div className="type">
+              <p>SUPER 5.1</p>
+            </div>
+            <p className="price">100 MAD</p>
           </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
-            <div className="overlay">
-            </div>
           </div>
         </div>
         </SwiperSlide>

@@ -1,7 +1,10 @@
 import Sidebare from "../Sidbare/Sidebare";
-import logo from "../IMG/swoosh-nike-logo-nike-logo-png-5ae4c95bb3ca9d158becf5ba9aa8b9e8.png"
 import { Link } from "react-router-dom";
-import categoryimg from "../IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import E1 from "../IMG/3.png"
+import E2 from "../IMG/e1.png"
+import E3 from "../IMG/e2.png"
+import E4 from "../IMG/e3.png"
+import Sponsor1 from "../IMG/s3.png"
 import {Swiper , SwiperSlide} from"swiper/react"
 
 export default function EditeMagasin(){
@@ -14,8 +17,8 @@ export default function EditeMagasin(){
         
       </span>
       <div className="marque">
-    <h4> Nike</h4>
-    <img src={logo} alt="" />
+    <h4> My little garage</h4>
+    <img src={Sponsor1} alt="" />
 </div>
     </div>
     <div className="inputForm">
@@ -77,7 +80,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E1} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -93,7 +96,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E2} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -109,7 +112,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E3} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -125,7 +128,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E4} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -141,7 +144,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E4} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -157,7 +160,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E4} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -173,7 +176,7 @@ export default function EditeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={E4} alt="" />
             <div className="overlay">
             </div>
           </div>

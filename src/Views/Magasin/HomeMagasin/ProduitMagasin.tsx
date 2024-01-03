@@ -1,5 +1,8 @@
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
-import ProductImage from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import ProductImage from "../../Admin/IMG/2.png"
+import ProductImage1 from "../../Admin/IMG/3.png"
+import ProductImage2 from "../../Admin/IMG/e1.png"
+
 import "./ProduitMagasin.css"
 import { Link } from "react-router-dom";
 export default  function ProduitMagasin(){
@@ -14,7 +17,7 @@ export default  function ProduitMagasin(){
           <i className="fa fa-search" />
           <input type="text" className="form-control form-input" placeholder="Recherch un produit , ref .." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
-          <Link to="/magasin/ajouter-produit"><button className="btnAjouteM">Ajouter Produit</button></Link>
+          <Link to="/magasin/ajouter-produit"><button className="btnAjouteM">Ajouter un produit</button></Link>
         </div>
       </div>
     </div>
@@ -30,12 +33,12 @@ export default  function ProduitMagasin(){
             <div className="contentMagasinP">
                 <div className="Itemimg">
                 <img src={ProductImage} alt="" /><br />
-                <span>100 MAD</span>
+                <p>490 MAD<span className="pu"> / p.u</span></p>
                 </div>
                 <div className="infoPM">
 
-                <p>nouvelles chaussures Nike</p><br />
-                <span>+300 ventes </span>    
+                <p>R-Flush Radiator Cleaner 1L</p><br />
+                <span>+100 ventes </span>    
                 </div>
             </div>
             <div className="btnVP">
@@ -57,13 +60,13 @@ export default  function ProduitMagasin(){
 
             <div className="contentMagasinP">
                 <div className="Itemimg">
-                <img src={ProductImage} alt="" /><br />
-                <span>100 MAD</span>
+                <img src={ProductImage1} alt="" /><br />
+                <p>15 120 MAD <span className="pu"> / p.u</span></p>
                 </div>
                 <div className="infoPM">
 
-                <p>nouvelles chaussures Nike</p><br />
-                <span>+300 ventes </span>    
+                <p>I-FLUX </p><br />
+                <span>+20 ventes </span>    
                 </div>
             </div>
             <div className="btnVP">
@@ -84,13 +87,13 @@ export default  function ProduitMagasin(){
 
             <div className="contentMagasinP">
                 <div className="Itemimg">
-                <img src={ProductImage} alt="" /><br />
-                <span>100 MAD</span>
+                <img src={ProductImage2} alt="" /><br />
+                <p>7 150 MAD <span className="pu"> / p.u</span></p>
                 </div>
                 <div className="infoPM">
 
-                <p>nouvelles chaussures Nike</p><br />
-                <span>+300 ventes </span>    
+                <p>R-Flush Radiator Cleaner </p><br />
+                <span>+40 ventes </span>    
                 </div>
             </div>
             <div className="btnVP">

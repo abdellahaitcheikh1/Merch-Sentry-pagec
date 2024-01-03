@@ -1,4 +1,4 @@
-import { HashRouter, Routes , Route} from "react-router-dom"
+import { BrowserRouter, Routes , Route} from "react-router-dom"
 
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -33,15 +33,15 @@ import Echanger from "./Views/Magasin/historique/Echanger";
 import Remboureser from "./Views/Magasin/historique/Remboureser";
 import PanierPrecedent from "./Views/Magasin/panierMagasin/PanierPrecedent";
 import Encour from "./Views/Magasin/historique/Encour";
-
+import HomeCommercial from "./Views/Commercial/Home/HomeCommercial";
+import AfficheProduitCommercial from "./Views/Commercial/Produit/AfficheProduitCommercial";
+import HomeVisiteur from "./Views/Utilisateure/visiteur/HomeVisiteur";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-
 root.render(
-
-    <HashRouter>
+    <BrowserRouter>
     <Routes>
     <Route path='/' index element={<Home/>}/>
     <Route path='/categories' index element={<Categories/>}/>
@@ -56,16 +56,20 @@ root.render(
     <Route path='/produits' index element={<ProduitMagasin/>}/>
     <Route path='/changeInfo' index element={<ChangeProduitMagasin/>}/>
     <Route path='/panier' index element={<PanierMagasin/>}/>
-    <Route path='/commercial' index element={<Commercial/>}/>
+    <Route path='/magasin/commercial' index element={<Commercial/>}/>
+    <Route path='/commercial/produit' index element={<AfficheProduitCommercial/>}/>
+
     <Route path='/ajouter-commercial' index element={<AjouterCommercial/>}/>
     <Route path='/shart' index element={<AfficheCommercial/>}/>
     <Route path='/magasin/notification' index element={<NotificationMagasin/>}/>
-    <Route path='/magasin/notification/confirmé' index element={<ConfirmeMessage/>}/>
+    <Route path='/magasin/notification/confirme' index element={<ConfirmeMessage/>}/>
     <Route path='/magasin/demande' index element={<Demande/>}/>
     <Route path='/magasin/client' index element={<Client/>}/>
     <Route path='/magasin/client/ajouter' index element={<AjouterClient/>}/>
     <Route path='/magasin/ajouter-produit' index element={<AjouterProduitM/>}/>
     <Route path='/panier/precedent' index element={<PanierPrecedent/>}/>
+    <Route path='/visiteur' index element={<HomeVisiteur/>}/>
+
 
 
 
@@ -76,6 +80,8 @@ root.render(
 
 
     <Route path='/magasin/historique' index element={<HistoriqueMagasin/>}/>
+    <Route path='/commercial' index element={<HomeCommercial/>}/>
+
     <Route path='/magasin/historique/id' index element={<HistoriqueId/>}/>
     <Route path='/magasin/historique/encour/id' index element={<Encour/>}/>
 
@@ -97,5 +103,5 @@ root.render(
 
 
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
 );

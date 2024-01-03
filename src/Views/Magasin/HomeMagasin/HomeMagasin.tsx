@@ -1,5 +1,15 @@
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
-import categoryimg from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import categoryimg from "../../Admin/IMG/1.png"
+import categoryimg1 from "../../Admin/IMG/11.png"
+import categoryimg2 from "../../Admin/IMG/1.png"
+import categoryimg3 from "../../Admin/IMG/111.png"
+import pMagasin from "../../Admin/IMG/3.png"
+import pMagasin1 from "../../Admin/IMG/e1.png"
+import pMagasin2 from "../../Admin/IMG/e2.png"
+import pMagasin3 from "../../Admin/IMG/e3.png"
+
+
+
 import {Swiper , SwiperSlide} from"swiper/react"
 import "./HomeMagasin.css"
 import logoecathlon from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
@@ -15,7 +25,10 @@ export function HomeMagasin(){
         <span className="num">1</span>
         </div>
         </Link>
-        <h2 className="container mt-3">Bienvenu</h2>
+        <div className="container">
+
+        <h5 className="mt-5"><b>Bienvenue ! </b> vous pouvez gérer votre stock en toute simplicité</h5>
+        </div>
   <div className="container mt-5">
     <div className="row height">
       <div className="col-md-6">
@@ -52,11 +65,10 @@ export function HomeMagasin(){
       }}
       >
         <SwiperSlide>
-        <Link to="/afficheProduit">
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={pMagasin} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -64,51 +76,49 @@ export function HomeMagasin(){
 
             <div className="type">
 
-              <p>shirt black</p>
+              <p className="paran">I-FLUX 200</p>
               <i className="bi bi-cart-plus"></i>
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>15 200 MAD <span>/P.U</span></p></div>
           </div>
         </div>
-        </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
-        <Link to="/afficheProduit">
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={categoryimg} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p>shirt black</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-        </div>
-        </Link>
         </SwiperSlide>
 
         <SwiperSlide>
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={pMagasin1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBoxMagasin">
             <div className="type">
-              <p>shirt black</p>
+              <p className="paran">DPF FLUSH</p>
               <i className="bi bi-cart-plus"></i>
 
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>7 720 MAD <span>/P.U</span></p></div>
+          </div>
+        </div>
+      
+        </SwiperSlide>
+
+        <SwiperSlide>
+
+        <div className="box">
+          <div className="slidImage">
+            <img src={pMagasin2} alt="" />
+            <div className="overlay">
+            </div>
+          </div>
+          <div className="detailBoxMagasin">
+            <div className="type">
+              <p className="paran">AT-FLUX 3</p>
+              <i className="bi bi-cart-plus"></i>
+
+            </div>
+            <div className="price"><p>75 038 MAD <span>/P.U</span></p></div>
           </div>
         </div>
         </SwiperSlide>
@@ -116,17 +126,17 @@ export function HomeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={pMagasin3} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBoxMagasin">
             <div className="type">
-              <p>shirt black</p>
+              <p className="paran">4-WAY Flux Evo</p>
               <i className="bi bi-cart-plus"></i>
 
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>4 092 MAD <span>/P.U</span></p></div>
           </div>
         </div>
         </SwiperSlide>
@@ -134,17 +144,17 @@ export function HomeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={pMagasin} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBoxMagasin">
             <div className="type">
-              <p>shirt black</p>
+              <p className="paran">4-WAY Flux Evo</p>
               <i className="bi bi-cart-plus"></i>
 
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
         </div>
         </SwiperSlide>
@@ -152,17 +162,17 @@ export function HomeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={pMagasin} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBoxMagasin">
             <div className="type">
-              <p>shirt black</p>
+              <p className="paran">4-WAY Flux Evo</p>
               <i className="bi bi-cart-plus"></i>
 
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
         </div>
         </SwiperSlide>
@@ -170,17 +180,17 @@ export function HomeMagasin(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={categoryimg} alt="" />
+            <img src={pMagasin} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBoxMagasin">
             <div className="type">
-              <p>shirt black</p>
+              <p className="paran">4-WAY Flux Evo</p>
               <i className="bi bi-cart-plus"></i>
 
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
         </div>
         </SwiperSlide>
@@ -210,11 +220,24 @@ export function HomeMagasin(){
         }
       }}
       >
+             <SwiperSlide>
+             <Link className="parantbox" to="/afficheProduit">
+
+<div className="boxSponsore">
+      <div className="slideImgSponsorem">
+      <img src={categoryimg} alt="" />
+        <div className="overlay">
+        </div>
+      </div>
+    </div>
+    </Link>
+    </SwiperSlide>
+
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgSponsorem">
+          <img src={categoryimg} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -223,8 +246,8 @@ export function HomeMagasin(){
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgSponsorem">
+          <img src={categoryimg1} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -233,8 +256,8 @@ export function HomeMagasin(){
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgSponsorem">
+          <img src={categoryimg2} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -243,8 +266,8 @@ export function HomeMagasin(){
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgSponsorem">
+          <img src={categoryimg3} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -253,8 +276,8 @@ export function HomeMagasin(){
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgSponsorem">
+          <img src={categoryimg} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -263,18 +286,8 @@ export function HomeMagasin(){
         <SwiperSlide>
 
         <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsore">
-          <img src={logoecathlon} alt="" />
+          <div className="slideImgSponsorem">
+          <img src={categoryimg1} alt="" />
             <div className="overlay">
             </div>
           </div>
