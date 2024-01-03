@@ -1,10 +1,14 @@
 .barTitleM a{
-    background-color: #7fa87e;
-	color: #eee;
+	font-family: Montserrat; 	
+	background: #7FA87E; 
 	text-decoration: none;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 10px 13px;
 	border: none;
+	color: #FFF;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
 }
 .barTitleM{
 	margin-left: 50px;

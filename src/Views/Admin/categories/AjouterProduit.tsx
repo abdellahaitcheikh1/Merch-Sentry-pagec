@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ajouterProduit.css"
-import Sidebare from "../Sidbare/Sidebare";
+import Sidebare from "../../Admin/Sidbare/Sidebare";
 export default function AjouterProduit(){
     return<>
     <Sidebare/>

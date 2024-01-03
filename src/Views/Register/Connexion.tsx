@@ -46,7 +46,7 @@ export default function Connexion(){
             </a>
           </div>
         </form>
-        <div className="login100-more" style={{backgroundImage: 'url("./imagebackground.png")'}}>
+        <div className="login100-more">
           <div className="merch">
             <h1 className="apptitle">MERCHSENTRY</h1> <br /><br />
           </div>

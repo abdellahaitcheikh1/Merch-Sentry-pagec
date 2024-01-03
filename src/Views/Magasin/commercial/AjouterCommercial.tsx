@@ -7,7 +7,7 @@ export default function AjouterCommercial(){
     <div className="container mt-5 mb-5">
     <div className="barRetour">
       <span className="iconRetour">
-        <Link to="/commercial"><i className="bi bi-arrow-left-short"></i></Link>
+        <Link to="/magasin/commercial"><i className="bi bi-arrow-left-short"></i></Link>
         
       </span>
   </div>

@@ -1,0 +1,49 @@
+.bar1{
+    display: flex;
+}
+.allproductCommercial{
+    margin-left: 100px;
+}
+.bar1 img{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    padding: 5px 5px 10px 5px;
+    margin-top: 7px;
+}
+.row .card{
+    height: 220px;
+    /* width: 200px; */
+}
+.bar1 h5{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.bar2{
+    margin-top: -70px;
+}
+.slidImages{
+    height: 150px;
+    width: 180px;
+	margin-left: 18px;
+    position: relative;
+	padding: 10px 2px 150px 2px;
+}
+.bar3{
+    height: 60px;
+    background: #D4B996;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.bar3 .buttonfleche i{
+    text-align: center;
+    color: aliceblue;
+}

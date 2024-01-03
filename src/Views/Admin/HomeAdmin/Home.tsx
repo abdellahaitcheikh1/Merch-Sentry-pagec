@@ -3,8 +3,16 @@ import {Swiper , SwiperSlide} from"swiper/react"
 import"swiper/css"
 import"swiper/css/free-mode"
 import "bootstrap/dist/css/bootstrap.min.css"
-import igg from "../IMG/cap-hat-adidas-cap-png-hd-6dba9558659261a0e0db21f9fcd22894.png"
-import sponsor from "../IMG/swoosh-nike-logo-nike-logo-png-5ae4c95bb3ca9d158becf5ba9aa8b9e8.png"
+import ImageProduit1 from "../IMG/1.png"
+import ImageProduit2 from "../IMG/2.png"
+import ImageProduit3 from "../IMG/3.png"
+import ImageProduit4 from "../IMG/4.png"
+import Sponsor1 from "../IMG/s1.png"
+import Sponsor2 from "../IMG/s2.png"
+import Sponsor3 from "../IMG/s3.png"
+import Sponsor4 from "../IMG/s4.png"
+
+
 import { Link } from "react-router-dom"
 
 export default function(){
@@ -14,8 +22,8 @@ export default function(){
   <main className="container ">
     <div className="head-title">
       <div className="left">
-        <h5><b>Bienvenue</b> ! vous pouvez gérer votre stock en toute simplicité</h5>
-        <p className="container mt-5 mb-5">Vous avez +5000 produits</p>
+        <h5><b>Bienvenue ! </b> vous pouvez gérer votre stock en toute simplicité</h5>
+        <p className="container mt-5 mb-5">Vous avez +5,000 produits</p>
       </div>
     </div>
   </main>
@@ -50,15 +58,15 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-          <img src={igg} alt="" />
+          <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
+            <p className="paran">Intake Pro Diesel</p>
             </div>
-            <p className="price">100 MAD</p>
+            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
         </div>
         </Link>
@@ -69,16 +77,17 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-          <img src={igg} alt="" />
+          <img src={ImageProduit2} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
+                  <p className="paran">R-Flush Radiator</p>
+              </div>
+<div className="price"><p>490 MAD <span>/P.U</span></p>
+</div>          
+</div>
         </div>
         </Link>
 
@@ -88,16 +97,14 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-            <img src={igg} alt="" />
+            <img src={ImageProduit3} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
+<p className="paran">I-FLUX 200</p>            </div>
+<div className="price"><p>15 120 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
@@ -107,16 +114,14 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-          <img src={igg} alt="" />
+          <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
+<p className="paran">Diesel Multi 5l</p>            </div>
+<div className="price"><p>2900 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
@@ -126,16 +131,14 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-          <img src={igg} alt="" />
+          <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
+<p className="paran">Intake Pro Diesel</p>            </div>
+<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
@@ -145,16 +148,14 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-          <img src={igg} alt="" />
+          <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
+<p className="paran">Intake Pro Diesel</p>            </div>
+<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
@@ -165,17 +166,15 @@ export default function(){
 
         <div className="box">
           <div className="slidImage">
-          <img src={igg} alt="" />
+          <img src={ImageProduit4} alt="" />
 
             <div className="overlay">
             </div>
           </div>
           <div className="detailBox">
             <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
+<p className="paran">Intake Pro Diesel</p>            </div>
+<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
         </SwiperSlide>
@@ -211,7 +210,7 @@ export default function(){
         <SwiperSlide>
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-            <img src={sponsor} alt="" />
+            <img src={Sponsor1} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -221,7 +220,7 @@ export default function(){
 
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-          <img src={sponsor} alt="" />
+          <img src={Sponsor2} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -231,7 +230,7 @@ export default function(){
 
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-          <img src={sponsor} alt="" />
+          <img src={Sponsor3} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -241,7 +240,7 @@ export default function(){
 
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-          <img src={sponsor} alt="" />
+          <img src={Sponsor4} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -251,7 +250,7 @@ export default function(){
 
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-          <img src={sponsor} alt="" />
+          <img src={Sponsor1} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -261,7 +260,7 @@ export default function(){
 
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-          <img src={sponsor} alt="" />
+          <img src={Sponsor1} alt="" />
             <div className="overlay">
             </div>
           </div>
@@ -271,7 +270,7 @@ export default function(){
 
     <div className="boxSponsore">
           <div className="slideImgSponsore">
-          <img src={sponsor} alt="" />
+          <img src={Sponsor1} alt="" />
             <div className="overlay">
             </div>
           </div>

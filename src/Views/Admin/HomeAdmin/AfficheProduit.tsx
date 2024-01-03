@@ -1,5 +1,5 @@
 import Sidebare from "../Sidbare/Sidebare";
-import produit from "../IMG/cap-hat-adidas-cap-png-hd-6dba9558659261a0e0db21f9fcd22894.png"
+import ImageProduit2 from "../IMG/2.png"
 import { Link } from "react-router-dom";
 export default function AfficheProduit(){
     return <>
@@ -8,13 +8,13 @@ export default function AfficheProduit(){
     <Link to="/"><i className="bi bi-arrow-left-short"></i></Link>
 
     <div className="barTitle">
-        <h3>Casket Adidas</h3>
+        <h3>R-Flush Radiator Cleaner 1L</h3>
         <a href=""><Link to="">Changer les infos</Link></a>
     </div>
     <div className="cardItem mt-5">
-        <img src={produit} alt="" />
+        <img src={ImageProduit2} alt="" />
     <div className="ItemInfo">
-        <h2 className="mb-5">100 MAD <span className="pu ">/P.U</span></h2>
+        <h2 className="mb-5">490 MAD <span className="pu ">/P.U</span></h2>
         <h6>Quantité : <span className="chifre">1000</span> </h6>
         <h6>Réference : <span className="chifre">3341264</span> </h6>
     </div>

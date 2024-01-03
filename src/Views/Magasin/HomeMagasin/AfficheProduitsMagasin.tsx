@@ -1,4 +1,4 @@
-import produit from "../../Admin/IMG/5bbc5e00c4c36-fcc258155d3a899ae16bf71910ea56be.png"
+import produit from "../../Admin/IMG/1.png"
 import { Link } from "react-router-dom";
 import "./afficheProduitmagasin.css"
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
@@ -9,7 +9,7 @@ export default function AfficheProduitMagasin(){
     <Link to="/magasine"><i className="bi bi-arrow-left-short"></i></Link>
 
     <div className="barTitle">
-        <h3>Casket Adidas</h3>
+        <h3>Super 5.1</h3>
         <i className="bi bi-cart3"><span>1</span></i>
         </div>
     <div className="cardItem mt-5">

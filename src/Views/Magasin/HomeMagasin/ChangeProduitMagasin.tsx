@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import produit from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
+import produit from "../../Admin/IMG/2.png"
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
 import "./ChangeProduitMagasin.css"
 export default function ChangeProduitMagasin(){
@@ -9,13 +9,13 @@ export default function ChangeProduitMagasin(){
     <Link to="/produits"><i className="bi bi-arrow-left-short"></i></Link>
 
     <div className="barTitleM">
-        <h3>Casket Adidas</h3>
+        <h3>R-Flush Radiator Cleaner 1L</h3>
         <a href=""><Link to="">Changer les infos</Link></a>
     </div>
     <div className="cardItem mt-5">
         <img src={produit} alt="" />
     <div className="ItemInfo">
-        <h2 className="mb-5">100 MAD <span className="pu ">/P.U</span></h2>
+        <h2 className="mb-5">490 MAD <span className="pu ">/P.U</span></h2>
         <h6>Quantité : <span className="chifre">1000</span> </h6>
         <h6>Réference : <span className="chifre">3341264</span> </h6>
     </div>
