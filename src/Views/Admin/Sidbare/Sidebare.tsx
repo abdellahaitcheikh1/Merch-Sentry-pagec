@@ -64,11 +64,23 @@ export default function Sidebare() {
                 </a>
               </Link>
             </li>
-          </ul>
-          <div className="menu-down">
+          </ul><br />
+          <div className="menu-down mt-5">
+          <div className="hr">
+            <hr />
+          </div>
             <ul className="side-menu top ">
+            <li className={activeItem === "/notifacation" ? "active" : "" }>
+              <Link to="">
+
+                <a href="#">
+                <i className="bi bi-bell"><span className="countNotif">1</span></i>
+                      </a>
+
+                </Link>
+              </li>
               <li className={activeItem === "/settings" ? "active" : ""}>
-                <Link to="/settings">
+                <Link to="">
                   <a href="#">
                     <i className="bi bi-gear" />
                   </a>

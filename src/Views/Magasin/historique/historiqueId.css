@@ -27,17 +27,31 @@
     margin-top: 20px;
 }
 .items h6{
-    font-weight: 600;
-    color: rgb(48, 48, 48);
     font-size: 22px;
-    margin-left: -90px;
+    margin-left: -95px;
     margin-top: 70px;
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
 }
-.items .quantite{
+
+
+#dpf{
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    margin-left: -160px;
+
+}
+.items .quantitem{
     margin-top: 120px;
     margin-left: -120px;
 }
-.items .quantite input{
+.items .quantitem input{
     border: none;
     padding: 3px;
     border-radius: 7px;
@@ -47,12 +61,20 @@
     margin-top: 50px;
 }
 .Echanger{
-    color: #7fa87e;
-    font-size: 20px;
+    color: #7FA87E;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
     padding: 10px 80px;
 }
 .rembourser{
-    font-size: 20px;
-    color:rgb(59, 59, 59) ;
+    font-size: 21px;
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
     padding: 10px 60px;
 }

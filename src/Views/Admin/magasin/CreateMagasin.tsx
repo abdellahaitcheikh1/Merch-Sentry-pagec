@@ -12,9 +12,9 @@ export default function CreateMagasin(){
   </div>
 <div className="marque">
 
-<h4 className="mb-3">Créer un nouveau magasin</h4>
+<h4 className="">Créer un nouveau magasin</h4>
 </div>
-<div className="row">
+<div className="row" style={{marginTop:"-50px"}}>
 <div className="col inputs">
     <div className="col-6">
         <span>Nom de magasin</span>

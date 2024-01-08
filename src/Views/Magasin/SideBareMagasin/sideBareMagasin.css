@@ -33,7 +33,6 @@ li {
 html {
 	overflow-x: hidden;
 }
-
 body.dark {
 	--light: #0C0C1E;
 	--grey: #060714;
@@ -95,8 +94,25 @@ body {
 	margin-top: -8px;
 	
 }
+.countNotifcom{
+	background-color:#7fa87e;
+	padding: 2px 6px ;
+	border-radius: 50px;
+	color: #FFF;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal; 
+	font-size: 10px;
+}
+.menu-down .logout{
+	color: #898989;
+	margin-left: 2px;
+	margin-top: -15px;
+}
 .menu-down{
-	margin-top: 45px;
+	margin-top: -115px;
 }
 .categ .container h5 b{
 	font-family: Montserrat; 
@@ -169,7 +185,7 @@ body {
 	display: flex;
 	align-items: center;
 	border-radius: 5px;
-	font-size: 26px;
+	font-size: 20px;
 	color: var(--dark);
 	white-space: nowrap;
 	overflow-x: hidden;

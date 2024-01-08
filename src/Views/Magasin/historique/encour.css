@@ -2,24 +2,49 @@
     display: flex;
 }
 .container .h3{
+    font-size: 32px;
+    margin-left: 50px;
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    line-height: normal; 
 }
 .items1{
     margin-top: 70px;
-    margin-left: 10px;
+    margin-left: 60px;
 }
 .items1 #pencour{
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -10px;
+    color: #898989;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+.id{
+    color: #898989;
+    font-family: Montserrat;
+    font-size: 22.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
 }
 .items1 .button{
     background-color: #7fa87e;
     text-decoration: none;
-    padding: 10px 35px;
+    padding: 15px 45px;
     border-radius: 10px;
-    color: antiquewhite;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
 }
+
 .items1 .btn{
     margin-top: 30px;
 }
@@ -27,26 +52,46 @@
     margin-top: 30px
 }
 .items2{
-    margin-left: 100px;
-    margin-top: -180px;
+    margin-left: 30px;
+    margin-top: -80px;
+}
+.items2 img{
+    width: 400px; 
 }
 .items2 .prencour{
-    margin-left: 250px;
+    text-align: right;
 }
 .ncom h4{
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: 600;
+    line-height: normal; 
 }
 .ncom h6{
     margin-left: 30px;
     font-size: 22px;
+    color: #898989;
+    font-family: Montserrat;
+    font-size: 28.447px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
 }
 .items2 .prencour h3{
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 50px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
 }
 .items2 .prencour h4{
-    font-size: 40px;
-    font-weight: 700;
-    margin-left: 10px;
+    color: #333;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
 }

@@ -8,9 +8,9 @@ export default function AfficheProduitMagasin(){
     <div className="container produitCard mt-5">
     <Link to="/magasine"><i className="bi bi-arrow-left-short"></i></Link>
 
-    <div className="barTitle">
+    <div className="barTitle paniercommercial">
         <h3>Super 5.1</h3>
-        <i className="bi bi-cart3"><span>1</span></i>
+        <i className="bi bi-cart3 icon"><span>1</span></i>
         </div>
     <div className="cardItem mt-5">
         <img src={produit} alt="" />

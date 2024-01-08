@@ -4,13 +4,26 @@
 	left: 80px;
 	transition: .3s all ease;
 }
+.logocommercial{
+	width: 40px;
+	margin-left: 25px;
+}
+.profilCommercial{
+	width: 50px;
+	margin-left: 23px;
+	margin-bottom: 60px;
 
+}
 #sidebar.hide ~ #content {
 	width: calc(100% - 60px);
 	left: 60px;
 }
 
-
+.logout{
+	color: #898989;
+	margin-left: 2px;
+	margin-top: -15px;
+}
 
 
 /* NAVBAR */
@@ -237,7 +250,31 @@
 #content main .box-info li .text p {
 	color: var(--dark);	
 }
+svg{
+	background-color: #007ACC;
+}
+.linemenu{
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	margin-left: 20px;
+	text-align: center;
+	margin-top: 100px;
+}
+#sidebar .side-menu li a{
+	color:#333333;
+}
+.hr{
+	width: 37px;
+	margin-left: 30px;
+	margin-top: 100px;
+}
+#sidebar .menu-down .top li a{
+	color: #898989;
+	font-size: 20px;
+	margin-top: -12px;
 
+}
 
 
 
