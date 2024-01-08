@@ -4,11 +4,35 @@
 .allproductCommercial{
     margin-left: 100px;
 }
+.formcommercial{
+    width: 1220px;
+}
+.bar1 p{
+    margin-left: 15px;
+    margin-top: 20px;
+    color: #333;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-right: 5px;
+}
+.bar2 ul li{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
 .bar1 img{
     width: 70px;
     height: 70px;
-    background-color: rgb(242, 242, 242);
-    border-radius: 20px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05); 
+    border-radius: 7.671px;
+    border: 0.5px solid #f2dabb;
+    background: #FFF; 
     padding: 5px 5px 10px 5px;
     margin-top: 7px;
 }
@@ -25,25 +49,58 @@
 }
 .slidImages{
     height: 150px;
-    width: 180px;
+    width: 260px;
 	margin-left: 18px;
     position: relative;
 	padding: 10px 2px 150px 2px;
 }
 .bar3{
-    height: 60px;
+    height: 45px;
     background: #D4B996;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
     border-radius: 0 0 20px 20px;
     box-sizing: border-box;
     text-align: center;
 
 }
+.bar2{
+    margin-top: -47px;
+    margin-bottom: 25px;
+}
 .bar3 .buttonfleche i{
-    text-align: center;
-    color: aliceblue;
+    text-align: center; 
+    justify-content: center;
+    display: flex;
+    color: #FFFFFF;
+}
+.bar2 .vent{
+    color: #6FBA2C;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+.bar2 .annule{
+    color: #FF6464;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+.bar2 .remborse{
+    color: #D4B996;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+.boxcomercial{
+    border-radius: 10px 10px 25px 25px;
+    width: 270px;
 }

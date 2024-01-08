@@ -17,9 +17,9 @@ export default function HistoriqueId(){
                 <div className="produit">
                 <div className="items">
                     <img src={produitIMG} alt="" />
-                        <h4>Nike Max</h4>
-                        <h6>100.00 MAD</h6>
-                        <div className="quantite">
+                        <h4>I-FLUX </h4>
+                        <h6>15 200 MAD</h6>
+                        <div className="quantitem">
 
                         <label htmlFor="">
                             Quantité <input type="number" min={1} placeholder="1" />
@@ -37,9 +37,9 @@ export default function HistoriqueId(){
                 <div className="produit">
                 <div className="items">
                     <img src={produitIMGa} alt="" />
-                        <h4>Nike Max</h4>
-                        <h6>100.00 MAD</h6>
-                        <div className="quantite">
+                        <h4>DPF FLUSH</h4>
+                        <h6 id="dpf">15 440 MAD</h6>
+                        <div className="quantitem">
 
                         <label htmlFor="">
                             Quantité <input type="number" min={1} placeholder="1" />

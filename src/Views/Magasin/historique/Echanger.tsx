@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
+import "./echanger.css"
 export default function Echanger(){
     return <>
     <SideBareMagasin/>
@@ -11,9 +12,9 @@ export default function Echanger(){
 
   </div>
 <div className="marque">
-<h4 className="mb-3">veuillez remplir tous ces informations pour pouvoir échanger votre produit</h4>
+<h4>Veuillez remplir tous ces informations pour pouvoir échanger votre produit</h4>
 </div>
-<form action="" style={{ marginLeft: "70px" }} method="post">
+<form className="formechange" action="" style={{ marginLeft: "70px" }} method="post">
 
   <div id="infoDemande" className="row mb-3">
     <div className="col">

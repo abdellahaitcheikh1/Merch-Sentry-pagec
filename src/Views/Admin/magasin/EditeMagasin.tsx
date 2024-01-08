@@ -86,9 +86,9 @@ export default function EditeMagasin(){
           </div>
           <div className="detailBoxEdite">
             <div className="type">
-              <p>shirt black</p>
+              <p>I-FLUX 200</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">15 120 MAD <span className="pu">/ P.U</span> </p>
           </div>
         </div>
         </SwiperSlide>
@@ -102,9 +102,9 @@ export default function EditeMagasin(){
           </div>
           <div className="detailBoxEdite">
             <div className="type">
-              <p>shirt black</p>
+              <p>DPF FLUSH</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">7 720 MAD <span className="pu">/ P.U</span> </p>
           </div>
         </div>
         </SwiperSlide>
@@ -118,9 +118,9 @@ export default function EditeMagasin(){
           </div>
           <div className="detailBoxEdite">
             <div className="type">
-              <p>shirt black</p>
+              <p>AT-FLUX 3</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">75 038 MAD <span className="pu">/ P.U</span> </p>
           </div>
         </div>
         </SwiperSlide>
@@ -134,9 +134,9 @@ export default function EditeMagasin(){
           </div>
           <div className="detailBoxEdite">
             <div className="type">
-              <p>shirt black</p>
+              <p>4-WAY Flux Evo</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">4 092 MAD <span className="pu">/ P.U</span> </p>
           </div>
         </div>
         </SwiperSlide>
@@ -150,9 +150,25 @@ export default function EditeMagasin(){
           </div>
           <div className="detailBoxEdite">
             <div className="type">
-              <p>shirt black</p>
+              <p>I-FLUX 200</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">100 MAD <span className="pu">/ P.U</span> </p>
+          </div> 
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+
+        <div className="box">
+          <div className="slidImage">
+            <img src={E4} alt="" />
+            <div className="overlay">
+            </div>
+          </div>
+          <div className="detailBoxEdite">
+            <div className="type">
+              <p>I-FLUX 200</p>
+            </div>
+            <p className="price">100 MAD <span className="pu">/ P.U</span> </p>
           </div>
         </div>
         </SwiperSlide>
@@ -166,25 +182,9 @@ export default function EditeMagasin(){
           </div>
           <div className="detailBoxEdite">
             <div className="type">
-              <p>shirt black</p>
+              <p>I-FLUX 200</p>
             </div>
-            <p className="price">100 MAD</p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={E4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxEdite">
-            <div className="type">
-              <p>shirt black</p>
-            </div>
-            <p className="price">100 MAD</p>
+            <p className="price">100 MAD <span className="pu">/ P.U</span> </p>
           </div>
         </div>
         </SwiperSlide>

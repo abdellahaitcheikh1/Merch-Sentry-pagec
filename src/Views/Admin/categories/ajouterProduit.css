@@ -49,3 +49,18 @@
     color: rgb(173, 173, 173);
     font-size: 14px;
 }
+.row .col a {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 15px ; 
+    background: #007ACC;
+    margin-top: 100px;
+}
+#wiconbtn{
+    margin-bottom: 100px;
+}

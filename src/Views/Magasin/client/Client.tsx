@@ -12,7 +12,7 @@ export default function Client(){
           <i className="fa fa-search" />
           <input type="text" className="form-control form-input" placeholder="Recherch un client.." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
-          <Link to="/magasin/client/ajouter"><button className="btnAjouteC">Ajouter un client</button></Link>
+          <Link to="/magasin/client/ajouter"><button id="ac" className="btnAjouteC">Ajouter un client</button></Link>
         </div>
       </div>
     </div>

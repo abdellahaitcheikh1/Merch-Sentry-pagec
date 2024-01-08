@@ -15,7 +15,7 @@ export default function AjouterProduit(){
 
 <h4 className="mb-3">Ajouter un nouveau produit</h4>
 </div>
-<div className="row">
+<div className="row" style={{marginTop:"-50px"}}>
 <div className="col inputs">
     <div className="col-6">
         <span>Nom de produit</span>
@@ -61,7 +61,7 @@ export default function AjouterProduit(){
   <input type="file" name="" id="ImportPhoto" />
     <label className="photoIploadeF" htmlFor="ImportPhoto3" ><span><i className="bi bi-images"></i></span> <br /> Importe une photo de produit <br />
     jpg , png , jpeg </label>
-   <div className="row mt-3"    >
+   <div id="wiconbtn" className="row mt-3">
   <div className="col">
   <span className="">Prix </span>
 
@@ -72,9 +72,9 @@ export default function AjouterProduit(){
   <span className="">Unité </span>
     <input type="Number" className="form-control" value={1} />
   </div>
+    <br /><a href="mb-5">Confirmer</a>
 </div>
 
-    <br /><a href="">Confirmer</a>
     </div>
     </div>
 

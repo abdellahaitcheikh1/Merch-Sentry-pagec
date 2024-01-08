@@ -42,7 +42,7 @@ export default  function ProduitMagasin(){
                 </div>
             </div>
             <div className="btnVP">
-            <Link to=""><a href="">plus de détails <i className="bi bi-arrow-right-short"></i></a></Link>
+            <Link to=""><a href="">Plus de détails <i className="bi bi-arrow-right-short"></i></a></Link>
             </div>
         </Link>
         </div>
@@ -70,7 +70,7 @@ export default  function ProduitMagasin(){
                 </div>
             </div>
             <div className="btnVP">
-            <Link to=""><a href="">plus de détails <i className="bi bi-arrow-right-short"></i></a></Link>
+            <Link to=""><a href="">Plus de détails <i className="bi bi-arrow-right-short"></i></a></Link>
             
             </div>
         </Link>
@@ -97,7 +97,7 @@ export default  function ProduitMagasin(){
                 </div>
             </div>
             <div className="btnVP">
-            <Link to=""><a href="">plus de détails <i className="bi bi-arrow-right-short"></i></a></Link>
+            <Link to=""><a href="">Plus de détails <i className="bi bi-arrow-right-short"></i></a></Link>
             </div>
         </div>
 

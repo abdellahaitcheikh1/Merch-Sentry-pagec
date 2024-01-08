@@ -4,6 +4,15 @@
 }
 .marque{
     margin-bottom: 80px;
+    
+}
+.marque h4{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
 }
 form .row input{
     height: 43px;
@@ -13,11 +22,18 @@ form .row input{
 }
 .btnAjouteCommercial{
     text-align: center;
+    font-family: Montserrat;
+
 }
 .btnAjouteCommercial .buttonAjouter{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 13px 25px;
     border-radius: 10px;
+    font-size: 14px;
     background-color: #7fa87e;
-    color: aliceblue;
+    color: #fff;
 }

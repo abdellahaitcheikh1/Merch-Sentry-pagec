@@ -90,6 +90,32 @@
     /* position: absolute;
     margin-top: -160px; */
 }
+.detailComercial .type p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.detailComercial .price{
+    margin-left: -45px;
+    color: #FFF;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.detailComercial .price span{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
 .detailComercial{
     height: 60px;
     width: 100%;

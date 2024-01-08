@@ -66,7 +66,7 @@ export default function AfficheCommercial() {
   </div>
 
           <div className="texth4">
-              <h4>les commandes vendues ou annulées pendant les 6 derniers mois </h4>
+              <p>les commandes vendues ou annulées pendant les 6 derniers mois </p>
           </div>
         <Chart
         className="chart mb-5"

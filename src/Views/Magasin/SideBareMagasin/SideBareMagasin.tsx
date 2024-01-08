@@ -77,13 +77,20 @@ export default function SideBareMagasin(){
       </Link>
     </li>
   </ul>
+  <br />
+<br />
+
   <div className="menu-down">
+  <div className="hr">
+
+<hr />
+</div>
     <ul className="side-menu top ">
     <li className={activeItem === "/magasin/notification" || activeItem==="/magasin/notification/confirme" ? "active" : "" }>
     <Link to="/magasin/notification">
 
       <a href="#">
-      <i className="bi bi-bell"></i>
+      <i className="bi bi-bell"><span className="countNotifcom">1</span></i>
             </a>
 
       </Link>

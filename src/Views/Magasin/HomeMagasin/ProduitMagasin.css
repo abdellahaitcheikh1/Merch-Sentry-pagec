@@ -15,7 +15,7 @@
 }
 .Itemimg p{
     font-size: 15px; 
-    color: white;
+    color: #fff;
     height: 35px;
     background-color: #7fa87e;
     width: 100%;
@@ -58,11 +58,14 @@ line-height: normal;
 }
 .infoPM span{
     position: absolute;
-    margin-top: -40px;
-    font-size: 15px;
-    font-weight: 600;
+    margin-top: -35px;
+    font-size: 17px;
     color: #63a362;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
     text-align: center;
+    font-family: Montserrat; 
 
 }
 
@@ -78,10 +81,13 @@ line-height: normal;
 }
 .btnVP{
     margin-right: 10px;
+    font-size: 18px;
     display: flex;
     justify-content: flex-end;
 }
 .btnVP a{
+    text-decoration: none;
+    font-family: Montserrat;
     color: #7fa87e;
 
 }

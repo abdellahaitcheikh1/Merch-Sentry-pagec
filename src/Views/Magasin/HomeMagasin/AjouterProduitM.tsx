@@ -33,7 +33,7 @@ export default function AjouterProduitM(){
         <span>Categorie</span>
     <input type="text" className="form-control mb-3" placeholder="Exemple@gmail.com" id="nom" />
   </div>
-  <div className="row mt-3" >
+  <div className="row  mt-3" >
   <div className="col">
   <span className="">Qunatité </span>
 
@@ -61,19 +61,19 @@ export default function AjouterProduitM(){
   <input type="file" name="" id="ImportPhoto" />
     <label className="photoIploadeF" htmlFor="ImportPhoto3" ><span><i className="bi bi-images"></i></span> <br /> Importe une photo de produit <br />
     jpg , png , jpeg </label>
-   <div className="row">
+   <div className="row rowcom">
   <div className="col">
   <span className="">Prix </span>
 
     <input type="text" className="form-control" value="299 MAD" />
   </div>
 
-  <div className="col">
+  <div className="col colmag">
   <Link className="ajouterOffre" to="">Ajouter un autre offres</Link>
   <span className="">Unité </span>
     <input type="Number" className="form-control" value={1} />
+    <br /><a href="" className="bntcon">Confirmer</a>
   </div>
-    <br /><a href="" className="bntcon ">Confirmer</a>
 </div>
 
     </div>

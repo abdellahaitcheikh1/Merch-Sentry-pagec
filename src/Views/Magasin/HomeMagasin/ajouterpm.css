@@ -1,13 +1,15 @@
-.col .ajouterOffre{
+.rowcom .colmag .ajouterOffre{
     background-color: transparent;
     text-decoration: underline;
-    color: rgb(150, 150, 150);
+    color: #898989;
     font-size: 13px;
     margin-top: 70px;
 }
-.row .bntcon{
+.rowcom .colmag .bntcon{
     background-color: #7fa87e;
-    margin-top: 130px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: -80px;
 }
 #rowMagasin{
     margin-bottom: 150px;

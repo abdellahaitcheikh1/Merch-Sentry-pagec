@@ -15,15 +15,17 @@
     padding: 10px 25px 10px 25px ;
     border-radius: 10px;
 }
-.barTitle i{
-    background-color: #7fa87e;
-    border-radius: 25px;
-    display: flex;
-    padding: 7px 10px 2px 15px;
-    margin-right: 30px;
-    float: right;
-    color: #e3e2e2;
-    cursor: pointer;
+.paniercommercial .icon{
+    color: #FFF;
+    text-align: center;
+    font-size: 27px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px 17px;
+    border-left: 6px solid #759A74;
+    border-radius: 61.49px 61.494px 61.494px 61.49px;
+    background: #7FA87E; 
 }
 .barTitle span{
     margin-top: 20px;

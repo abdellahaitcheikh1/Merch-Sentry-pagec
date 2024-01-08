@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
 import"./SideBare.css"
-// import logo from "../../Admin/IMG/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png"
-import logocommercial from "../../Admin/IMG/computer-icons-user-profile-male-user-8d62411d7e891230b6d16cf2cad69184.png"
+import profil from "../../Admin/IMG/Commercial.png"
+import logo from "../../Admin/IMG/cropped-favicon-mylittlegarage-32x32 1.png"
 import { useEffect, useState } from "react";
 export default function SideBareCommercial(){
   const location = useLocation();
@@ -10,7 +10,6 @@ export default function SideBareCommercial(){
   useEffect(() => {
     const path = location.pathname;
 
-    // Set the active item based on the current path
     setActiveItem(path);
   }, [location.pathname]);
 
@@ -25,12 +24,12 @@ export default function SideBareCommercial(){
 
 <body>
 <section id="sidebar">
-  <a href="#" className="brand">
-    <img className="mt-3" width="100px" src=""  />			
+  <a href="#/commercial" className="brand">
+    <img className="logocommercial mt-3" width="40px" src={logo}  />			
   </a>
-  <img id="logoMagasin" src={logocommercial}  />	
-  <br /><br />		
-  <ul className="side-menu top">
+  <img className="profilCommercial" src={profil}  />	
+  <br />	
+  <ul className="side-menu top mb-5">
     <li className={activeItem === "/commercial" ? "active" : "" }>
         <Link className="active" to="/commercial">
       <a href="#">
@@ -48,10 +47,15 @@ export default function SideBareCommercial(){
       </Link>
     </li>
   </ul>
-  <div className="menu-down">
+  <br />
+  <div className="menu-down mt-5">
+  <div className="hr">
+
+  <hr />
+  </div>
     <ul className="side-menu top ">
     <li className={activeItem === "/" ? "active" : "" }>
-    <Link to="/magasin/notification">
+    <Link to="">
 
       <a href="#">
       <i className="bi bi-bell"></i>
@@ -69,6 +73,7 @@ export default function SideBareCommercial(){
       </Link>
       </li>
     </ul>
+
     <ul className="logout">
       <li className={activeItem === "/" ? "active" : "" }> 
       <Link to="">

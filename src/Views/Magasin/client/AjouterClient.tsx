@@ -58,7 +58,7 @@ export default function AjouterClient(){
 </form>
 </div>
     <div className="btnAjouteCommercial mt-5">
-        <Link className="buttonAjouter" to ="">Ajouter un client </Link>
+        <Link id="bac" className="buttonAjouter" to ="">Ajouter un client </Link>
     </div>
     </div>
     </>

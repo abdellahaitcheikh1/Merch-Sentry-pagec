@@ -12,7 +12,13 @@
 }
 .magasinInfo h5{
     margin-left: 90px;
-}
+    color: #333;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    }
 .magasinInfo img{
     width: 80px;
     margin-bottom: 10px;
@@ -27,9 +33,12 @@
     
 }
 .location p{
-    color: rgb(119, 119, 119);
-
-    
+    color: #898989;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
 }
 .etoile{
     color: yellow;
@@ -85,15 +94,32 @@ span{
     margin-right: 30px;
 }
 .btnChangeInfo{
-    background-color: #5495d7;
-    color: aliceblue;
-    border: none;
-    padding: 10px 30px 10px 30px;
-    border-radius: 10px;
+    border-radius: 12px;
+    background: #007ACC;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding: 13px 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .btnChangeInfo:hover{
-    background-color: #357ec8;
+    background: #007ACC;
 
+}
+.row .col a{
+    border-radius: 12px;
+    background: #cc0081;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding: 10px 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;  
 }
 .detailBoxEdite{
     height: 60px;
@@ -104,7 +130,32 @@ span{
     padding: 10px 20px;
     border-radius: 0 0 20px 20px;
     box-sizing: border-box;
-    background-color: rgb(50, 50, 50);
+    background-color: #333333;
+}
+.detailBoxEdite .type p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin-left: -10px;
+}
+.detailBoxEdite .price{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.detailBoxEdite .price .pu{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
 }
 .categorieSlide{
     margin-top: -50px;
@@ -160,6 +211,14 @@ span{
     padding: 10px 30px 10px 30px;
     text-decoration: none;
     border-radius: 10px;
+}
+.descmag{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.4%;
 }
 .textUp{
     margin-top: 30px;
