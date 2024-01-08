@@ -10,7 +10,6 @@ export default function SideBareCommercial(){
   useEffect(() => {
     const path = location.pathname;
 
-    // Set the active item based on the current path
     setActiveItem(path);
   }, [location.pathname]);
 
@@ -49,7 +48,6 @@ export default function SideBareCommercial(){
     </li>
   </ul>
   <br />
-  {/* <i className="linemenu bi bi-dash-lg"></i> */}
   <div className="menu-down mt-5">
   <div className="hr">
 
