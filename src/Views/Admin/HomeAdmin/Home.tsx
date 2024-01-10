@@ -19,7 +19,7 @@ export default function(){
     return <>
     <Sidebare/>
     	<div className="home mt-5" >
-  <main className="container ">
+  <main className="container">
     <div className="head-title">
       <div className="left">
         <h5><b>Bienvenue ! </b> vous pouvez gérer votre stock en toute simplicité</h5>
@@ -31,7 +31,7 @@ export default function(){
 
   {/* ----------------------------------- PRODUIT SLIDE ------------------------------------ */}
 
-  <div className="container-fluid " id="ProductSlide">
+  <div className="container-fluid ProductSlide">
     <a className="right-align" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
     <Swiper
       
@@ -63,8 +63,8 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-            <p className="paran">Intake Pro Diesel</p>
+            <div className="ParantName">
+            <p className="nameProduct">Intake Pro Diesel</p>
             </div>
             <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
@@ -82,8 +82,8 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-                  <p className="paran">R-Flush Radiator</p>
+            <div className="ParantName">
+                  <p className="nameProduct">R-Flush Radiator</p>
               </div>
 <div className="price"><p>490 MAD <span>/P.U</span></p>
 </div>          
@@ -102,8 +102,8 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-<p className="paran">I-FLUX 200</p>            </div>
+            <div className="ParantName">
+<p className="nameProduct">I-FLUX 200</p>            </div>
 <div className="price"><p>15 120 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -119,8 +119,8 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-<p className="paran">Diesel Multi 5l</p>            </div>
+            <div className="ParantName">
+<p className="nameProduct">Diesel Multi 5l</p>            </div>
 <div className="price"><p>2900 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -136,9 +136,11 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-<p className="paran">Intake Pro Diesel</p>            </div>
-<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
+            <div className="ParantName">
+              <p className="nameProduct">Intake Pro Diesel</p>            
+            </div>
+          <div className="price"><p>230 MAD <span>/P.U</span></p></div>
+            </div>
         </div>
         </Link>
 
@@ -153,8 +155,8 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-<p className="paran">Intake Pro Diesel</p>            </div>
+            <div className="ParantName">
+<p className="nameProduct">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -172,8 +174,8 @@ export default function(){
             </div>
           </div>
           <div className="detailBox">
-            <div className="type">
-<p className="paran">Intake Pro Diesel</p>            </div>
+            <div className="ParantName">
+<p className="nameProduct">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -184,7 +186,7 @@ export default function(){
 
   {/*----------------------------------- SPONSOR SLIDE --------------------------------------- */}
   
-  <div className="mt-3 container-fluid" id="ProductSlide">
+  <div className="mt-3 container-fluid ProductSlide">
     <p className="container pMagazin mt-3">Vous avez +20 magasins</p>
     <a className="right-align" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
     <Swiper

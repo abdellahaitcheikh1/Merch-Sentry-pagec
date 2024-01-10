@@ -15,3 +15,82 @@
     justify-content: right;
     
 }
+svg{
+    stroke-width: 1px;
+    stroke: #D4B996; 
+    width: 125px;
+    flex-shrink: 0; 
+    margin-left: 83px;
+    margin-top: -33px;
+}
+.itemvisiteur{
+    margin-left: 40px;
+    border-radius: 10.417px;
+    background: #FFF;
+    width: 310px;
+
+}
+.contentvisiteure{
+    display: flex;
+}
+.contentvisiteure .categorie{
+    margin-top: -60px;
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    background: #FAFAFA; 
+    width: 350px;
+    margin-left: 30px;
+}
+.boxvisiteur{
+    border-radius: 0px 0px 10.417px 10.417px;
+    background: #007ACC;
+    padding: 5px; 
+}
+.boxvisiteur p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 13px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.nameproduitvisiteur p{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.nameproduitvisiteur .etoilevisiteur{
+    background-color: transparent;
+    margin-left: -20px;
+
+}
+.nameproduitvisiteur h5{
+    float: right;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+
+}
+.brand{
+    display: flex;
+}
+.brand .panierboxvisiteur{
+    background-color: transparent;
+    margin-top: -3px;
+    margin-left: 116px;
+}
+.brand img{
+    height: 22px;
+}

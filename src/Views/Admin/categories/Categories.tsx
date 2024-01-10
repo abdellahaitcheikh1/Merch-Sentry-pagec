@@ -27,9 +27,9 @@ export default function Categories(){
     </div>
   </div>
 
-  <div className="container-fluid" id="ProductSlide">
+  <div className="container-fluid ProductSlide">
     <h5 className="container">Equipements</h5>
-    <a className="right-align" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
+    <a className="BtnVoirPlus" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
     <Swiper
       
       freeMode={true}
@@ -165,9 +165,9 @@ export default function Categories(){
         </Swiper>
 
   </div>
-  <div className="mt-3 container-fluid" id="ProductSlide">
+  <div className="mt-3 container-fluid ProductSlide">
     <p className="pMagazin container mt-3">Lubrifiants</p>
-    <a className="right-align" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
+    <a className="BtnVoirPlus" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
     <Swiper
       
       freeMode={true}
