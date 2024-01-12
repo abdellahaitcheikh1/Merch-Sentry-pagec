@@ -75,13 +75,13 @@ export default function Sidebare() {
             <li className={activeItem === "/notifacation" ? "active" : "" }>
               <Link to="">
 
-                <a href="#">
-                <i className="bi bi-bell"><span className="countNotif">1</span></i>
+                <a href="">
+              <i className="bi bi-bell"/><span className="countNotif">1</span>
                       </a>
-
                 </Link>
               </li>
               <li className={activeItem === "/settings" ? "active" : ""}>
+
                 <Link to="">
                   <a href="#">
                     <i className="bi bi-gear" />

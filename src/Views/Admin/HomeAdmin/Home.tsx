@@ -45,16 +45,20 @@ export default function(){
         },
         480:{
           slidesPerView:2,
-          spaceBetween:10,
+          spaceBetween:80,
         },
-        700:{
+        600:{
+          slidesPerView:3,
+          spaceBetween:80,
+        },
+        800:{
           slidesPerView:4,
-          spaceBetween:10,
+          spaceBetween:5,
         }
       }}
       >
     <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="">
 
         <div className="box">
           <div className="slidImage">
@@ -62,7 +66,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
             <p className="nameProduct">Intake Pro Diesel</p>
             </div>
@@ -73,7 +77,7 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="/produit">
 
         <div className="box">
           <div className="slidImage">
@@ -81,7 +85,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
                   <p className="nameProduct">R-Flush Radiator</p>
               </div>
@@ -93,7 +97,7 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="">
 
         <div className="box">
           <div className="slidImage">
@@ -101,7 +105,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
 <p className="nameProduct">I-FLUX 200</p>            </div>
 <div className="price"><p>15 120 MAD <span>/P.U</span></p></div>          </div>
@@ -110,7 +114,7 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="">
 
         <div className="box">
           <div className="slidImage">
@@ -118,7 +122,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
 <p className="nameProduct">Diesel Multi 5l</p>            </div>
 <div className="price"><p>2900 MAD <span>/P.U</span></p></div>          </div>
@@ -127,7 +131,7 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="">
 
         <div className="box">
           <div className="slidImage">
@@ -135,7 +139,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
               <p className="nameProduct">Intake Pro Diesel</p>            
             </div>
@@ -146,7 +150,7 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="">
 
         <div className="box">
           <div className="slidImage">
@@ -154,7 +158,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
 <p className="nameProduct">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
@@ -164,7 +168,7 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="LinkProduct" to="">
 
         <div className="box">
           <div className="slidImage">
@@ -173,7 +177,7 @@ export default function(){
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
+          <div className="BoxInfoProduct">
             <div className="ParantName">
 <p className="nameProduct">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
