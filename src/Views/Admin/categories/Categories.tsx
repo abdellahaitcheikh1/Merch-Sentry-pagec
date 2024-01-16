@@ -58,7 +58,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">I-FLUX 200</p>
             </div>
@@ -74,7 +74,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">DPF FLUSH</p>
             </div>
@@ -90,7 +90,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">AT-FLUX 3</p>
             </div>
@@ -106,7 +106,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">4-WAY Flux </p>
             </div>
@@ -122,7 +122,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">AT-FLUX 3</p>
             </div>
@@ -138,7 +138,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">AT-FLUX 3</p>
             </div>
@@ -154,7 +154,7 @@ export default function Categories(){
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
+          <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">AT-FLUX 3</p>
             </div>
@@ -195,7 +195,7 @@ export default function Categories(){
           <img src={catProduit} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">Chain Pro</p>
             </div>
@@ -211,7 +211,7 @@ export default function Categories(){
           <img src={catProduit1} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">Deblock SHOCK</p>
             </div>
@@ -226,7 +226,7 @@ export default function Categories(){
           <img src={catProduit2} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">SUPER 5.1</p>
             </div>
@@ -242,7 +242,7 @@ export default function Categories(){
           <img src={catProduit} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">C1200+</p>
             </div>
@@ -258,7 +258,7 @@ export default function Categories(){
           <img src={catProduit2} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">SUPER 5.1</p>
             </div>
@@ -274,7 +274,7 @@ export default function Categories(){
           <img src={catProduit1} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct">SUPER 5.1</p>
             </div>
@@ -290,7 +290,7 @@ export default function Categories(){
           <img src={catProduit} alt="" />
             <div className="overlay">
             </div>
-            <div className="BoxInfoProduct">
+            <div className="Box-info-product">
             <div className="ParantName">
               <p className="nameProduct" >SUPER 5.1</p>
             </div>

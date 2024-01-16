@@ -91,6 +91,34 @@
     /* position: absolute;
     margin-top: -160px; */
 }
+.detailBoxMagasin .paran{
+    margin-top: 1%;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: -10%;
+    line-height: normal; 
+}
+.detailBoxMagasin .price p{
+    color: #FFF;
+    text-align: right;
+    font-family: Montserrat;
+    font-size:0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    margin-top: 15%;
+}
+.detailBoxMagasin .price span{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 0.3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
 .panier{
     background-color: #7fa87e;
     border-radius: 25px;

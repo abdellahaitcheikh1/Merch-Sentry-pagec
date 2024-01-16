@@ -65,7 +65,7 @@
     text-decoration: none;
 
 }
-.BoxInfoProduct .ParantName .nameProduct{
+.Box-info-product .ParantName .nameProduct{
     font-family: Montserrat;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -73,7 +73,7 @@
 	font-size: 80%;
     margin-left: -8%;
 }
-.BoxInfoProduct .price{
+.Box-info-product .price{
     font-family: Montserrat;
     color: rgb(255, 255, 255);
     font-weight: 600;
