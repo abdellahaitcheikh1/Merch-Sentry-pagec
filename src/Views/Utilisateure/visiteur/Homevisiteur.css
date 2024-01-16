@@ -53,6 +53,39 @@
     width:25%;
     margin-left: 3%;
 }
+@media screen and (max-width: 577px) {
+	.content-visiteure .categorie{
+		margin-top: -6%;
+    border-radius: 10px;
+    border: 1px solid #DADADA;
+    box-shadow: 0px 2% 20% 0% rgba(0, 0, 0, 0.05);
+    padding: 3%;
+    background: #FAFAFA; 
+    width:25%;
+    height: 100%;
+    margin-left: 3%;
+    font-size: 1rem;
+	}
+    .item-visiteur{
+        width: 110%;
+    }
+    .produit-content{
+        width: 100%;
+        margin-left: 5%;
+    }
+    .prix input{
+        width: 100%;
+    }
+    .underline-title{
+        stroke-width: 1%;
+        stroke: #D4B996; 
+        width: 23%;
+        flex-shrink: 0; 
+        margin-left: 18.5%;
+        margin-top: -7.6%;
+        background-color:transparent;
+    }
+}
 .categorie .piece-auto{
     border-radius: 10.106px;
     background: #DAF0FF; 
@@ -245,4 +278,93 @@
     border-radius: 50px;
     margin-top: 43%;
 
+}
+
+/* affiche produit visiteur  */
+
+.bar-roteur{
+    display: flex;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+}
+.bar-roteur .icon-roteur{
+    color: #000000;
+    background-color: #eaeaea;
+    border: 0.5px solid #DADADA;
+    border-radius: 50px;
+    padding: 0 0.8%;
+    font-size: 1.4rem;
+}
+.info-products{
+    display: flex;
+    margin-left: 5%;
+}
+.image-product img{
+    border-radius: 20px;
+    border: 0.5px solid #dfdfdf; 
+
+}
+.info-product .price{
+    margin-bottom: 3%;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin-right: 15%;
+}
+.info-product p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+    margin-left: 5%;
+
+}
+.info-product input{
+    margin-left: 5%;
+    width: 35%; 
+    border-radius: 5px;
+    border: 0.5px solid rgb(211, 211, 211);
+}
+.info-product .location-content{
+    color: #898989;
+    margin-top: 9%;
+    margin-bottom: 1%;
+    font-family: Montserrat;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.info-product .icon-location{
+    background-color: transparent;
+}
+.info-product .reviews{
+    margin-right: 50%;
+    color: #898989;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.info-product .icon-etoile{
+    background-color: transparent;
+}
+.info-product img{
+    margin-left: 5%;
+    width: 30%;
+}
+.commande{
+    margin-top: 20%;
+    margin-left: 30%;
+    background-color: #6FBA2C;
 }
