@@ -363,8 +363,9 @@ body {
 	line-height: normal; 
 	font-size: 112.5%;
 }
-.ProductSlide{
+.home .ProductSlide{
 	margin-top: -8%;
+	margin-left: 4%;
 
 }
 .ProductSlide .pMagazin{
@@ -567,64 +568,65 @@ body {
 
  /* -------------------------------- SHOW PRODCUT BY ADMIN -------------------------------  */
 
-.produitCard .ImageProduit{
+.produit-card .image-produit{
 	border-radius: 5%;
-	border: 1% solid rgb(235, 235, 235);
-	width: 130%;
+	border: 1px solid rgb(235, 235, 235);
 	padding: 1% 2% 1% 2%;
 }
-.produitCard .arrow{
-	color: rgb(59, 59, 59);
+.produit-card .arrow{
+	color: rgba(59, 59, 59, 0.908);
     cursor: pointer;
-    border-radius: 50%;
-    border: 1% solid rgb(200, 200, 200);
-    font-size: 150%;
+    border-radius: 50px;
+    border: 1px solid rgb(200, 200, 200);
+    font-size: 1.7rem;
 }
-.produitCard .barTitle{
-	margin-left: 4%;
+.produit-card .bar-title{
+	margin-left: 3%;
 	margin-top: -3%;
 	display: flex;
 	justify-content: space-between;
 
 }
-.buttonDelete{
-	margin-top: 7%;
+.button-delete{
+	margin-top: 6%;
 }
-.produitCard .barTitle a{
+.produit-card .bar-title a{
 	background: #007ACC;
 	color: #eee;
 	text-decoration: none;
+	padding: 1% 1.9%;
+	width: 16%;
+	font-size: 0.9rem;
+	text-align: center;
+	border-radius: 10px;
 	border: none;
 }
-.cardItem{
+.card-item{
 	display: flex;
-	margin-left: 100%;
+	margin-left: 10%;
 }
-.cardItem .ImageProduit{
-	width:25%;
-	height: 2%;
-	margin-top: -2%;
-}
-.ItemInfo h2{
+.item-info .price-product{
 	font-weight: 600;
+	font-size: 2.3rem;
+	margin-left: -10%;
 } 
-.ItemInfo .pu{
+.item-info .pu{
 	color: #333;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 300;
 	line-height: normal;
 }
-.ItemInfo h6{
+.item-info h6{
 	margin-top: 10%;
-	font-size: 20%;
+	font-size: 1.2rem;
 	font-weight: 600;
 }
-.ItemInfo .QuantityItem , .ReferenceItem{
-	margin-left: 15%;
+.item-info .quantity-item , .reference-item{
+	margin-left: 7%;
 	color: #000;
 	font-family: Montserrat;
-	font-size: 90%;
+	font-size: 0.9rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal; 
@@ -641,8 +643,8 @@ body {
 	font-weight: 400;
 	line-height: normal;
 }
-.ItemInfo{
-	margin-left: 437.5%;
+.item-info{
+	margin-left: 20%;
 }
 .card{
 	margin-left: 10%;
@@ -694,20 +696,19 @@ a{
     margin: 25%;
 }
 .boxSponsore{
-    width: 200%;
-    margin: 20%;
+    width: 100%;
 	display: flex;
 	justify-content: center;
 }
-.slidImage{
-    height: 150%;
-    width: 180%;
-	margin-left: 7%;
+.box .slide-image{
+    height: 100%;
+    width: 100%;
+	margin-left: 13%;
     position: relative;
-	padding: 10% 2% 67% 2%;
+	padding: 3% 2% 2% 2%;
 }
-.box .slidImage img{
-	height: 9rem;
+.box .slide-image img{
+	width: 75%;
 }
 .slideImgSponsore{
 	height: 80%;
@@ -717,12 +718,6 @@ a{
 .slideImgSponsore img{
     width: 100%;
     height: 60%;
-    /* object-fit: cover;
-    box-sizing: border-box; */
-}
-.slidImage img{
-    width: 100%;
-    height: 100%;
     /* object-fit: cover;
     box-sizing: border-box; */
 }
@@ -739,10 +734,10 @@ a{
 	line-height: normal; 
 	font-size: 45%;
 }
-.LinkProduct{
+.product-link{
 	text-decoration: none;
 }
-.BoxInfoProduct{
+.Box-info-product{
     height: 4rem;
 	background: #007ACC;
 	width: 100%;
@@ -757,11 +752,11 @@ a{
 .menu-down hr{
 	width: 80%;
 }
-.ParantName{
+.Box-info-product .parant-name{
     display: flex;
     flex-direction: column;
 }
-.ParantName .nameProduct{
+.Box-info-product .parant-name .product-name{
 	color: #FFF; 	
 	margin-top: -16%;
 	font-style: normal; 
@@ -774,25 +769,25 @@ a{
 	line-height: normal; 
 
 }
-.BoxInfoProduct b{
+.Box-info-product b{
     color: rgb(255, 255, 255);
 
 }
-.ParantName span{
+.Box-info-product .parant-name span{
     color: rgb(76, 67, 67);
 }
-.price p{
+.Box-info-product .price p{
     color: rgb(255, 255, 255);
-    font-size: 99%;
+    font-size: 0.8rem;
 	margin-left: -3%;
 	font-style: normal;
-	line-height: normal;  	/* background-color: #DB504A; */
+	line-height: normal;
 	margin-top: 7%;
 	font-family: Montserrat; 
 
 
 }
-.price span{
+.Box-info-product .price span{
     color: #efefef;
 	font-family: Montserrat; 
 	font-size:60%;
@@ -812,12 +807,12 @@ a{
 	.sidebar {
 		width: auto;
 	}
-	.produitCard .ImageProduit{
+	.produit-card .ImageProduit{
 		border-radius: 5%;
 		border: 1% solid rgb(235, 235, 235);
 		width: 40%;
 	}
-	.produitCard .barTitle a{
+	.produit-card .bar-title a{
 		background: #007ACC;
 		color: #eee;
 		text-decoration: none;
@@ -834,12 +829,12 @@ a{
 		width: 11%;
 		/* background-color: #007ACC; */
 	}
-	.produitCard .ImageProduit{
+	.produit-card .ImageProduit{
 		border-radius: 5%;
 		border: 1% solid rgb(235, 235, 235);
 		width: 40%;
 	}
-	.produitCard .barTitle a{
+	.produit-card .bar-title a{
 		background: #007ACC;
 		color: #eee;
 		text-decoration: none;

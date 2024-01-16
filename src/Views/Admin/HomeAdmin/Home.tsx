@@ -58,17 +58,17 @@ export default function(){
       }}
       >
     <SwiperSlide>
-      <Link className="LinkProduct" to="">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-            <p className="nameProduct">Intake Pro Diesel</p>
+          <div className="Box-info-product">
+            <div className="parant-name">
+            <p className="product-name">Intake Pro Diesel</p>
             </div>
             <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
@@ -77,17 +77,17 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link className="LinkProduct" to="/produit">
+      <Link className="product-link" to="/produit">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit2} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-                  <p className="nameProduct">R-Flush Radiator</p>
+          <div className="Box-info-product">
+            <div className="parant-name">
+                  <p className="product-name">R-Flush Radiator</p>
               </div>
 <div className="price"><p>490 MAD <span>/P.U</span></p>
 </div>          
@@ -97,51 +97,51 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link className="LinkProduct" to="">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
             <img src={ImageProduit3} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-<p className="nameProduct">I-FLUX 200</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">I-FLUX 200</p>            </div>
 <div className="price"><p>15 120 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link className="LinkProduct" to="">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-<p className="nameProduct">Diesel Multi 5l</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">Diesel Multi 5l</p>            </div>
 <div className="price"><p>2900 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link className="LinkProduct" to="">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-              <p className="nameProduct">Intake Pro Diesel</p>            
+          <div className="Box-info-product">
+            <div className="parant-name">
+              <p className="product-name">Intake Pro Diesel</p>            
             </div>
           <div className="price"><p>230 MAD <span>/P.U</span></p></div>
             </div>
@@ -150,17 +150,17 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link className="LinkProduct" to="">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-<p className="nameProduct">Intake Pro Diesel</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -168,18 +168,18 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link className="LinkProduct" to="">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
 
             <div className="overlay">
             </div>
           </div>
-          <div className="BoxInfoProduct">
-            <div className="ParantName">
-<p className="nameProduct">Intake Pro Diesel</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
