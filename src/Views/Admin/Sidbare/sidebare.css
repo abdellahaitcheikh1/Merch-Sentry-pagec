@@ -49,14 +49,14 @@ body {
 }
 
 
+ /* ------------------------------- SIDEBARE ADMIN ----------------------------------------- */
 
 
-
-#sidebar {
+.sidebar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 80px;
+	width: 6%;
 	height: 100%;
 	background: var(--light);
 	z-index: 2000;
@@ -65,144 +65,137 @@ body {
 	overflow-x: hidden;
 	scrollbar-width: none;
 }
-#sidebar.hide {
-	width: 60px;
+.sidebar.hide {
+	width: 6%;
 }
-#sidebar .brand {
-	font-size: 24px;
+.sidebar .brand {
+	font-size: 24%;
 	font-weight: 700;
-	height: 56px;
+	height: 10%;
 	display: flex;
 	align-items: center;
-	color: var(--blue);
 	position: sticky;
 	top: 0;
 	left: 0;
-	background: var(--light);
 	z-index: 500;
-	padding-bottom: 20px;
+	padding-bottom: 20%;
 	box-sizing: content-box;
 }
-#sidebar .brand .bx {
-	min-width: 60px;
+.sidebar .brand img{
+	margin-left: 35%;
+	width: 60%;
+	height: 75%;
+}
+.sidebar .brand .bx {
+	min-width: 6%;
 	display: flex;
 	justify-content: center;
 }
-#sidebar .side-menu {
+.sidebar .side-menu {
 	width: 100%;
-	margin-top: 8px;
+	margin-top: 9%;
 	
 }
 .menu-down{
-	margin-top: 150px;
+	margin-top: 15%;
 }
 .menu-down .logout li a{
-	font-size: 20px;
+	font-size: 100%;
 	color: #898989;
 }
 .menu-down .logout li {
-	margin-top: -27px;
-	margin-left: 2px;
+	margin-top: -56%;
+	margin-left: 5%;
 }
 /* imoprant	 */
-#sidebar .side-menu li {
-	height: 50px;
-	background: transparent;
-	margin-left: -5px;
-	margin-bottom: 7px;
+.sidebar .side-menu li {
+	height: 3.125rem;
+	margin-left: -8%;
+	margin-bottom: 8%;
 
 }
-#sidebar .side-menu li.active {
+.sidebar .side-menu li.active {
 	background: var(--grey);
 	position: relative;
 }
-#sidebar .side-menu li.active::before {
+.sidebar .side-menu li.active::before {
 	content: '';
 	position: absolute;
-	width: 40px;
-	height: 40px;
+	width: 40%;
+	height: 30%;
 	border-radius: 50%;
-	top: -40px;
+	top: -40%;
 	right: 0;
-	box-shadow: 20px 20px 0 var(--grey);
+	box-shadow: 20% 20% 0 var(--grey);
 	z-index: -1;
 }
-#sidebar .side-menu li.active::after {
+
+.sidebar .side-menu li.active::after {
 	content: '';
 	position: absolute;
-	width: 40px;
-	height: 40px;
+	width: 40%;
+	height: 40%;
 	border-radius: 50%;
-	bottom: -40px;
+	bottom: -40%;
 	right: 0;
-	box-shadow: 20px -20px 0 var(--grey);
+	box-shadow: 20% -20% 0 var(--grey);
 	z-index: -1;
 }
 
 /* impotant */
 
-#sidebar .side-menu li a {             
-	padding: 3px 2px 3px 7px;
+.sidebar .side-menu li a {             
+	padding: 3% 2% 3% 15%;
 	width: 100%;
 	height: 100%;
-	background: var(--light);
 	display: flex;
 	align-items: center;
-	border-radius: 5px;
-	font-size: 20px;
-	color: var(--dark);
+	border-radius: 5%;
+	font-size: 115%;
+	color: #333333;
 	white-space: nowrap;
 	overflow-x: hidden;
 }  
 
 /* important  */
 
-#sidebar .side-menu.top li.active a {
+.sidebar .side-menu.top li.active a {
 	color: rgb(255, 254, 254);
 	background-color: #333;
-	border-radius:16px;
+	border-radius:32%;
 
 }
-#sidebar.hide .side-menu li a {
-	width: calc(48px - (4px * 2));
+.sidebar.hide .side-menu li a {
+	width: calc(48% - (4% * 2));
 	transition: width .3s ease;
 }
-#sidebar .side-menu li a.logout {
-	color: var(--red);
-}
-#sidebar .side-menu.top li a:hover {
+
+.sidebar .side-menu.top li a:hover {
 	color: white;
 	background-color: #333;
-	border-radius:16px;
+	border-radius:32%;
 }
-/* #sidebar .side-menu li a .bx {
-	min-width: calc(60px  - ((4px + 6px) * 2));
-	display: flex;
-	justify-content: center;
+/* .sidebar.hide ~ #content {
+	width: calc(100% - 60%);
+	left: 60px;
+	background-color: #007ACC;
 } */
-/* SIDEBAR */
-
-
-
-
+ /* --------------------------------- FINISH OF SIDEBAR --------------------------------------- */
 
 /* CONTENT */
-#content {
+/* #content {
 	position: relative;
 	width: calc(100% - 80px);
 	left: 80px;
 	transition: .3s ease;
-}
-#sidebar.hide ~ #content {
-	width: calc(100% - 60px);
-	left: 60px;
-}
+	background-color: ;
+} */
 
 
 
 
 /* NAVBAR */
-#content nav {
+/* #content nav {
 	height: 56px;
 	background: var(--light);
 	padding: 0 24px;
@@ -323,13 +316,7 @@ body {
 #content nav #switch-mode:checked + .switch-mode::before {
 	left: calc(100% - (25px - 4px) - 2px);
 }
-/* NAVBAR */
 
-
-
-
-
-/* MAIN */
 #content main {
 	width: 100%;
 	padding: 36px 24px;
@@ -351,24 +338,22 @@ body {
 	margin-bottom: 10px;
 	color: var(--dark);
 
-}
+} */
 .container .head-title .left h5 b{
 	font-family: Montserrat; 
 	color: #000;
 	font-style: normal; 
 	font-weight: 500;
-	font-size: 140px;  
 	line-height: normal; 
-	font-size: 26px;
+	font-size: 162.5%;
 }
 .container .head-title .left h5{
 	font-family: Montserrat; 
 	color: #000;
 	font-style: normal; 
 	font-weight: 500;
-	font-size: 140px;  
 	line-height: normal; 
-	font-size: 19px;
+	font-size: 118.75%;
 }
 .container .head-title .left p{
 	font-family: Montserrat; 
@@ -376,21 +361,26 @@ body {
 	font-style: normal; 
 	font-weight: 400; 
 	line-height: normal; 
-	font-size: 18px;
+	font-size: 112.5%;
 }
-#ProductSlide .pMagazin{
-	margin-left: 60px;
+.home .ProductSlide{
+	margin-top: -8%;
+	margin-left: 4%;
+
+}
+.ProductSlide .pMagazin{
+	margin-left: 8%;
 	font-family: Montserrat; 
 	color: #000; 
 	font-style: normal; 
 	font-weight: 400; 
 	line-height: normal; 
-	font-size: 17px;
+	font-size: 106%;
 }
-#content main .head-title .left .breadcrumb {
+/* #content main .head-title .left .breadcrumb {
 	display: flex;
 	align-items: center;
-	grid-gap: 16px;
+	grid-gap: 100%;
 }
 #content main .head-title .left .breadcrumb li {
 	color: var(--dark);
@@ -418,7 +408,6 @@ body {
 
 
 
-
 #content main .box-info {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -432,6 +421,7 @@ body {
 	display: flex;
 	align-items: center;
 	grid-gap: 24px;
+	
 }
 #content main .box-info li .bx {
 	width: 80px;
@@ -461,13 +451,13 @@ body {
 }
 #content main .box-info li .text p {
 	color: var(--dark);	
-}
+} */
 
 
 
 
 
-#content main .table-data {
+/* #content main .table-data {
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 24px;
@@ -574,162 +564,104 @@ body {
 }
 #content main .table-data .todo .todo-list li:last-child {
 	margin-bottom: 0;
-}
-.produitCard img{
-	border-radius: 10px;
+} */
+
+ /* -------------------------------- SHOW PRODCUT BY ADMIN -------------------------------  */
+
+.produit-card .image-produit{
+	border-radius: 5%;
 	border: 1px solid rgb(235, 235, 235);
-	width: 130px;
-	padding: 15px 30px 10px 30px;
-	height: 170px;
-	width: 200px;
+	padding: 1% 2% 1% 2%;
 }
-.produitCard i{
-	color: rgb(59, 59, 59);
+.produit-card .arrow{
+	color: rgba(59, 59, 59, 0.908);
     cursor: pointer;
-    border-radius: 100px;
-    padding: 0 5px 0 5px;
+    border-radius: 50px;
     border: 1px solid rgb(200, 200, 200);
-    font-size: 25px;
+    font-size: 1.7rem;
 }
-.barTitle{
-	margin-left: 50px;
-	margin-top: -30px;
+.produit-card .bar-title{
+	margin-left: 3%;
+	margin-top: -3%;
 	display: flex;
 	justify-content: space-between;
 
 }
-.buttonSuprimer{
-	margin-top: 70px;
+.button-delete{
+	margin-top: 6%;
 }
-.barTitle a{
-	background-color: #3C91E6;
+.produit-card .bar-title a{
+	background: #007ACC;
 	color: #eee;
 	text-decoration: none;
+	padding: 1% 1.9%;
+	width: 16%;
+	font-size: 0.9rem;
+	text-align: center;
 	border-radius: 10px;
-	padding: 10px;
 	border: none;
 }
-.cardItem{
+.card-item{
 	display: flex;
-	margin-left: 120px;
+	margin-left: 10%;
 }
-.ItemInfo h2{
+.item-info .price-product{
 	font-weight: 600;
+	font-size: 2.3rem;
+	margin-left: -10%;
 } 
-.ItemInfo .pu{
-	font-weight: 400;
-	font-size: 20px;
+.item-info .pu{
+	color: #333;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
 }
-.ItemInfo h6{
-	margin-top: 10px;
-	font-size: 20px;
+.item-info h6{
+	margin-top: 10%;
+	font-size: 1.2rem;
 	font-weight: 600;
 }
-.ItemInfo .chifre{
-	margin-left: 40px;
-	font-weight: 500;
+.item-info .quantity-item , .reference-item{
+	margin-left: 7%;
+	color: #000;
+	font-family: Montserrat;
+	font-size: 0.9rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal; 
 
 }
 .description{
-	margin-left: 90px	;
+	margin-left: 90%;
 }
 .description p {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 20px;
+	color: #000;
+	font-family: Montserrat;
+	font-size: 100%;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
-.ItemInfo{
-	margin-left: 70px;
+.item-info{
+	margin-left: 20%;
+}
+.card{
+	margin-left: 10%;
+
+}
+.infoProduct{
+	width: 100%;
+	border-radius: 0 0 1% 1%;
+	background-color:#5495d7;
+}
+.cardProduct{
+	border: 1% solid rgb(211, 211, 211);
 }
 /* MAIN */
 /* CONTENT */
 
 
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-	#sidebar {
-		width: 80px;
-	}
-
-	#content {
-		width: calc(100% - 70px);
-		left: 70px;
-	}
-
-	#content nav .nav-link {
-		display: none;
-	}
-}
-
-
-
-
-
-
-@media screen and (max-width: 576px) {
-	#content nav form .form-input input {
-		display: none;
-	}
-
-	#content nav form .form-input button {
-		width: auto;
-		height: auto;
-		background: transparent;
-		border-radius: 0;
-		color: var(--dark);
-	}
-
-	#content nav form.show .form-input input {
-		display: block;
-		width: 100%;
-	}
-	#content nav form.show .form-input button {
-		width: 36px;
-		height: 100%;
-		border-radius: 0 36px 36px 0;
-		color: var(--light);
-		background: var(--red);
-	}
-
-	#content nav form.show ~ .notification,
-	#content nav form.show ~ .profile {
-		display: none;
-	}
-
-	#content main .box-info {
-		grid-template-columns: 1fr;
-	}
-
-	#content main .table-data .head {
-		min-width: 420px;
-	}
-	#content main .table-data .order table {
-		min-width: 420px;
-	}
-	#content main .table-data .todo .todo-list {
-		min-width: 420px;
-	}
-}
-.card{
-	margin-left: 10px;
-
-}
-.infoProduct{
-	width: 100%;
-	/* margin-left: -8px; */
-	border-radius: 0px 0px 10px 10px;
-	background-color:#5495d7;
-}
-.cardProduct{
-	border: 1px solid rgb(211, 211, 211);
-	/* margin-left: 10px; */
-}
 
 
 /*--------------------------- Produc Slid -----------------------  */
@@ -741,43 +673,46 @@ body{
 
 }
 
-#ProductSlide{
-	margin-left: 50px;
-	margin-top: -60px;
+.ProductSlide{
+	margin-left: 50%;
+	margin-top: -8%;
 }
-.right-align {
+.BtnVoirPlus {
 	text-decoration: none;
 	position: absolute;
-	margin-left: 1050px;
-	margin-top: -10px;
+	margin-left: 80%;
+	margin-top:-0.5%;
 
   }
 a{
     text-decoration: none;
 }
+/* ICI */
+
 .box{
-	border: 1px solid rgb(218, 218, 218);
-    width: 220px;
-    border-radius: 10px;
-    margin: 25px;
+	border: 1% solid rgb(218, 218, 218);
+    width: 220%;
+    border-radius: 10%;
+    margin: 25%;
 }
 .boxSponsore{
-    width: 200px;
-    margin: 25px;
+    width: 100%;
+	display: flex;
+	justify-content: center;
 }
-.slidImage{
-    height: 150px;
-    width: 180px;
-	margin-left: 18px;
+.box .slide-image{
+    height: 100%;
+    width: 100%;
+	margin-left: 13%;
     position: relative;
-	padding: 10px 2px 150px 2px;
+	padding: 3% 2% 2% 2%;
 }
-.box .slidImage img{
-	height: 150px;
+.box .slide-image img{
+	width: 75%;
 }
 .slideImgSponsore{
-	height: 80px;
-    width: 100px;
+	height: 80%;
+    width: 100%;
     position: relative;
 }
 .slideImgSponsore img{
@@ -786,95 +721,148 @@ a{
     /* object-fit: cover;
     box-sizing: border-box; */
 }
-.slidImage img{
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover;
-    box-sizing: border-box; */
-}
 .countNotif{
 	background-color: #007ACC;
-	padding: 2px 6px ;
-	border-radius: 50px;
+	padding: 5% 14% ;
+	border-radius: 40%;
+	margin-left: -12%;
 	color: #FFF;
 	text-align: center;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal; 
-	font-size: 10px;
+	font-size: 45%;
 }
-.detailBox{
-    height: 60px;
+.product-link{
+	text-decoration: none;
+}
+.Box-info-product{
+    height: 4rem;
 	background: #007ACC;
 	width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 0 0 20px 20px;
+    padding: 5% 10%;
+    border-radius: 0 0 1.5rem 1.5rem;
     box-sizing: border-box;
 
 }
 .menu-down hr{
-	width: 80px;
+	width: 80%;
 }
-.type{
-	
+.Box-info-product .parant-name{
     display: flex;
     flex-direction: column;
 }
-.type .paran{
+.Box-info-product .parant-name .product-name{
 	color: #FFF; 	
-	margin-top: -10px;
+	margin-top: -16%;
 	font-style: normal; 
 	/* background-color: #DB504A; */
 	font-family: Montserrat; 
-	margin-left:-11px;
-    /* padding-right: 8px; */
+	margin-left:-10%;
 	font-style: normal;
-	font-size: 11px;
+	font-size: 71%;
 	font-weight: 500;
 	line-height: normal; 
 
 }
-.detailBox b{
-	
+.Box-info-product b{
     color: rgb(255, 255, 255);
 
 }
-.type span{
-	
+.Box-info-product .parant-name span{
     color: rgb(76, 67, 67);
 }
-.price p{
+.Box-info-product .price p{
     color: rgb(255, 255, 255);
-    font-size: 10px;
-	margin-left: -8px;
+    font-size: 0.8rem;
+	margin-left: -3%;
 	font-style: normal;
-	font-size: 13px;
-	line-height: normal;  	/* background-color: #DB504A; */
-	margin-top: 10px;
+	line-height: normal;
+	margin-top: 7%;
 	font-family: Montserrat; 
 
 
 }
-.price span{
+.Box-info-product .price span{
     color: #efefef;
 	font-family: Montserrat; 
-	font-size:8px;
+	font-size:60%;
 	font-weight: 300;
 
 
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 38rem) {
 	.home{
-		margin-left: 100px;
+		margin-left: 100%;
+		width: 80%;
 	}
-	#ProductSlide{
-		margin-left: -5px;
+}
+@media screen and (max-width: 61.25rem) {
+	.sidebar {
+		width: auto;
 	}
-  }
+	.produit-card .ImageProduit{
+		border-radius: 5%;
+		border: 1% solid rgb(235, 235, 235);
+		width: 40%;
+	}
+	.produit-card .bar-title a{
+		background: #007ACC;
+		color: #eee;
+		text-decoration: none;
+		border: none;
+		width: 49%;
+		height: 7%;
+	}
+
+}
+
+@media screen and (max-width: 48rem) {
+	.sidebar {
+		
+		width: 11%;
+		/* background-color: #007ACC; */
+	}
+	.produit-card .ImageProduit{
+		border-radius: 5%;
+		border: 1% solid rgb(235, 235, 235);
+		width: 40%;
+	}
+	.produit-card .bar-title a{
+		background: #007ACC;
+		color: #eee;
+		text-decoration: none;
+		border: none;
+		width: 49%;
+		height: 7%;
+	}
+
+}
+@media screen and (max-width: 37rem) {
+	.sidebar {
+		width: auto;
+	}
+	.sidebar .brand img{
+		margin-left: 35%;
+		width: 60%;
+		height: 55%;
+	}
+}
+@media screen and (max-width: 28rem) {
+	.sidebar {
+		width: auto;
+		margin-top: -8%;
+	}
+	.sidebar .brand img{
+		margin-left: 35%;
+		width: 60%;
+		height: 20%;
+	}
+}
 

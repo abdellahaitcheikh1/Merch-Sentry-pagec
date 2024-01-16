@@ -32,11 +32,11 @@ export default function Sidebare() {
       </div>
 
       <body>
-        <section id="sidebar">
+        <section className="sidebar">
           <a href="#" className="brand">
-            <img className="mt-3" width="47px" style={{marginLeft:"30px"}} src={Logo} />
+            <img className="mt-3" src={Logo} />
           </a>
-          <br /><br />
+          <br />
           <ul className="side-menu top">
             <li className={activeItem === "/" || activeItem==="/produit" ? "active" : "" }>
               <Link className="active" to="/">
@@ -75,13 +75,13 @@ export default function Sidebare() {
             <li className={activeItem === "/notifacation" ? "active" : "" }>
               <Link to="">
 
-                <a href="#">
-                <i className="bi bi-bell"><span className="countNotif">1</span></i>
+                <a href="">
+              <i className="bi bi-bell"/><span className="countNotif">1</span>
                       </a>
-
                 </Link>
               </li>
               <li className={activeItem === "/settings" ? "active" : ""}>
+
                 <Link to="">
                   <a href="#">
                     <i className="bi bi-gear" />

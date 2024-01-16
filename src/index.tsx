@@ -35,6 +35,7 @@ import Encour from "./Views/Magasin/historique/Encour";
 import HomeCommercial from "./Views/Commercial/Home/HomeCommercial";
 import AfficheProduitCommercial from "./Views/Commercial/Produit/AfficheProduitCommercial";
 import HomeVisiteur from "./Views/Utilisateure/visiteur/HomeVisiteur";
+import AfficheProduitVisiteur from "./Views/Utilisateure/visiteur/AfficheProduitVisiteur";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -68,6 +69,9 @@ root.render(
     <Route path='/magasin/ajouter-produit' index element={<AjouterProduitM/>}/>
     <Route path='/panier/precedent' index element={<PanierPrecedent/>}/>
     <Route path='/visiteur' index element={<HomeVisiteur/>}/>
+    <Route path='/visiteur/produit' index element={<AfficheProduitVisiteur/>}/>
+
+
 
 
 

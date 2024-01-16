@@ -19,7 +19,7 @@ export default function(){
     return <>
     <Sidebare/>
     	<div className="home mt-5" >
-  <main className="container ">
+  <main className="container">
     <div className="head-title">
       <div className="left">
         <h5><b>Bienvenue ! </b> vous pouvez gérer votre stock en toute simplicité</h5>
@@ -31,7 +31,7 @@ export default function(){
 
   {/* ----------------------------------- PRODUIT SLIDE ------------------------------------ */}
 
-  <div className="container-fluid " id="ProductSlide">
+  <div className="container-fluid ProductSlide">
     <a className="right-align" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
     <Swiper
       
@@ -45,26 +45,30 @@ export default function(){
         },
         480:{
           slidesPerView:2,
-          spaceBetween:10,
+          spaceBetween:80,
         },
-        700:{
+        600:{
+          slidesPerView:3,
+          spaceBetween:80,
+        },
+        800:{
           slidesPerView:4,
-          spaceBetween:10,
+          spaceBetween:5,
         }
       }}
       >
     <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-            <p className="paran">Intake Pro Diesel</p>
+          <div className="Box-info-product">
+            <div className="parant-name">
+            <p className="product-name">Intake Pro Diesel</p>
             </div>
             <div className="price"><p>230 MAD <span>/P.U</span></p></div>
           </div>
@@ -73,17 +77,17 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="/produit">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit2} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-                  <p className="paran">R-Flush Radiator</p>
+          <div className="Box-info-product">
+            <div className="parant-name">
+                  <p className="product-name">R-Flush Radiator</p>
               </div>
 <div className="price"><p>490 MAD <span>/P.U</span></p>
 </div>          
@@ -93,68 +97,70 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
             <img src={ImageProduit3} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-<p className="paran">I-FLUX 200</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">I-FLUX 200</p>            </div>
 <div className="price"><p>15 120 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-<p className="paran">Diesel Multi 5l</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">Diesel Multi 5l</p>            </div>
 <div className="price"><p>2900 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-<p className="paran">Intake Pro Diesel</p>            </div>
-<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+              <p className="product-name">Intake Pro Diesel</p>            
+            </div>
+          <div className="price"><p>230 MAD <span>/P.U</span></p></div>
+            </div>
         </div>
         </Link>
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-<p className="paran">Intake Pro Diesel</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -162,18 +168,18 @@ export default function(){
 
         </SwiperSlide>
         <SwiperSlide>
-      <Link to="/produit">
+      <Link className="product-link" to="">
 
         <div className="box">
-          <div className="slidImage">
+          <div className="slide-image">
           <img src={ImageProduit4} alt="" />
 
             <div className="overlay">
             </div>
           </div>
-          <div className="detailBox">
-            <div className="type">
-<p className="paran">Intake Pro Diesel</p>            </div>
+          <div className="Box-info-product">
+            <div className="parant-name">
+<p className="product-name">Intake Pro Diesel</p>            </div>
 <div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
@@ -184,7 +190,7 @@ export default function(){
 
   {/*----------------------------------- SPONSOR SLIDE --------------------------------------- */}
   
-  <div className="mt-3 container-fluid" id="ProductSlide">
+  <div className="mt-3 container-fluid ProductSlide">
     <p className="container pMagazin mt-3">Vous avez +20 magasins</p>
     <a className="right-align" href="#">Voir Plus <i className="bi bi-arrow-right-short" /></a>
     <Swiper
