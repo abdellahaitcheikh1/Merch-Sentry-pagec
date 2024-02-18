@@ -61,6 +61,15 @@
     background: #007ACC;
     margin-top: 100px;
 }
+.btn-ajouter-produit{
+    margin-top: 27px;
+    background-color: #007ACC;
+    color: #FFF;
+    width: 45%;
+    padding: 2%;
+    height: 70%;
+    border-radius: 10px;
+}
 #wiconbtn{
     margin-bottom: 100px;
 }

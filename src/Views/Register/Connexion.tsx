@@ -1,6 +1,14 @@
+import { Utilisateure } from "../../Modeles/UtilisateureModel";
 import "./connexion.css"
-export default function Connexion(){
-    return <>
+const Connexion:React.FC<Utilisateure> = ({
+  handleSubmit,
+  setCompteEmail,
+  CompteEmail,
+  setPassword,
+  Password,
+}) => {
+// export default function Connexion(){
+    return (<>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />	{/* My CSS */}
 
 <div>
@@ -10,23 +18,23 @@ export default function Connexion(){
   <div className="limiter">
     <div className="container-login100">
       <div className="wrap-login100">
-        <form className="login100-form validate-form">
+        <form onSubmit={handleSubmit} className="login100-form validate-form">
           <span className="login100-form-title p-b-43">
             Connexion 
             <i className="line bi bi-dash-lg"></i>
                       </span>
           <label htmlFor="" className="mb-3">Pseudo</label>
           <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-            <input className="input100" type="text" name="email" />
+            <input onChange={(e) => setCompteEmail(e.target.value)} value={CompteEmail} className="input100" type="text" name="CompteEmail" />
             <span className="focus-input100" />
           </div>
           <label htmlFor="" className="mb-3">Mot de passe</label>
           <div className="wrap-input100 validate-input" data-validate="Password is required">
-            <input className="input100" type="password" name="pass" />
+            <input onChange={(e) => setPassword(e.target.value)} value={Password}  className="input100" type="password" name="Password" />
             <span className="focus-input100" />
           </div>
           <div className="container-login100-form-btn">
-            <button className="login100-form-btn">
+            <button type="submit" className="login100-form-btn">
               Entrer
             </button>
           </div>
@@ -59,4 +67,6 @@ export default function Connexion(){
 
 
     </>
+    )
 }
+export default Connexion;

@@ -67,7 +67,7 @@ export default function Sidebare() {
               </Link>
             </li>
           </ul><br />
-          <div className="menu-down mt-5">
+          <div className="menu-down-admin mt-5">
           <div className="hr">
             <hr />
           </div>
@@ -89,7 +89,7 @@ export default function Sidebare() {
                 </Link>
               </li>
             </ul>
-            <ul className="logout">
+            <ul className="logout-admin">
               <li className={activeItem === "/logout" ? "active" : ""}>
                 <Link to="/logout" className="logout">
                   <a href="#">

@@ -99,6 +99,7 @@
     font-style: normal;
     font-weight: 500;
     margin-left: -10%;
+    width: 160%;
     line-height: normal; 
 }
 .detailBoxMagasin .price p{
@@ -109,7 +110,8 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal; 
-    margin-top: 15%;
+    margin-top: 20%;
+    width: 120%;
 }
 .detailBoxMagasin .price span{
     color: #FFF;

@@ -72,12 +72,17 @@
 	margin-top: -13%;
 	font-size: 80%;
     margin-left: -8%;
+    width: 150%;
 }
 .Box-info-product .price{
     font-family: Montserrat;
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 70%;
+    width: 110%;
+    margin-top: 30%;
+    /* background-color: #00cc25; */
+
 }
 .btnAjoutee:hover{
     transition: 0.2s ease ;

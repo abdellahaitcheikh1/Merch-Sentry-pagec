@@ -65,7 +65,7 @@ export default function HomeCommercial(){
 
               <p>I-FLUX 200</p>
             </div>
-            <p className="price">15 120 <span>/P.U</span>  </p>
+            <p className="price">15 120 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </Link>
@@ -85,7 +85,7 @@ export default function HomeCommercial(){
               <p>DPF FLUSH</p>
 
             </div>
-            <p className="price">7 720 <span>/P.U</span>  </p>
+            <p className="price">7 720 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </Link>
@@ -104,7 +104,7 @@ export default function HomeCommercial(){
               <p>AT-FLUX 3</p>
 
             </div>
-            <p className="price">75 038 <span>/P.U</span>  </p>
+            <p className="price">75 038 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </SwiperSlide>
@@ -121,7 +121,7 @@ export default function HomeCommercial(){
               <p>4-WAY Flux Evo</p>
 
             </div>
-            <p className="price">4 092 <span>/P.U</span>  </p>
+            <p className="price">4 092 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </SwiperSlide>
@@ -138,7 +138,7 @@ export default function HomeCommercial(){
               <p>shirt black</p>
 
             </div>
-            <p className="price">100 <span>/P.U</span>  </p>
+            <p className="price">100 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </SwiperSlide>
@@ -155,7 +155,7 @@ export default function HomeCommercial(){
               <p>shirt black</p>
 
             </div>
-            <p className="price">100 <span>/P.U</span>  </p>
+            <p className="price">100 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </SwiperSlide>
@@ -172,7 +172,7 @@ export default function HomeCommercial(){
               <p>shirt black</p>
 
             </div>
-            <p className="price">100 <span>/P.U</span>  </p>
+            <p className="price">100 MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </SwiperSlide>

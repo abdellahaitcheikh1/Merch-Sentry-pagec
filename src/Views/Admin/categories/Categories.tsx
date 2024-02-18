@@ -9,9 +9,32 @@ import ImageProduit2 from "../IMG/e1.png"
 import ImageProduit3 from "../IMG/3.png"
 import ImageProduit4 from "../IMG/e3.png"
 import { Link } from "react-router-dom";
+import { ArticleInfo } from "../../../Modeles/ArticleModel";
+import { useEffect, useState } from "react";
+import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+
+export interface ProductType{
+
+  product : ArticleInfo[],
+  messageErros:string,
+}
 export default function Categories(){
+    
+  const [state , setState] = useState<ProductType>({
+    product:[] as ArticleInfo[],
+    messageErros : "accune produit",
+
+})
+useEffect(()=>{
+    setState({...state })
+        AfficheProductsService().getProduct()
+        .then((res)=>setState({...state  , product:res.data})
+        )
+        .catch(msg=>setState({...state  , product:msg.messageErros}))
+},[]);
+const {product , messageErros} = state
     return <>
-    <Sidebare/>    
+    <Sidebare/>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <div className="categ">
   <div className="container mt-5">
@@ -34,7 +57,7 @@ export default function Categories(){
       
       freeMode={true}
       grabCursor={true}
-      className="container mt-5 myswiper"
+      className="container myswiper"
       breakpoints={{
         0:{
           slidesPerView:1,
@@ -42,127 +65,41 @@ export default function Categories(){
         },
         480:{
           slidesPerView:2,
-          spaceBetween:10,
+          spaceBetween:80,
         },
-        700:{
+        600:{
+          slidesPerView:3,
+          spaceBetween:80,
+        },
+        800:{
           slidesPerView:4,
-          spaceBetween:10,
+          spaceBetween:5,
         }
       }}
       >
-        <SwiperSlide>
-
+        {product.length>0? product.map(pro=>(
+          <SwiperSlide>
+      <Link className="product-link" to={`produit/${pro.IdArticle}`}>
         <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit3} alt="" />
+          <div className="slide-image">
+          <img src={ImageProduit1} alt="" />
             <div className="overlay">
             </div>
           </div>
           <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">I-FLUX 200</p>
+            <div className="parant-name">
+            <p className="product-name">{pro.Designation}</p>
             </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
+            <div className="price"><p>{pro.PrixVenteArticleTTC} MAD <span>/P.U</span></p></div>
           </div>
         </div>
-        </SwiperSlide>
-        <SwiperSlide>
+        </Link>
 
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit2} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">DPF FLUSH</p>
-            </div>
-            <p className="price">7 720 MAD<span>/P.U</span></p>
-          </div>
-        </div>
         </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">AT-FLUX 3</p>
-            </div>
-            <p className="price">75 038 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">4-WAY Flux </p>
-            </div>
-            <p className="price">4 092 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">AT-FLUX 3</p>
-            </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">AT-FLUX 3</p>
-            </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">AT-FLUX 3</p>
-            </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        </Swiper>
+        )):""
+        }
+        
+      </Swiper>
 
   </div>
   <div className="mt-3 container-fluid ProductSlide">
@@ -188,117 +125,27 @@ export default function Categories(){
         }
       }}
       >
+        {product.length>0? product.map(pro=>(
         <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit} alt="" />
-            <div className="overlay">
+        <Link className="product-link" to={`produit/${pro.IdArticle}`}>
+          <div className="box">
+            <div className="slide-image">
+            <img src={ImageProduit1} alt="" />
+              <div className="overlay">
+              </div>
             </div>
             <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">Chain Pro</p>
+              <div className="parant-name">
+              <p className="product-name">{pro.Designation}</p>
+              </div>
+              <div className="price"><p>{pro.PrixVenteArticleTTC} MAD <span>/P.U</span></p></div>
             </div>
-            <p className="price">100 MAD</p>
           </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit1} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">Deblock SHOCK</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit2} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">C1200+</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit2} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit1} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct">SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product">
-            <div className="ParantName">
-              <p className="nameProduct" >SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
+          </Link>
+  
+          </SwiperSlide>
+        )):""
+      }
         </Swiper>
 
 

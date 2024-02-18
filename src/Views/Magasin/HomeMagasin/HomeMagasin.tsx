@@ -14,7 +14,29 @@ import {Swiper , SwiperSlide} from"swiper/react"
 import "./HomeMagasin.css"
 import logoecathlon from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
 import { Link } from "react-router-dom";
+import { ArticleInfo } from "../../../Modeles/ArticleModel";
+import { useEffect, useState } from "react";
+import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+export interface ProductType{
+
+  product : ArticleInfo[],
+  messageErros:string,
+}
+    
 export function HomeMagasin(){
+  const [state , setState] = useState<ProductType>({
+    product:[] as ArticleInfo[],
+    messageErros : "accune produit",
+
+})
+useEffect(()=>{
+    setState({...state })
+        AfficheProductsService().getProduct()
+        .then((res)=>setState({...state  , product:res.data})
+        )
+        .catch(msg=>setState({...state  , product:msg.messageErros}))
+},[]);
+const {product , messageErros} = state
     return <>
     <SideBareMagasin/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -64,11 +86,15 @@ export function HomeMagasin(){
         }
       }}
       >
+        {product.length>0? product.map(pro=>(
+
         <SwiperSlide>
 
         <div className="box">
           <div className="slidImage">
             <img src={pMagasin} alt="" />
+            {/* <img src={`http://127.0.0.1:8000/storage/${pro.image}`} alt="" /> */}
+
             <div className="overlay">
             </div>
           </div>
@@ -76,124 +102,15 @@ export function HomeMagasin(){
 
             <div className="type">
 
-              <p className="paran">I-FLUX 200</p>
+              <p className="paran">{pro.Designation}</p>
               <i className="bi bi-cart-plus"></i>
             </div>
-            <div className="price"><p>15 200 MAD <span>/P.U</span></p></div>
+            <div className="price"><p>{pro.PrixVenteArticleTTC}<span>/P.U</span></p></div>
           </div>
         </div>
         </SwiperSlide>
-
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p className="paran">DPF FLUSH</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <div className="price"><p>7 720 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-      
-        </SwiperSlide>
-
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin2} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p className="paran">AT-FLUX 3</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <div className="price"><p>75 038 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin3} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p className="paran">4-WAY Flux Evo</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <div className="price"><p>4 092 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p className="paran">4-WAY Flux Evo</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p className="paran">4-WAY Flux Evo</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailBoxMagasin">
-            <div className="type">
-              <p className="paran">4-WAY Flux Evo</p>
-              <i className="bi bi-cart-plus"></i>
-
-            </div>
-            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-        </SwiperSlide>
+        )):""
+      }
         </Swiper>
 
   </div>
@@ -220,6 +137,8 @@ export function HomeMagasin(){
         }
       }}
       >
+        {product.length>0? product.map(pro=>(
+
              <SwiperSlide>
              <Link className="parantbox" to="/afficheProduit">
 
@@ -233,66 +152,8 @@ export function HomeMagasin(){
     </Link>
     </SwiperSlide>
 
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsorem">
-          <img src={categoryimg} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsorem">
-          <img src={categoryimg1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsorem">
-          <img src={categoryimg2} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsorem">
-          <img src={categoryimg3} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsorem">
-          <img src={categoryimg} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgSponsorem">
-          <img src={categoryimg1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-        </div>
-        </SwiperSlide>
+        )):""
+      }
         </Swiper>
 
 

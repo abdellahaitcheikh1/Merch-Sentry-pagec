@@ -11,11 +11,30 @@ import Sponsor1 from "../IMG/s1.png"
 import Sponsor2 from "../IMG/s2.png"
 import Sponsor3 from "../IMG/s3.png"
 import Sponsor4 from "../IMG/s4.png"
-
-
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { ArticleInfo } from "../../../Modeles/ArticleModel";
+import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+export interface ProductType{
 
-export default function(){
+  product : ArticleInfo[],
+  messageErros:string,
+}
+export default function Home(){
+
+  const [state , setState] = useState<ProductType>({
+    product:[] as ArticleInfo[],
+    messageErros : "accune produit",
+
+})
+useEffect(()=>{
+    setState({...state })
+        AfficheProductsService().getProduct()
+        .then((res)=>setState({...state  , product:res.data})
+        )
+        .catch(msg=>setState({...state  , product:msg.messageErros}))
+},[]);
+const {product , messageErros} = state
     return <>
     <Sidebare/>
     	<div className="home mt-5" >
@@ -57,28 +76,9 @@ export default function(){
         }
       }}
       >
-    <SwiperSlide>
-      <Link className="product-link" to="">
-
-        <div className="box">
-          <div className="slide-image">
-          <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="parant-name">
-            <p className="product-name">Intake Pro Diesel</p>
-            </div>
-            <div className="price"><p>230 MAD <span>/P.U</span></p></div>
-          </div>
-        </div>
-        </Link>
-
-        </SwiperSlide>
-        <SwiperSlide>
-      <Link className="product-link" to="/produit">
-
+        {product.length>0? product.map(pro=>(
+          <SwiperSlide>
+      <Link className="product-link" to={`produit/${pro.IdArticle}`}>
         <div className="box">
           <div className="slide-image">
           <img src={ImageProduit2} alt="" />
@@ -87,103 +87,17 @@ export default function(){
           </div>
           <div className="Box-info-product">
             <div className="parant-name">
-                  <p className="product-name">R-Flush Radiator</p>
-              </div>
-<div className="price"><p>490 MAD <span>/P.U</span></p>
-</div>          
-</div>
-        </div>
-        </Link>
-
-        </SwiperSlide>
-        <SwiperSlide>
-      <Link className="product-link" to="">
-
-        <div className="box">
-          <div className="slide-image">
-            <img src={ImageProduit3} alt="" />
-            <div className="overlay">
+            <p className="product-name">{pro.Designation}</p>
             </div>
+            <div className="price"><p>{pro.PrixVenteArticleTTC} MAD <span>/P.U</span></p></div>
           </div>
-          <div className="Box-info-product">
-            <div className="parant-name">
-<p className="product-name">I-FLUX 200</p>            </div>
-<div className="price"><p>15 120 MAD <span>/P.U</span></p></div>          </div>
         </div>
         </Link>
 
         </SwiperSlide>
-        <SwiperSlide>
-      <Link className="product-link" to="">
-
-        <div className="box">
-          <div className="slide-image">
-          <img src={ImageProduit4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="parant-name">
-<p className="product-name">Diesel Multi 5l</p>            </div>
-<div className="price"><p>2900 MAD <span>/P.U</span></p></div>          </div>
-        </div>
-        </Link>
-
-        </SwiperSlide>
-        <SwiperSlide>
-      <Link className="product-link" to="">
-
-        <div className="box">
-          <div className="slide-image">
-          <img src={ImageProduit4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="parant-name">
-              <p className="product-name">Intake Pro Diesel</p>            
-            </div>
-          <div className="price"><p>230 MAD <span>/P.U</span></p></div>
-            </div>
-        </div>
-        </Link>
-
-        </SwiperSlide>
-        <SwiperSlide>
-      <Link className="product-link" to="">
-
-        <div className="box">
-          <div className="slide-image">
-          <img src={ImageProduit4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="parant-name">
-<p className="product-name">Intake Pro Diesel</p>            </div>
-<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
-        </div>
-        </Link>
-
-
-        </SwiperSlide>
-        <SwiperSlide>
-      <Link className="product-link" to="">
-
-        <div className="box">
-          <div className="slide-image">
-          <img src={ImageProduit4} alt="" />
-
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product">
-            <div className="parant-name">
-<p className="product-name">Intake Pro Diesel</p>            </div>
-<div className="price"><p>230 MAD <span>/P.U</span></p></div>          </div>
-        </div>
-        </Link>
-        </SwiperSlide>
+        )):""
+        }
+        
       </Swiper>
 
   </div>

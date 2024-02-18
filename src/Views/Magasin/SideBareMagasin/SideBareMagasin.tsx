@@ -26,14 +26,14 @@ export default function SideBareMagasin(){
 </div>
 
 <body>
-<section id="sidebar">
+<section className="sidebar">
   <br />
   <a href="#" className="brand">
-    <img className="mt-3" width="47px" style={{marginLeft:"28px" , marginBottom:"20px"}} src={LOGO} />			
+    <img className="mt-3" src={LOGO} />			
   </a>
   <img id="logoMagasin" src={logomagasine}  />			
   <ul id = "side" className="sidee-menu top">
-    <li className={activeItem === "/magasine" || activeItem==="/panier" ? "active" : "" }>
+    <li className={activeItem === "/magasine" || activeItem==="/panier" || activeItem==="/afficheProduit"  ? "active" : "" }>
         <Link to="/magasine" className="active">
       <a href="#">
         <i className="bi bi-menu-button-wide-fill" />
@@ -49,7 +49,7 @@ export default function SideBareMagasin(){
 
       </Link>
     </li>
-    <li className={activeItem === "/magasin/commercial" || activeItem==="/ajouter-commercial" ? "active" : "" }>
+    <li className={activeItem === "/magasin/commercial" || activeItem==="/ajouter-commercial" || activeItem==="/shart" ? "active" : "" }>
     <Link to="/magasin/commercial">
 
       <a href="#">
@@ -80,7 +80,7 @@ export default function SideBareMagasin(){
   <br />
 <br />
 
-  <div className="menu-down">
+  <div className="menu-down-magasine">
   <div className="hr">
 
 <hr />
@@ -105,7 +105,7 @@ export default function SideBareMagasin(){
       </Link>
       </li>
     </ul>
-    <ul className="logout">
+    <ul className="logoutmagasine">
       <li className={activeItem === "/" || activeItem==="/produit" ? "active" : "" }>
       <Link to="">
 

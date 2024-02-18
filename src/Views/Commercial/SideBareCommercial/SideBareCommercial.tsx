@@ -23,9 +23,9 @@ export default function SideBareCommercial(){
 </div>
 
 <body>
-<section id="sidebar">
-  <a href="#/commercial" className="brand">
-    <img className="logocommercial mt-3" width="40px" src={logo}  />			
+<section className="sidebar">
+  <a href="/commercial" className="brand">
+    <img className="logocommercial mt-3" src={logo}  />			
   </a>
   <img className="profilCommercial" src={profil}  />	
   <br />	
@@ -48,12 +48,12 @@ export default function SideBareCommercial(){
     </li>
   </ul>
   <br />
-  <div className="menu-down mt-5">
+  <div className="menu-down-commercial mt-5">
   <div className="hr">
 
   <hr />
   </div>
-    <ul className="side-menu top ">
+    <ul className="side-menu-commercial top ">
     <li className={activeItem === "/" ? "active" : "" }>
     <Link to="">
 
@@ -74,7 +74,7 @@ export default function SideBareCommercial(){
       </li>
     </ul>
 
-    <ul className="logout">
+    <ul className="logout-commercial">
       <li className={activeItem === "/" ? "active" : "" }> 
       <Link to="">
 

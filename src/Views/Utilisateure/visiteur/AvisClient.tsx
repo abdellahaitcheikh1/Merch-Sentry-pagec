@@ -2,11 +2,13 @@ import "./Homevisiteur.css"
 import imgProduit from "./cassette-8-vitesses-12x32 1(1).png"
 import logoBrand from "../../Admin/IMG/Logo_Decathlon_RVB 1.png"
 import panier from "./cart.fill.badge.plus(1).png"
+import profil from "./f83ec8f4d40b01b93dbd1798ba8fbeaf.png"
+
 
 import { Link } from "react-router-dom"
 
 
-export default function AfficheProduitVisiteur(){
+export default function AvisClient(){
     return <>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -54,17 +56,27 @@ export default function AfficheProduitVisiteur(){
 </div>
 <div className="description-part">
     <div className="links">
-    <Link to="" className="link-description">Description</Link>
+    <Link to="/visiteur/produit" className="link-description">Description</Link>
     <Link to="/avis-client" className="link-avis-client">Avis clients</Link>
     </div>
-    <hr className="line" />
-    <div className="description-content">
-        <p>Cassette 8 vitesses 12x32 polyvalente pour tous les dénivelés et compatible avec les dérailleurs et chaînes <br />
-        8 vitesses: Shimano, SRAM, MicroSHIFT, Btwin et KMC <br />
-        Conçu pour les vélos équipés avec corps de cassette et chaîne de 8 vitesses.</p>
-    </div>
+    <hr className="line-avis" />
     <div className="ref">
-        <h4>REF : <span>8328485</span></h4>
+    <p className="reviews">
+<svg className="icon-etoile-avis" width="80" height="30" viewBox="0 0 145 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.2289 0.373291L18.4662 10.3366H28.9422L20.4669 16.4942L23.7042 26.4575L15.2289 20.2999L6.75361 26.4575L9.99088 16.4942L1.51559 10.3366H11.9916L15.2289 0.373291Z" fill="#FAE315"/>
+<path d="M44.0667 0.373291L47.304 10.3366H57.78L49.3047 16.4942L52.542 26.4575L44.0667 20.2999L35.5914 26.4575L38.8287 16.4942L30.3534 10.3366H40.8294L44.0667 0.373291Z" fill="#FAE315"/>
+<path d="M72.9047 0.373291L76.142 10.3366H86.618L78.1427 16.4942L81.38 26.4575L72.9047 20.2999L64.4294 26.4575L67.6667 16.4942L59.1914 10.3366H69.6675L72.9047 0.373291Z" fill="#FAE315"/>
+<path d="M101.743 0.373291L104.98 10.3366H115.456L106.981 16.4942L110.218 26.4575L101.743 20.2999L93.2675 26.4575L96.5047 16.4942L88.0294 10.3366H98.5055L101.743 0.373291Z" fill="#FAE315"/>
+<path d="M130.581 0.373291L133.818 10.3366H144.294L135.819 16.4942L139.056 26.4575L130.581 20.2999L122.106 26.4575L125.343 16.4942L116.868 10.3366H127.344L130.581 0.373291Z" fill="#FAE315"/>
+</svg> </p>
+    </div>
+    <div className="description-content">
+        <p>"Cette cassette 8 vitesses 12x32 est tout simplement géniale ! J'ai constaté une amélioration significative de mes performances en montée, et le <br />
+        passage des vitesses est incroyablement fluide. Elle s'est parfaitement adaptée à mon vélo. Je suis ravi de mon achat !"</p>
+    </div>
+    <div className="profil">
+<img src={profil} alt="" />
+        <h6>Pierre</h6>
     </div>
 </div>
     </>

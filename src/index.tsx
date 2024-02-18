@@ -36,6 +36,14 @@ import HomeCommercial from "./Views/Commercial/Home/HomeCommercial";
 import AfficheProduitCommercial from "./Views/Commercial/Produit/AfficheProduitCommercial";
 import HomeVisiteur from "./Views/Utilisateure/visiteur/HomeVisiteur";
 import AfficheProduitVisiteur from "./Views/Utilisateure/visiteur/AfficheProduitVisiteur";
+import AddArticleService from "./Services/Admin/AddArticleService";
+import MessageSuccess from "./Views/Admin/message/MessageSuccess";
+import AfficheProduitService from "./Services/Admin/AfficheProduitService";
+import ModifierProduit from "./Views/Admin/HomeAdmin/ModifierProduit";
+import ModifierArticleService from "./Services/Admin/ModifierArticleService";
+import AvisClient from "./Views/Utilisateure/visiteur/AvisClient";
+import LoginService from "./Services/Authentication/LoginService";
+import HomeClient from "./Views/Utilisateure/client/HomeClient";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -44,12 +52,14 @@ root.render(
     <HashRouter>
     <Routes>
     <Route path='/' index element={<Home/>}/>
+    <Route path='produit/:id' element={<AfficheProduitService/>}/>
+    <Route path='modifier/:id' element={<ModifierArticleService/>}/>
+
     <Route path='/categories' index element={<Categories/>}/>
-    <Route path='/magasin' index element={<Magasin/>}/>
+    <Route path='/magasin' index element={<Magasin/>}/> 
     <Route path='/magasin/edit' index element={<EditeMagasin/>}/>
     <Route path='/magasin/create' index element={<CreateMagasin/>}/>
-    <Route path='/produit' index element={<AfficheProduit/>}/>
-    <Route path='/ajouter-produit' index element={<AjouterProduit/>}/>
+    <Route path='/ajouter-produit' index element={<AddArticleService/>}/>
     <Route path='/historique' index element={<Historique/>}/>
     <Route path='/Magasine' index element={<HomeMagasin/>}/>
     <Route path='/afficheProduit' index element={<AfficheProduitMagasin/>}/>
@@ -70,6 +80,10 @@ root.render(
     <Route path='/panier/precedent' index element={<PanierPrecedent/>}/>
     <Route path='/visiteur' index element={<HomeVisiteur/>}/>
     <Route path='/visiteur/produit' index element={<AfficheProduitVisiteur/>}/>
+    <Route path='/message' index element={<MessageSuccess/>}/>
+    <Route path='/avis-client' element={<AvisClient/>}/>
+
+
 
 
 
@@ -98,7 +112,9 @@ root.render(
 
 
 
-    <Route path='/connexion' index element={<Connexion/>}/>
+    <Route path='/connexion' index element={<LoginService/>}/>
+    <Route path='/client' index element={<HomeClient/>}/>
+
 
 
 
