@@ -7,7 +7,7 @@ export default function Echanger(){
     <div className="container mt-5">
         <div className="barRetour">
       <span className="iconRetour">
-        <Link to="/magasin/historique/id"><i className="bi bi-arrow-left-short"></i></Link>
+        <Link to="/magasins/historique/id"><i className="bi bi-arrow-left-short"></i></Link>
       </span>
 
   </div>

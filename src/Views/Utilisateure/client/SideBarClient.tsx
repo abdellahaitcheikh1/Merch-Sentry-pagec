@@ -29,8 +29,8 @@ export default function SidBarClient(){
     <img className="profilCommercial" src={""}  />	
     <br />	
     <ul className="side-menu top mb-5">
-      <li className={activeItem === "/client" ? "active" : "" }>
-          <Link className="active" to="">
+      <li className={activeItem === "/clients/:id" ? "active" : "" }>
+          <Link className="active" to="/clients/:id">
         <a href="#">
           <i className="bi bi-menu-button-wide-fill" />
         </a>

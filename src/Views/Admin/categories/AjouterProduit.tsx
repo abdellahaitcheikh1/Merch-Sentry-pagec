@@ -20,7 +20,7 @@ const AjouterProduit:React.FC<ArticleInfo> = ({
 <form action="" method="post" onSubmit={handleSubmit} >
     <div className="barRetour">
       <span className="iconRetour">
-        <Link to="/categories"><i className="bi bi-arrow-left-short"></i></Link>
+        <Link to="/articles/categories"><i className="bi bi-arrow-left-short"></i></Link>
         
       </span>
   </div>

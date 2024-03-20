@@ -17,7 +17,7 @@ export default function AfficheProduitVisiteur(){
 </div>
 <div className="product-content">
     <div className="bar-roteur">
-        <Link className="icon-roteur" to="/visiteur"><i className="bi bi-arrow-left"></i>
+        <Link className="icon-roteur" to="/visiteurs"><i className="bi bi-arrow-left"></i>
 </Link>
         <h3>CASSETTE 8 VITESSES 12X32</h3>
     </div>
@@ -55,7 +55,7 @@ export default function AfficheProduitVisiteur(){
 <div className="description-part">
     <div className="links">
     <Link to="" className="link-description">Description</Link>
-    <Link to="/avis-client" className="link-avis-client">Avis clients</Link>
+    <Link to="/avis/clients" className="link-avis-client">Avis clients</Link>
     </div>
     <hr className="line" />
     <div className="description-content">

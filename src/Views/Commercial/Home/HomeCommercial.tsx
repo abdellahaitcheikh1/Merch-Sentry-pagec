@@ -8,7 +8,32 @@ import PRODUIT3 from "../../Admin/IMG/e2.png"
 import PRODUIT4 from "../../Admin/IMG/e3.png"
 
 import { Link } from "react-router-dom";
-export default function HomeCommercial(){
+import { useEffect, useState } from "react";
+import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+import { ArticleInfo } from "../../../Modeles/ArticleModel";
+export interface ProductType{
+
+  product : ArticleInfo[],
+  messageErros:string,
+}
+export default function Home(){
+  const [search , setSearche] = useState("");
+  const [state , setState] = useState<ProductType>({
+    product:[] as ArticleInfo[],
+    messageErros : "accune produit",
+
+})
+const handelSearche=(e:any)=>{
+  setSearche(e.target.value);
+}
+useEffect(()=>{
+    setState({...state })
+        AfficheProductsService().getProduct()
+        .then((res)=>setState({...state  , product:res.data})
+        )
+        .catch(msg=>setState({...state  , product:msg.messageErros}))
+},[]);
+const {product , messageErros} = state
     return <>
     <SideBareCommercial/>
     <div className="container">
@@ -20,7 +45,7 @@ export default function HomeCommercial(){
       <div className="col-md-6">
         <div className="form ">
           <i className="fa fa-search" />
-          <input type="text" className="form-control form-input" placeholder="Recherch un produit , ref .." />
+          <input type="text" onChange={handelSearche}  className="form-control form-input" placeholder="Recherch un produit , ref .." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
         </div>
       </div>
@@ -50,8 +75,16 @@ export default function HomeCommercial(){
         }
       }}
       >
+{product.length > 0 ? 
+  product.filter((pro) => {
+    return search.toLowerCase() === "" || 
+    pro.Designation.toLowerCase().includes(search.toLowerCase());
+  }).length > 0 ? (
+    product.filter((pro) => {
+      return search.toLowerCase() === "" || 
+      pro.Designation.toLowerCase().includes(search.toLowerCase());
+    }).map((pro) => (
         <SwiperSlide>
-        <Link className="boxs" to="/afficheProduit">
 
         <div className="box">
           <div className="slidImage">
@@ -63,119 +96,22 @@ export default function HomeCommercial(){
 
             <div className="type">
 
-              <p>I-FLUX 200</p>
+              <p>{pro.Designation}</p>
             </div>
-            <p className="price">15 120 MAD <span>/P.U</span>  </p>
-          </div>
-        </div>
-        </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
-        <Link className="boxs" to="/afficheProduit">
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={PRODUIT2} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailComercial">
-            <div className="type">
-              <p>DPF FLUSH</p>
-
-            </div>
-            <p className="price">7 720 MAD <span>/P.U</span>  </p>
-          </div>
-        </div>
-        </Link>
-        </SwiperSlide>
-
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={PRODUIT3} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailComercial">
-            <div className="type">
-              <p>AT-FLUX 3</p>
-
-            </div>
-            <p className="price">75 038 MAD <span>/P.U</span>  </p>
+            <p className="price">{pro.PrixVenteArticleTTC} MAD <span>/P.U</span>  </p>
           </div>
         </div>
         </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={PRODUIT3} alt="" />
-            <div className="overlay">
+           ))
+           ) : (
+            <div className="no-produit">
+              <i className="bi bi-emoji-neutral"></i><br />
+              <p>Malheureusement, on n‘a pas ce produit pour l’instant.</p><br />
             </div>
-          </div>
-          <div className="detailComercial">
-            <div className="type">
-              <p>4-WAY Flux Evo</p>
-
-            </div>
-            <p className="price">4 092 MAD <span>/P.U</span>  </p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={PRODUIT4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailComercial">
-            <div className="type">
-              <p>shirt black</p>
-
-            </div>
-            <p className="price">100 MAD <span>/P.U</span>  </p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={PRODUIT4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailComercial">
-            <div className="type">
-              <p>shirt black</p>
-
-            </div>
-            <p className="price">100 MAD <span>/P.U</span>  </p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={PRODUIT4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="detailComercial">
-            <div className="type">
-              <p>shirt black</p>
-
-            </div>
-            <p className="price">100 MAD <span>/P.U</span>  </p>
-          </div>
-        </div>
-        </SwiperSlide>
+            )
+           :
+           <div className="no-produit"><i className="bi bi-info-lg"></i>Accune product</div>
+          }
         </Swiper>
 
   </div>

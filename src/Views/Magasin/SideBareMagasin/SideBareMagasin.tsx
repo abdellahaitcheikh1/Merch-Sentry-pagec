@@ -2,20 +2,25 @@ import { Link, useLocation } from "react-router-dom"
 import"./sideBareMagasin.css"
 // import logo from "../../Admin/IMG/Blue_and_Black_Modern_Digital_Agency_Logo-removebg-preview.png"
 import logomagasine from "../../Admin/IMG/cropped-favicon-mylittlegarage-32x32 1.png"
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import LOGO from "../../Admin/IMG/Logo.png"
 import { act } from "react-dom/test-utils";
+import { MagasinContext } from "../../../Context/MagasinContext";
 export default function SideBareMagasin(){
   const location = useLocation();
   const [activeItem, setActiveItem] = useState<string | null>(null);
+  const magasinContext = useContext(MagasinContext);
+  const MagasinId = localStorage.getItem('MagasinId');
+  const MagasinName = localStorage.getItem('MagasinName');
+    const id = MagasinId || magasinContext.id?.id;
+    const nameMagasin =  MagasinName || magasinContext.id?.NomMagasin;
+
 
   useEffect(() => {
     const path = location.pathname;
 
-    // Set the active item based on the current path
     setActiveItem(path);
   }, [location.pathname]);
-
     return<>
 <div>
   <meta charSet="UTF-8" />
@@ -33,15 +38,15 @@ export default function SideBareMagasin(){
   </a>
   <img id="logoMagasin" src={logomagasine}  />			
   <ul id = "side" className="sidee-menu top">
-    <li className={activeItem === "/magasine" || activeItem==="/panier" || activeItem==="/afficheProduit"  ? "active" : "" }>
-        <Link to="/magasine" className="active">
+    <li className={activeItem === `/magasins/${id}` || activeItem===`/magasins/${id}/panier` || activeItem==="/affiche-article" || activeItem==="/magasins/id/panier" || activeItem==="/magasins/:id/articles/id"  ? "active" : "" }>
+        <Link to={`/magasins/${id}`} className="active">
       <a href="#">
         <i className="bi bi-menu-button-wide-fill" />
       </a>
       </Link>
     </li>
-    <li className={activeItem === "/produits" || activeItem==="/changeInfo" || activeItem==="/magasin/ajouter-produit" ? "active" : "" }>
-    <Link to="/produits">
+    <li className={activeItem === `/magasins/${id}/articles`|| activeItem ==="/message/article" || activeItem==="/magasins/:id/articles/:id" || activeItem===`/magasins/${id}/articles/add` ? "active" : "" }>
+    <Link to={`/magasins/${id}/articles`}>
 
       <a href="#">
         <i className="bi bi-box-seam" />
@@ -49,8 +54,8 @@ export default function SideBareMagasin(){
 
       </Link>
     </li>
-    <li className={activeItem === "/magasin/commercial" || activeItem==="/ajouter-commercial" || activeItem==="/shart" ? "active" : "" }>
-    <Link to="/magasin/commercial">
+    <li className={activeItem === `/magasins/${id}/commercials` || activeItem==="/message/commercial" || activeItem===`/magasins/${id}/commercials/add` || activeItem==="/magasins/id/commercials/id/shart" ? "active" : "" }>
+    <Link to= {`/magasins/${id}/commercials`}>
 
       <a href="#">
       <i className="bi bi-headset"></i>
@@ -58,8 +63,8 @@ export default function SideBareMagasin(){
 
       </Link>
     </li>
-    <li className={activeItem === "/magasin/client" || activeItem==="/magasin/client/ajouter" ? "active" : "" }>
-      <Link to="/magasin/client">
+    <li className={activeItem === `/magasins/${id}/clients` || activeItem===`/message/client` || activeItem===`/magasins/${id}/clients/add` ? "active" : "" }>
+      <Link to={`/magasins/${id}/clients`}>
 
       <a href="#">
       <i className="bi bi-people"></i>
@@ -67,8 +72,8 @@ export default function SideBareMagasin(){
 
       </Link>
     </li>
-    <li className={activeItem === "/magasin/historique" || activeItem==="/magasin/historique/id" ? "active" : "" }>
-      <Link to="/magasin/historique">
+    <li className={activeItem === `/magasins/${id}/historiques` || activeItem===`/magasins/${id}/historiques/id` ? "active" : "" }>
+      <Link to={`/magasins/${id}/historiques`}>
 
       <a href="#">
       <i className="bi bi-clock"></i>
@@ -86,8 +91,8 @@ export default function SideBareMagasin(){
 <hr />
 </div>
     <ul className="side-menu top ">
-    <li className={activeItem === "/magasin/notification" || activeItem==="/magasin/notification/confirme" ? "active" : "" }>
-    <Link to="/magasin/notification">
+    <li className={activeItem === `/magasins/${id}/notifications` || activeItem==="/magasins/notification/confirme" ? "active" : "" }>
+    <Link to={`/magasins/${id}/notifications`}>
 
       <a href="#">
       <i className="bi bi-bell"><span className="countNotifcom">1</span></i>

@@ -4,15 +4,20 @@ import produitIMG from  "../../Admin/IMG/3.png"
 import produitIMGa from  "../../Admin/IMG/e1.png"
 
 import "./historiqueId.css"
+import { useContext } from "react";
+import { MagasinContext } from "../../../Context/MagasinContext";
 export default function HistoriqueId(){
+    const magasinContext = useContext(MagasinContext);
+    const MagasinId = localStorage.getItem('MagasinId');
+      const id = MagasinId || magasinContext.id?.id;
     return<>
     <SideBareMagasin/>
         <div className="container produitCard  mt-5">
-        <Link to="/magasin/historique"><i className="bi bi-arrow-left-short"></i></Link>
+        <Link to={`/magasins/${id}/historiques`}><i className="bi bi-arrow-left-short"></i></Link>
 
         <div className="barTitle">
             <h3>6484011</h3>
-            </div>
+            </div>  
             <div className="card mt-5">
                 <div className="produit">
                 <div className="items">
@@ -27,8 +32,8 @@ export default function HistoriqueId(){
                         </div>
                 </div>
                     <div className="choix">
-                        <Link className="Echanger" to="/magasin/historique/id/echanger">Echanger</Link><br /><br />
-                        <Link className="rembourser" to="/magasin/historique/id/rembourser">Se rembourser</Link>
+                        <Link className="Echanger" to="/magasins/historique/id/echanger">Echanger</Link><br /><br />
+                        <Link className="rembourser" to="/magasins/historique/id/rembourser">Se rembourser</Link>
 
                     </div>
                 </div>

@@ -7,7 +7,7 @@ export default function ConfirmeMessage(){
     <div className="container mt-5">
     <div className="barRetour">
       <span className="iconRetour">
-        <Link to="/magasin/notification"><i className="bi bi-arrow-left-short"></i></Link>
+        <Link to="/magasins/:id/notifications"><i className="bi bi-arrow-left-short"></i></Link>
         
       </span>
   </div>

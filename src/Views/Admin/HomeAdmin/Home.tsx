@@ -1,5 +1,5 @@
 import Sidebare from "../Sidbare/Sidebare"
-import {Swiper , SwiperSlide} from"swiper/react"
+import {Swiper , SwiperSlide } from"swiper/react"
 import"swiper/css"
 import"swiper/css/free-mode"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -15,6 +15,7 @@ import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { ArticleInfo } from "../../../Modeles/ArticleModel";
 import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+import AfficheMagasinsService from "../../../Services/Magasin/AfficheMagasinsService"
 export interface ProductType{
 
   product : ArticleInfo[],
@@ -27,14 +28,29 @@ export default function Home(){
     messageErros : "accune produit",
 
 })
+const [stateMagasin , setStateMagasin] = useState<ProductType>({
+  product:[] as ArticleInfo[],
+  messageErros : "accune produit",
+
+})
 useEffect(()=>{
     setState({...state })
         AfficheProductsService().getProduct()
         .then((res)=>setState({...state  , product:res.data})
+
         )
         .catch(msg=>setState({...state  , product:msg.messageErros}))
 },[]);
+useEffect(()=>{
+  setState({...state })
+      AfficheMagasinsService().getMagasin()
+      .then((res)=>setStateMagasin({...stateMagasin  , product:res.data})
+
+      )
+      .catch(msg=>setStateMagasin({...stateMagasin  , product:msg.messageErros}))
+},[]);
 const {product , messageErros} = state
+
     return <>
     <Sidebare/>
     	<div className="home mt-5" >
@@ -78,7 +94,7 @@ const {product , messageErros} = state
       >
         {product.length>0? product.map(pro=>(
           <SwiperSlide>
-      <Link className="product-link" to={`produit/${pro.IdArticle}`}>
+      <Link className="product-link" to={`/articles/${pro.IdArticle}`}>
         <div className="box">
           <div className="slide-image">
           <img src={ImageProduit2} alt="" />
@@ -116,6 +132,7 @@ const {product , messageErros} = state
         0:{
           slidesPerView:1,
           spaceBetween:10,
+          
         },
         480:{
           slidesPerView:2,

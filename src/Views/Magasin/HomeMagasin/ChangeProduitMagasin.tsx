@@ -6,7 +6,7 @@ export default function ChangeProduitMagasin(){
     return <>
     <SideBareMagasin/>
         <div className="container produitCard mt-5">
-    <Link to="/produits"><i className="bi bi-arrow-left-short"></i></Link>
+    <Link to="/magasins/:id/articles"><i className="bi bi-arrow-left-short"></i></Link>
 
     <div className="barTitleM">
         <h3>R-Flush Radiator Cleaner 1L</h3>

@@ -24,21 +24,21 @@ export default function SideBareCommercial(){
 
 <body>
 <section className="sidebar">
-  <a href="/commercial" className="brand">
+  <a href="/commercials" className="brand">
     <img className="logocommercial mt-3" src={logo}  />			
   </a>
   <img className="profilCommercial" src={profil}  />	
   <br />	
   <ul className="side-menu top mb-5">
-    <li className={activeItem === "/commercial" ? "active" : "" }>
-        <Link className="active" to="/commercial">
+    <li className={activeItem === "/commercials/:id" ? "active" : "" }>
+        <Link className="active" to="/commercials/:id">
       <a href="#">
         <i className="bi bi-menu-button-wide-fill" />
       </a>
       </Link>
     </li >
-    <li className={activeItem === "/commercial/produit" ? "active" : "" }>
-      <Link to="/commercial/produit">
+    <li className={activeItem === "/commercials/:id/articles" ? "active" : "" }>
+      <Link to="/commercials/:id/articles">
 
       <a href="#">
       <i className="bi bi-clock"></i>

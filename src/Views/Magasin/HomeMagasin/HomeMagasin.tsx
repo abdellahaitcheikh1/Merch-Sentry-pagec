@@ -15,8 +15,10 @@ import "./HomeMagasin.css"
 import logoecathlon from "../../Admin/IMG/nike-air-max-sneakers-shoe-air-jordan-men-shoes-45af4ec7176bad26683ab00a9e5623ca.png"
 import { Link } from "react-router-dom";
 import { ArticleInfo } from "../../../Modeles/ArticleModel";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+import AfficheArticleInMagasin from "../../../Services/Magasin/AfficheArticleInMagasin";
+import { MagasinContext } from "../../../Context/MagasinContext";
 export interface ProductType{
 
   product : ArticleInfo[],
@@ -24,14 +26,21 @@ export interface ProductType{
 }
     
 export function HomeMagasin(){
+  const [search , setSearche] = useState("");
+  const magasinContext = useContext(MagasinContext);
+  const MagasinId = localStorage.getItem('MagasinId');
+    const id = MagasinId || magasinContext.id?.id;
   const [state , setState] = useState<ProductType>({
     product:[] as ArticleInfo[],
     messageErros : "accune produit",
 
 })
+const handelSearche=(e:any)=>{
+  setSearche(e.target.value);
+}
 useEffect(()=>{
     setState({...state })
-        AfficheProductsService().getProduct()
+        AfficheArticleInMagasin().getArticle()
         .then((res)=>setState({...state  , product:res.data})
         )
         .catch(msg=>setState({...state  , product:msg.messageErros}))
@@ -41,7 +50,7 @@ const {product , messageErros} = state
     <SideBareMagasin/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <div className="categ">
-      <Link to="/panier">
+      <Link to="/magasins/id/panier">
         <div className="panier">
         <i className="bi bi-cart3"></i>
         <span className="num">1</span>
@@ -56,7 +65,7 @@ const {product , messageErros} = state
       <div className="col-md-6">
         <div className="form ">
           <i className="fa fa-search" />
-          <input type="text" className="form-control form-input" placeholder="Recherch un produit , ref .." />
+          <input onChange={handelSearche} type="text" className="form-control form-input" placeholder="Recherch un produit , ref .." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
         </div>
       </div>
@@ -86,31 +95,71 @@ const {product , messageErros} = state
         }
       }}
       >
-        {product.length>0? product.map(pro=>(
+        {
+product.length > 0 ? (
+  product.filter((pro) => {
+    const searchTerm = search.toLowerCase();
+    const designation = pro.Designation.toLowerCase();
+    const refArticle = pro.RefArticle.toString().toLowerCase();
+    const sub = pro.LibelleSubstitut?.toString().toLowerCase(); 
+    console.log(sub)// Convert RefArticle to string and lowercase
 
-        <SwiperSlide>
+    // Check if either the Designation or RefArticle matches the search term
+    return searchTerm === "" || 
+      designation.includes(searchTerm) || 
+      refArticle.startsWith(searchTerm) ||
+      sub?.startsWith(searchTerm);
+  }).length > 0 ? (
+    product.filter((pro) => {
+      const searchTerm = search.toLowerCase();
+      const designation = pro.Designation.toLowerCase();
+      const refArticle = pro.RefArticle.toString().toLowerCase();
+      const sub = pro.LibelleSubstitut?.toString().toLowerCase(); 
+      ;  // Convert RefArticle to string and lowercase
 
-        <div className="box">
-          <div className="slidImage">
-            <img src={pMagasin} alt="" />
-            {/* <img src={`http://127.0.0.1:8000/storage/${pro.image}`} alt="" /> */}
-
-            <div className="overlay">
+      // Check if either the Designation or RefArticle matches the search term
+      return searchTerm === "" || 
+        designation.includes(searchTerm) || 
+        refArticle.startsWith(searchTerm)||
+        sub?.startsWith(searchTerm);
+    }).map((pro) => (
+        <SwiperSlide className="upBox" key={pro.IdArticle}>
+          <Link className="hh" to={`/magasins/${id}/articles/${pro.IdArticle}`}>
+            <div className="box">
+              <div className="slidImage">
+                <img src={pMagasin} alt="" />
+                {/* <img src={`http://127.0.0.1:8000/storage/${pro.image}`} alt="" /> */}
+                <div className="overlay"></div>
+              </div>
+              <div className="detailBoxMagasin">
+                <div className="type">
+                  <p className="paran">{pro.Designation}</p>
+                  <i className="bi bi-cart-plus"></i>
+                </div>
+                <div className="price"><p>{pro.PrixVenteArticleTTC} MAD<span>/P.U</span></p></div>
+              </div>
             </div>
-          </div>
-          <div className="detailBoxMagasin">
-
-            <div className="type">
-
-              <p className="paran">{pro.Designation}</p>
-              <i className="bi bi-cart-plus"></i>
-            </div>
-            <div className="price"><p>{pro.PrixVenteArticleTTC}<span>/P.U</span></p></div>
-          </div>
-        </div>
+          </Link>
         </SwiperSlide>
-        )):""
-      }
+      ))
+    ) : (
+      <div className="no-produit">
+        <i className="bi bi-emoji-neutral"></i><br />
+        <p>Malheureusement, on n‘a pas ce produit pour l’instant.</p><br />
+        <Link to={"/magasins/:id/demande"} className="botton-remplir"><button>Remplir une demande</button></Link>
+      </div>
+    )
+  ) : (
+    // Handle case when product list is empty
+    <div className="no-produit">
+      <i className="bi bi-info-lg"></i> Aucun produit
+    </div>
+  )
+}
+
+
+      
+       
         </Swiper>
 
   </div>
@@ -140,7 +189,7 @@ const {product , messageErros} = state
         {product.length>0? product.map(pro=>(
 
              <SwiperSlide>
-             <Link className="parantbox" to="/afficheProduit">
+             <Link className="parantbox" to="/magasins/:id/articles/id">
 
 <div className="boxSponsore">
       <div className="slideImgSponsorem">

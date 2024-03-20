@@ -34,7 +34,7 @@ export default function AfficheCommercial() {
       <div className="container">
       <div className="barRetour mt-5">
       <span className="iconRetour">
-        <Link to="/commercial"><i className="bi bi-arrow-left-short"></i></Link>
+        <Link to="/magasins/:id/commercials"><i className="bi bi-arrow-left-short"></i></Link>
         
       </span>
       <div className="marque">

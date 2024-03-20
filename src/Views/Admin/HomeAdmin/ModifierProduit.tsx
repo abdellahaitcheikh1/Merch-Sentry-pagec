@@ -8,6 +8,7 @@ const ModifierProduit:React.FC<ArticleInfo> = ({
           PrixVenteArticleTTC,
           Description,
           image,
+          IdArticle,
           stock,
           RefArticle,
     }) => {
@@ -18,19 +19,18 @@ const ModifierProduit:React.FC<ArticleInfo> = ({
   <form action="" method="post">
       <div className="barRetour">
         <span className="iconRetour">
-          <Link to="/categories"><i className="bi bi-arrow-left-short"></i></Link>
-          
+          <Link to={`/articles/${IdArticle}`}><i className="bi bi-arrow-left-short"></i></Link>
         </span>
     </div>
   <div className="marque">
   
-  <h4 className="mb-3">Ajouter un nouveau produit</h4>
+  <h4 className="mb-3">Modifer votre produit maintenant</h4>
   </div>
   <div className="row" style={{marginTop:"-80px"}}>
     <div className="col inputs">
       <div className="col-6">
           <span>Nom de produit</span>
-      <input type="text" className="form-control mb-3" value={Designation} id="nom" />
+      <input type="text" className="form-control mb-3" defaultValue={Designation} id="nom" />
     </div>
     <div className="col-9 form-floating">
     <span className="spandesc">Description</span>
@@ -48,12 +48,12 @@ const ModifierProduit:React.FC<ArticleInfo> = ({
     <div className="col">
     <span className="">Qunatité </span>
   
-      <input value={stock}  type="text" className="form-control"  />
+      <input defaultValue={stock}  type="text" className="form-control"  />
     </div>
   
     <div className="col">
     <span className="">Réference </span>
-      <input value={RefArticle} type="text" className="form-control" />
+      <input defaultValue={RefArticle} type="text" className="form-control" />
     </div>
   </div>
       </div>
@@ -78,7 +78,7 @@ const ModifierProduit:React.FC<ArticleInfo> = ({
     <div className="col">
     <span className="">Prix </span>
   
-      <input value={PrixVenteArticleTTC} name="PrixVenteArticleTTC" />
+      <input defaultValue={PrixVenteArticleTTC} name="PrixVenteArticleTTC" />
     </div>
   
     <div className="col">
@@ -87,7 +87,7 @@ const ModifierProduit:React.FC<ArticleInfo> = ({
     </div>
       <br />
       <div className="parent-button">
-      <button className="btn-ajouter-produit" type="submit">Confirmer</button>
+      <button className="btn-ajouter-produit" type="submit">Modifier</button>
         </div>
   </div>
   

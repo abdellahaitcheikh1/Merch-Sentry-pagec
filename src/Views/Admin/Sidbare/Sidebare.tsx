@@ -38,29 +38,29 @@ export default function Sidebare() {
           </a>
           <br />
           <ul className="side-menu top">
-            <li className={activeItem === "/" || activeItem==="/produit" ? "active" : "" }>
-              <Link className="active" to="/">
+            <li className={activeItem === "/home" || activeItem && /^\/articles\/\d+$/.test(activeItem) ||activeItem && /^\/articles\/\d+\/edit$/.test(activeItem)? "active" : "" }>
+              <Link className="active" to="/home">
                 <a href="#">
                   <i className="bi bi-menu-button-wide-fill" />
                 </a>
               </Link>
             </li>
-            <li className={activeItem === "/categories" ? "active"  : "" || activeItem === "/ajouter-produit" ? "active"  : ""}>
-              <Link to="/categories">
+            <li className={activeItem === "/articles/categories" ?  "active"  : "" || activeItem==="/message" || activeItem === "/articles/categories/add" ?  "active"  : ""}>
+              <Link to="/articles/categories">
                 <a href="#">
                   <i className="bi bi-box-seam" />
                 </a>
               </Link>
             </li>
-            <li className={activeItem === "/magasin" ? "active" : ""|| activeItem === "/magasin/create" ? "active"  : "" || activeItem === "/magasin/edit" ? "active"  : ""}>
+            <li className={activeItem === "/magasin" ? "active" : "" || activeItem === "/magasin/add" ? "active"  : "" || activeItem === "/magasin/edit" || activeItem === "/magasin/:id/edit" ? "active"  : ""}>
               <Link to="/magasin">
                 <a href="#">
                   <i className="bi bi-shop" />
                 </a>
               </Link>
             </li>
-            <li className={activeItem === "/historique" ? "active" : ""}>
-              <Link to="/historique">
+            <li className={activeItem === "/historiques" ? "active" : ""}>
+              <Link to="/historiques">
                 <a href="#">
                   <i className="bi bi-clock"></i>
                 </a>
@@ -72,7 +72,7 @@ export default function Sidebare() {
             <hr />
           </div>
             <ul className="side-menu top ">
-            <li className={activeItem === "/notifacation" ? "active" : "" }>
+            <li className={activeItem === "/notifacations" ? "active" : "" }>
               <Link to="">
 
                 <a href="">

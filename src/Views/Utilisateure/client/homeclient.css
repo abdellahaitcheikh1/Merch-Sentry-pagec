@@ -56,13 +56,12 @@
 	color: #ffffff; 	
 	margin-top: -16%;
 	font-style: normal; 
-	/* background-color: #DB504A; */
 	font-family: Montserrat; 
 	margin-left:-13%;
 	font-style: normal;
 	font-size: 67%;
 	font-weight: 500;
-	width: 210%;
+	width: 230%;
 	line-height: normal; 
 
 }
@@ -75,12 +74,12 @@
 }
 .Box-info-product-client .price{
     color: rgb(255, 255, 255);
-    font-size: 0.7rem;
-	margin-left: 31%;
-	width: 100%;
+    font-size: 0.68rem;
+	margin-left: 15%;
+	width: 180%;
 	font-style: normal;
 	line-height: normal;
-	margin-top: 7%;
+	margin-top: 17%;
 	font-family: Montserrat; 
 
 
@@ -135,4 +134,28 @@
 }
 .card-name{
     margin-left: 9%;
+}
+.solde{
+    display: flex;
+    justify-content: space-between;
+}
+.card-client{
+    border: 1px solid black;
+    padding: 3%;
+}
+.card-client .card-content img{
+    width: 22%;
+}
+.card-client .card-content h4{
+    font-size: 0.6rem;
+}
+.card-client .card-content h4{
+    font-size: 0.6rem;
+}
+.card-client .card-content .button{
+    font-size: 0.6rem;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
 }

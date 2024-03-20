@@ -109,3 +109,25 @@ line-height: normal;
     background-color: #63a362;
 
 }
+.no-produit{
+    text-align: center;
+}
+.no-produit i{
+    font-size: 6rem;
+}
+.no-produit p{
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.no-produit .botton-remplir button{
+    color: #FFFFFF;
+    padding: 1.1%;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #7FA87E;
+}

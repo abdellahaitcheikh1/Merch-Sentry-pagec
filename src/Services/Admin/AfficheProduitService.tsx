@@ -11,27 +11,45 @@ export default function AfficheProduitService(){
   const [image,setimage] = useState<any>("");
   const [Description,setDescription] = useState<string>("");
   const [stock,setstock] = useState<string>("");
-
-
+  const [LibelleSubstitut,setLibelle] = useState<string>("")
+  
     const {id}= useParams();    
     useEffect(()=>{
         fetchProduct();
     },[])
     const fetchProduct=async()=>{
         try {
-          await axios.get(`http://127.0.0.1:8000/api/article/${id}`)
+          await axios.get(process.env.REACT_APP_PHP_APP_URL + '/articles/' + id)
           .then(({data})=>{
-            setDesignation(data.Designation);
-            setIdArticle(data.IdArticle);
-            setDescription(data.Description);
-            setimage(data.image);
-            setPrixVenteArticleTTC(data.PrixVenteArticleTTC);
-            setRefArticle(data.RefArticle);
-            setstock(data.stock);
+            data.forEach((items:any) => {
+              if (Array.isArray(items)) {
+                items.forEach((item) => {
+                  if(item.LibelleSubstitut===""){
+                    // console.log('fj')
+                    setLibelle("N/A");
+                  }else{
+                    setLibelle(item.LibelleSubstitut);
+                    
+                  }
+                });
+              }else{
+              setDesignation(items.Designation);
+              setIdArticle(items.IdArticle);
+              setDescription(items.Description);
+              setimage(items.image);
+              setPrixVenteArticleTTC(items.PrixVenteArticleTTC);
+              setRefArticle(items.RefArticle);
+              setstock(items.stock);
+                
+              }
+
+          });
+            
 
         })} catch (error: AxiosError | any) {
           if (error.response?.status === 442) {
           console.log("good data");
+
     
           } else {
             console.log("error");
@@ -44,10 +62,11 @@ export default function AfficheProduitService(){
         IdArticle={IdArticle}
         Designation={Designation}
         PrixVenteArticleTTC={PrixVenteArticleTTC}
+        LibelleSubstitut={LibelleSubstitut}
         RefArticle={RefArticle}
         image={image}
         Description={Description}
-        stock={stock} 
+        stock={stock}
         Unite={""} setDesignation={function (value: SetStateAction<string>): void {
           throw new Error("Function not implemented.");
         } } setPrixVenteArticleTTC={function (value: SetStateAction<string>): void {
@@ -61,6 +80,14 @@ export default function AfficheProduitService(){
         } } setRefARticle={function (value: SetStateAction<string>): void {
           throw new Error("Function not implemented.");
         } } setUnite={function (value: SetStateAction<string>): void {
+          throw new Error("Function not implemented.");
+        } } setprix_ht_2_magasin={function (value: SetStateAction<string>): void {
+          throw new Error("Function not implemented.");
+        } } setprix_ht_3_magasin={function (value: SetStateAction<string>): void {
+          throw new Error("Function not implemented.");
+        } } setprix_ttc_magasin={function (value: SetStateAction<string>): void {
+          throw new Error("Function not implemented.");
+        } } setquantité={function (value: SetStateAction<string>): void {
           throw new Error("Function not implemented.");
         } }        />
     </>

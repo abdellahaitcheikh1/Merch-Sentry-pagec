@@ -6,7 +6,7 @@ export default function NotificationMagasin(){
         <SideBareMagasin/>
         <div className="container">
             <h2 className="mt-5 mb-5">Notifications</h2>
-            <Link className="derection" to="/magasin/notification/confirme">
+            <Link className="derection" to="/magasins/:id/notifications/:id/confirme">
                 <h5>Aujourd'hui</h5>
             <div className="card mb-5">
                 <span>5/12/2023</span>

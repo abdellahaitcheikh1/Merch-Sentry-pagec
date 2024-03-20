@@ -13,8 +13,34 @@ import ImageProduit2 from "../../Admin/IMG/e1.png"
 import ImageProduit3 from "../../Admin/IMG/3.png"
 import ImageProduit4 from "../../Admin/IMG/e3.png"
 import {Swiper , SwiperSlide} from"swiper/react"
+import { useEffect, useState } from "react";
+import { ArticleInfo } from "../../../Modeles/ArticleModel";
+import AfficheProductsService from "../../../Services/Admin/AfficheProductsService";
+export interface ProductType{
+
+  product : ArticleInfo[],
+  messageErros:string,
+}
+
 export default function HomeClient(){
-    return<>
+  const [search , setSearche] = useState("");
+  const [state , setState] = useState<ProductType>({
+    product:[] as ArticleInfo[],
+    messageErros : "accune produit",
+
+})
+const handelSearche=(e:any)=>{
+  setSearche(e.target.value);
+}
+useEffect(()=>{
+    setState({...state })
+        AfficheProductsService().getProduct()
+        .then((res)=>setState({...state  , product:res.data})
+        )
+        .catch(msg=>setState({...state  , product:msg.messageErros}))
+},[]);
+const {product , messageErros} = state    
+return<>
     <SidBarClient/>
     <div className="container">
         <h1 className="title-i-client">MERCHSENRTY</h1>
@@ -24,7 +50,7 @@ export default function HomeClient(){
         <div className=" mt-5">
         <div className="form forme ">
           <i className="fa fa-search" />
-          <input type="text" className="form-control form-input" placeholder="Recherchez un produit , ref .." />
+          <input type="text" onChange={handelSearche} className="form-control form-input" placeholder="Recherchez un produit , ref .." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
         </div>
       </div>
@@ -57,6 +83,15 @@ export default function HomeClient(){
         }
       }}
       >
+                        {product.length > 0 ? 
+  product.filter((pro) => {
+    return search.toLowerCase() === "" || 
+    pro.Designation.toLowerCase().includes(search.toLowerCase());
+  }).length > 0 ? (
+    product.filter((pro) => {
+      return search.toLowerCase() === "" || 
+      pro.Designation.toLowerCase().includes(search.toLowerCase());
+    }).map((pro) => (
         <SwiperSlide>
 
         <div className="box">
@@ -67,108 +102,22 @@ export default function HomeClient(){
           </div>
           <div className="Box-info-product-client">
             <div className="parant-name">
-              <p className="product-name">I-FLUX 200</p>
+              <p className="product-name">{pro.Designation}</p>
             </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
+            <p className="price">{pro.PrixVenteArticleTTC}MAD<span>/P.U</span></p>
           </div>
         </div>
         </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit2} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">DPF FLUSH</p>
-            </div>
-            <p className="price">7 720 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">AT-FLUX 3</p>
-            </div>
-            <p className="price">75 038 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit4} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">4-WAY Flux </p>
-            </div>
-            <p className="price">4 092 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">AT-FLUX 3</p>
-            </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">AT-FLUX 3</p>
-            </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="box">
-          <div className="slidImage">
-            <img src={ImageProduit1} alt="" />
-            <div className="overlay">
-            </div>
-          </div>
-          <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">AT-FLUX 3</p>
-            </div>
-            <p className="price">15 120 MAD<span>/P.U</span></p>
-          </div>
-        </div>
-        </SwiperSlide>
+        ))
+        ) : (
+         <div className="no-produit">
+           <i className="bi bi-emoji-neutral"></i><br />
+           <p>Malheureusement, on n‘a pas ce produit pour l’instant.</p><br />
+         </div>
+         )
+        :
+        <div className="no-produit"><i className="bi bi-info-lg"></i>Accune product</div>
+       }
         </Swiper>
 
         <div className="equipement">
@@ -201,6 +150,8 @@ export default function HomeClient(){
         }
       }}
       >
+                                {product.length>0? product.map(pro=>(
+
         <SwiperSlide>
 
         <div className="boxSponsore">
@@ -210,108 +161,15 @@ export default function HomeClient(){
             </div>
             <div className="Box-info-product-client">
             <div className="parant-name">
-              <p className="product-name">Chain Pro</p>
+              <p className="product-name">{pro.Designation}</p>
             </div>
-            <p className="price">100 MAD</p>
+            <p className="price">{pro.PrixVenteArticleTTC} MAD</p>
           </div>
           </div>
         </div>
         </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit1} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">Deblock SHOCK</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit2} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">C1200+</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit2} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit1} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name">SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-
-        <div className="boxSponsore">
-          <div className="slideImgcategori">
-          <img src={catProduit} alt="" />
-            <div className="overlay">
-            </div>
-            <div className="Box-info-product-client">
-            <div className="parant-name">
-              <p className="product-name" >SUPER 5.1</p>
-            </div>
-            <p className="price">100 MAD</p>
-          </div>
-          </div>
-        </div>
-        </SwiperSlide>
+)):""
+}
         </Swiper>
       </div>
       
@@ -337,7 +195,28 @@ export default function HomeClient(){
             </div>
             <h5 className="card-name">Nour</h5>
         </div>
+        <div className="progresse">
+          <div className="progress">
+          </div>
+          <div className="solde">
+            <h6>solde:</h6>
+            <span>MAD 8 000/ MAD 10 000</span>
+
+          </div>
         </div>
+        <div className="card-client">
+          <p>Mon Panier (1)</p>
+          <div className="card-content">
+
+            <img src={ImageProduit1} alt="" />
+            <h4>Chain Pro</h4>
+            <Link to="" className="button">Supprimer ce produit</Link>
+          </div>
+        </div>
+        </div>
+
+
+
 
     </div>
     </div>

@@ -7,11 +7,21 @@
     margin: 0;
 }
 .message-success .icon-sucess{
-    font-size: 2.3rem;
+    font-size: 2.6rem;
     border-radius: 100%;
     background-color: #007ACC;
     color: aliceblue;
-    padding: 5%;
+    padding: 1.5% 2.5%;
+}
+.icon-sucess-commercial{
+    font-size: 2.6rem;
+    border-radius: 100%;
+    color: aliceblue;
+    padding: 1.5% 2.3%;
+    background-color: #7FA87E;
+}
+.message-content p{
+    font-family: Montserrat;
 }
 .message-success .message-content{
     margin-top: 30px;

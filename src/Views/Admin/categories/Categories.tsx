@@ -19,12 +19,15 @@ export interface ProductType{
   messageErros:string,
 }
 export default function Categories(){
-    
+  const [search , setSearche] = useState("");
   const [state , setState] = useState<ProductType>({
     product:[] as ArticleInfo[],
-    messageErros : "accune produit",
+    messageErros : "Il n'y a pas de produit",
 
 })
+const handelSearche=(e:any)=>{
+  setSearche(e.target.value);
+}
 useEffect(()=>{
     setState({...state })
         AfficheProductsService().getProduct()
@@ -40,11 +43,11 @@ const {product , messageErros} = state
   <div className="container mt-5">
     <div className="row height">
       <div className="col-md-6">
-        <div className="form ">
+        <div className="form form-categorie ">
           <i className="fa fa-search" />
-          <input type="text" className="form-control form-input" placeholder="Recherchez un produit , ref .." />
+          <input type="text" onChange={handelSearche} className="form-control form-input" placeholder="Recherchez un produit , ref .." />
           <span className="left-pan"><i className="bi bi-sliders"></i></span>
-          <Link to="/ajouter-produit"><button className="btnAjoutee">Ajouter Produit</button></Link>
+          <Link to="/articles/categories/add"><button className="btnAjoutee">Ajouter Produit</button></Link>
         </div>
       </div>
     </div>
@@ -77,9 +80,17 @@ const {product , messageErros} = state
         }
       }}
       >
-        {product.length>0? product.map(pro=>(
+        {product.length > 0 ? 
+  product.filter((pro) => {
+    return search.toLowerCase() === "" || 
+    pro.Designation.toLowerCase().includes(search.toLowerCase());
+  }).length > 0 ? (
+    product.filter((pro) => {
+      return search.toLowerCase() === "" || 
+      pro.Designation.toLowerCase().includes(search.toLowerCase());
+    }).map((pro) => (
           <SwiperSlide>
-      <Link className="product-link" to={`produit/${pro.IdArticle}`}>
+      <Link className="product-link" to={`articles/${pro.IdArticle}`}>
         <div className="box">
           <div className="slide-image">
           <img src={ImageProduit1} alt="" />
@@ -96,8 +107,16 @@ const {product , messageErros} = state
         </Link>
 
         </SwiperSlide>
-        )):""
-        }
+            ))
+            ) : (
+             <div className="no-produit">
+             <i className="bi bi-emoji-neutral"></i><br />
+             <p>Malheureusement, on n‘a pas ce produit pour l’instant.</p><br />
+           </div>     )
+            :
+            (<div className="no-produit"><i className="bi bi-info-lg"></i> Accune product</div>)
+          }
+       
         
       </Swiper>
 
@@ -127,7 +146,7 @@ const {product , messageErros} = state
       >
         {product.length>0? product.map(pro=>(
         <SwiperSlide>
-        <Link className="product-link" to={`produit/${pro.IdArticle}`}>
+        <Link className="product-link" to={`articles/${pro.IdArticle}`}>
           <div className="box">
             <div className="slide-image">
             <img src={ImageProduit1} alt="" />

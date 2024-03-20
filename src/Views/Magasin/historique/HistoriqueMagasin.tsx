@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import "./historique.css"
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
+import { useContext } from "react";
+import { MagasinContext } from "../../../Context/MagasinContext";
 export default function HistoriqueMagasin(){
+  const magasinContext = useContext(MagasinContext);
+    const MagasinId = localStorage.getItem('MagasinId');
+      const id = MagasinId || magasinContext.id?.id;
     return<>
     <SideBareMagasin/>
     <div className="container mt-5">
@@ -27,7 +32,7 @@ export default function HistoriqueMagasin(){
     <tbody>
       <tr>
         <td>
-      <Link className="columnTable" to="/magasin/historique/id">
+      <Link className="columnTable" to={`/magasins/${id}/historiques/id`}>
         6484011
       </Link>
       </td>

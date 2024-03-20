@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Utilisateure } from "../../Modeles/UtilisateureModel";
 import "./connexion.css"
 const Connexion:React.FC<Utilisateure> = ({
@@ -6,6 +7,7 @@ const Connexion:React.FC<Utilisateure> = ({
   CompteEmail,
   setPassword,
   Password,
+  message,
 }) => {
 // export default function Connexion(){
     return (<>
@@ -23,6 +25,16 @@ const Connexion:React.FC<Utilisateure> = ({
             Connexion 
             <i className="line bi bi-dash-lg"></i>
                       </span>
+                      <div className='container'>
+{message==true?
+        <div className="alert alert-danger" role="alert">        
+    <b className='text-center'><i className="bi bi-question-circle-fill"></i> Veuillez entrer les informations correctes . </b>
+        
+        </div>
+        :""
+        
+    }      <p></p>
+    </div>
           <label htmlFor="" className="mb-3">Pseudo</label>
           <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
             <input onChange={(e) => setCompteEmail(e.target.value)} value={CompteEmail} className="input100" type="text" name="CompteEmail" />
@@ -39,11 +51,13 @@ const Connexion:React.FC<Utilisateure> = ({
             </button>
           </div>
           <div className="text-center mt-3 p-t-46 p-b-20">
+            <Link to="/visiteurs">
             <span className="txt2">
               <a href="">
                 Rejoindre comme visiteur <i className="bi bi-arrow-right-circle-fill" />
               </a>
             </span>
+            </Link>
           </div>
           <div className="login100-form-social flex-c-m">
             <a href="#" className="login100-form-social-item flex-c-m bg1 m-r-5">

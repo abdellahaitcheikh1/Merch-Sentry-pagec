@@ -51,7 +51,9 @@ body {
 
  /* ------------------------------- SIDEBARE ADMIN ----------------------------------------- */
 
-
+ .head-title{
+	padding-left: 3%;
+}
 .sidebar {
 	position: fixed;
 	top: 0;
@@ -345,6 +347,7 @@ body {
 	color: var(--dark);
 
 } */
+
 .container .head-title .left h5 b{
 	font-family: Montserrat; 
 	color: #000;
@@ -641,6 +644,10 @@ body {
 .description{
 	margin-left: 90%;
 }
+.form-categorie{
+	margin: 0 80% 0 -5%;
+
+}
 .description p {
 	color: #000;
 	font-family: Montserrat;
@@ -806,12 +813,16 @@ a{
 }
 
 @media screen and (max-width: 38rem) {
+
 	.home{
 		margin-left: 100%;
 		width: 80%;
 	}
 }
 @media screen and (max-width: 61.25rem) {
+	.head-title{
+		padding-left: 6%;
+	}
 	.sidebar {
 		width: auto;
 	}

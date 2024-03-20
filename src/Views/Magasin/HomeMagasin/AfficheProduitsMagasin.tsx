@@ -2,22 +2,37 @@ import produit from "../../Admin/IMG/1.png"
 import { Link } from "react-router-dom";
 import "./afficheProduitmagasin.css"
 import SideBareMagasin from "../SideBareMagasin/SideBareMagasin";
-export default function AfficheProduitMagasin(){
-    return <>
+import { ArticleInfo } from "../../../Modeles/ArticleModel";
+const AfficheProduitMagasin:React.FC<ArticleInfo> = ({
+    IdArticle,
+    Designation,
+    PrixVenteArticleTTC,
+    Description,
+    image,
+    stock,
+    quantité,
+    RefArticle,
+    LibelleSubstitut,
+
+}) => {
+    const handleGoBack = () => {
+        window.history.back();
+    };
+    return (<>
     <SideBareMagasin/>
     <div className="container produitCard mt-5">
-    <Link to="/magasine"><i className="bi bi-arrow-left-short"></i></Link>
+    <Link to="" onClick={handleGoBack}><i className="bi bi-arrow-left-short"></i></Link>
 
     <div className="barTitle paniercommercial">
-        <h3>Super 5.1</h3>
+        <h3>{Designation}</h3>
         <i className="bi bi-cart3 icon"><span>1</span></i>
         </div>
     <div className="cardItem mt-5">
         <img src={produit} alt="" />
     <div className="ItemsInfo">
-        <h2 className="mb-5">100 MAD</h2>
+        <h2 className="mb-5">{PrixVenteArticleTTC} MAD</h2>
         <div className="quantity">
-        <h6>Quantité <input className="inputQ" type="number" min={1} placeholder="1"/> </h6>
+        <h6>Quantité <input className="inputQ" value={quantité} type="number" min={1}/> </h6>
             </div>
         <button className="ajouterP">Ajouter au panier</button>
     </div>
@@ -31,9 +46,10 @@ export default function AfficheProduitMagasin(){
          Rerum voluptatibus, delectus quas fugiat culpa, <br />
            nesciunt quisquam laboriosam, expedita quaerat voluptas alias quod! <br />
          Quisquam quis explicabo eveniet accusamus, magnam praesentium rem!</p>
-         <h5>Réference : <span>4038500</span></h5>
+         <h5>Réference : <span>{RefArticle}</span></h5>
     </div>
     </div>
     </div>
-    </>
+    </>)
 }
+export default AfficheProduitMagasin;

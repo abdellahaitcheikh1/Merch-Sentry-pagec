@@ -1,4 +1,4 @@
-import { HashRouter, Routes , Route} from "react-router-dom"
+import { HashRouter, Routes , Route, BrowserRouter} from "react-router-dom"
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './Views/Admin/HomeAdmin/Home';
@@ -44,77 +44,77 @@ import ModifierArticleService from "./Services/Admin/ModifierArticleService";
 import AvisClient from "./Views/Utilisateure/visiteur/AvisClient";
 import LoginService from "./Services/Authentication/LoginService";
 import HomeClient from "./Views/Utilisateure/client/HomeClient";
+import AfficheArticleById from "./Services/Magasin/AfficheArticleById";
+import AddCommercialMagasin from "./Services/Magasin/AddCommercialMagasin";
+import MessageAddCommercial from "./Views/Admin/message/MessageAddCommercial";
+import AddClient from "./Services/Magasin/AddClient";
+import MessageAddClient from "./Views/Admin/message/MessagAddClient";
+import AddArticle from "./Services/Magasin/AddArticle";
+import MessageAddArticleInMagasin from "./Views/Admin/message/MessageAddArticleInMagasin";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <HashRouter>
+
+      
+    <BrowserRouter>
     <Routes>
-    <Route path='/' index element={<Home/>}/>
-    <Route path='produit/:id' element={<AfficheProduitService/>}/>
-    <Route path='modifier/:id' element={<ModifierArticleService/>}/>
+          {/* -------------------------------- routes authentification -----------------------------*/}
+    <Route path='/' index element={<LoginService/>}/>
 
-    <Route path='/categories' index element={<Categories/>}/>
+          {/* -------------------------------- routes admin -----------------------------*/}
+
+    <Route path='/home' index element={<Home/>}/>
+    <Route path='/articles/:id' element={<AfficheProduitService/>}/>
+    <Route path='/articles/:id/edit' element={<ModifierArticleService/>}/>
+    <Route path='/articles/categories' index element={<Categories/>}/>
+    <Route path='/articles/categories/add' index element={<AddArticleService/>}/>
     <Route path='/magasin' index element={<Magasin/>}/> 
-    <Route path='/magasin/edit' index element={<EditeMagasin/>}/>
-    <Route path='/magasin/create' index element={<CreateMagasin/>}/>
-    <Route path='/ajouter-produit' index element={<AddArticleService/>}/>
-    <Route path='/historique' index element={<Historique/>}/>
-    <Route path='/Magasine' index element={<HomeMagasin/>}/>
-    <Route path='/afficheProduit' index element={<AfficheProduitMagasin/>}/>
-    <Route path='/produits' index element={<ProduitMagasin/>}/>
-    <Route path='/changeInfo' index element={<ChangeProduitMagasin/>}/>
-    <Route path='/panier' index element={<PanierMagasin/>}/>
-    <Route path='/magasin/commercial' index element={<Commercial/>}/>
-    <Route path='/commercial/produit' index element={<AfficheProduitCommercial/>}/>
+    <Route path='/magasin/add' index element={<CreateMagasin/>}/>
+    <Route path='/magasin/:id/edit' index element={<EditeMagasin/>}/>
+    <Route path='/historiques' index element={<Historique/>}/>
 
-    <Route path='/ajouter-commercial' index element={<AjouterCommercial/>}/>
-    <Route path='/shart' index element={<AfficheCommercial/>}/>
-    <Route path='/magasin/notification' index element={<NotificationMagasin/>}/>
-    <Route path='/magasin/notification/confirme' index element={<ConfirmeMessage/>}/>
-    <Route path='/magasin/demande' index element={<Demande/>}/>
-    <Route path='/magasin/client' index element={<Client/>}/>
-    <Route path='/magasin/client/ajouter' index element={<AjouterClient/>}/>
-    <Route path='/magasin/ajouter-produit' index element={<AjouterProduitM/>}/>
-    <Route path='/panier/precedent' index element={<PanierPrecedent/>}/>
-    <Route path='/visiteur' index element={<HomeVisiteur/>}/>
-    <Route path='/visiteur/produit' index element={<AfficheProduitVisiteur/>}/>
+    {/* -------------------------------- routes magasin -----------------------------*/}
+    <Route path='/magasins/:id' index element={<HomeMagasin/>}/>
+    <Route path='/magasins/:id/articles/:id' index element={<AfficheArticleById/>}/>
+    <Route path='/magasins/:id/articles' index element={<ProduitMagasin/>}/>
+    <Route path='/magasins/:id/article/:id/edit' index element={<ChangeProduitMagasin/>}/>
+    <Route path='/magasins/:id/panier' index element={<PanierMagasin/>}/>
+    <Route path='/magasins/:id/commercials' index element={<Commercial/>}/>
+    <Route path='/magasins/:id/commercials/add' index element={<AddCommercialMagasin/>}/>
+    <Route path='/magasins/:id/commercials/:id/shart' index element={<AfficheCommercial/>}/>
+    <Route path='/magasins/:id/notifications' index element={<NotificationMagasin/>}/>
+    <Route path='/magasins/:id/notifications/:id/confirme' index element={<ConfirmeMessage/>}/>
+    <Route path='/magasins/:id/demande' index element={<Demande/>}/>
+    <Route path='/magasins/:id/clients' index element={<Client/>}/>
+    <Route path='/magasins/:id/clients/add' index element={<AddClient/>}/>
+    <Route path='/magasins/:id/articles/add' index element={<AddArticle/>}/>
+    <Route path='/magasins/:id/panier/precedent' index element={<PanierPrecedent/>}/>
     <Route path='/message' index element={<MessageSuccess/>}/>
-    <Route path='/avis-client' element={<AvisClient/>}/>
+    <Route path='/message/article' index element={<MessageAddArticleInMagasin/>}/>
+    <Route path='/message/commercial' index element={<MessageAddCommercial/>}/>
+    <Route path='/message/client' index element={<MessageAddClient/>}/>
+    <Route path='/magasins/:id/historiques' index element={<HistoriqueMagasin/>}/>
+    <Route path='/magasins/:id/historiques/id' index element={<HistoriqueId/>}/>
+    <Route path='/magasins/:id/historiques/encour/id' index element={<Encour/>}/>
+    <Route path='/magasins/:id/historiques/id/echanger' index element={<Echanger/>}/>
+    <Route path='/magasins/:id/historiques/id/rembourser' index element={<Remboureser/>}/>
 
+    {/* -------------------------------- routes Commercial -----------------------------*/}
 
+    <Route path='/commercials/:id' index element={<HomeCommercial/>}/>
+    <Route path='/commercials/:id/articles' index element={<AfficheProduitCommercial/>}/>
 
+    {/* -------------------------------- routes Visiteur -----------------------------*/}
 
+    <Route path='/visiteurs' index element={<HomeVisiteur/>}/>
+    <Route path='/visiteurs/articles' index element={<AfficheProduitVisiteur/>}/>
+    <Route path='/avis/clients' element={<AvisClient/>}/>
 
+    {/* -------------------------------- routes Client -----------------------------*/}
 
-
-
-
-
-
-
-
-
-    <Route path='/magasin/historique' index element={<HistoriqueMagasin/>}/>
-    <Route path='/commercial' index element={<HomeCommercial/>}/>
-
-    <Route path='/magasin/historique/id' index element={<HistoriqueId/>}/>
-    <Route path='/magasin/historique/encour/id' index element={<Encour/>}/>
-
-    <Route path='/magasin/historique/id/echanger' index element={<Echanger/>}/>
-    <Route path='/magasin/historique/id/rembourser' index element={<Remboureser/>}/>
-
-
-
-
-
-
-
-
-    <Route path='/connexion' index element={<LoginService/>}/>
-    <Route path='/client' index element={<HomeClient/>}/>
-
+    <Route path='/clients/:id' index element={<HomeClient/>}/>
 
 
 
@@ -122,5 +122,5 @@ root.render(
 
 
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
 );

@@ -525,11 +525,10 @@ input.input100 {
     transition: all .4s
 }
 .line{
-    position: absolute;
     font-size: 45px;
     opacity: 0.6;
     margin-top: 10px;
-    margin-left: 119px;
+    margin-left: -40px;
     /* margin-right: 160px; */
     color: #0f7cc0;
 }

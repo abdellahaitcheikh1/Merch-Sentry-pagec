@@ -79,7 +79,7 @@ export  default function HomeVisiteur(){
       >
 
         <SwiperSlide>
-      <Link to="/visiteur/produit">
+      <Link to="/visiteurs/articles">
       <div className="produit-visiteur">
                 <div className="item-visiteur">
                     <img src={imgProduit} alt="" />
