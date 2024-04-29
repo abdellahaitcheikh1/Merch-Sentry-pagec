@@ -1,0 +1,93 @@
+.container .item{
+    display: flex;
+    margin-left: 200px;
+}
+.container #h3{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 32.347px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.container #h5{
+    margin-left: 250px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.container #h5 b{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.808px; 
+    
+}
+.container #h1{
+    margin-left: 50px;
+    font-size: 26px;
+}
+.container .image{
+    margin-top: -170px;
+}
+.container .image img{
+    border-radius: 15.819px;
+    border: 1px solid #DADADA;
+    background: #FFF; 
+    border-radius: 10px;
+    margin: 10px;
+}
+.container .image #i2{
+    border-radius: 15.819px;
+    border: 1px solid #DADADA;
+    background: #FFF; 
+    margin: 10px;
+    width: 140px;
+    margin-left: -130px;
+    margin-top: 70px;
+}
+.container .image #i3{
+    border-radius: 15.819px;
+    border: 1px solid #DADADA;
+    background: #FFF; 
+    margin: 10px;
+    width: 140px;
+    margin-left: -240px;
+    margin-top: -65px;
+}
+.container .recupere{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    width: 170px;
+    margin-left: 250px;
+    text-decoration: none;
+    padding: 12px 5px;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: #7fa87e;
+}
+.item #voirPlus{
+    margin-left: 30px;
+    color: #7FA87E;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}

@@ -1,0 +1,300 @@
+@media screen and (min-width:450px) and (max-width: 600px) {
+   /*  .categ {
+        margin-top: -80px;
+    } */
+	.height{
+        width: 380px;
+        height: 16vh;
+    }
+    .container .row .col-md-6 .form{
+        margin-left: auto;
+    }
+
+    .container-fluid a .right-align #ProductSlide{
+        margin-left: 0;
+    }
+
+    h5 .mt-5{
+        width:auto;
+        font-family: Montserrat;
+        color: #ad2222;
+        line-height: normal;
+        font-size: 19px;
+        margin-bottom: -15px;
+    }
+    
+    h5 .container{
+        margin-top: -100px;
+    }
+    .btnAjoute{
+        margin-bottom: 110px;
+        position: absolute;
+        border: none;
+        padding: 7px;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: #46992d;
+        width: 130px;
+        transition: 0.1s ease ;
+    }
+
+	#ProductSlide {
+        margin-left: -5px;
+        margin-top: -250px;
+	}
+
+     .categ{
+        margin-top: 60px;
+        margin-left: 80px;
+    }
+     .swiper-wrapper{
+        margin-left: -35px;
+    }
+
+
+    .sidebar .brand {
+        margin-top: -15%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        padding-bottom: 20px;
+        box-sizing: content-box;
+    } 
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 100%;
+        background: var(--light);
+        z-index: 2000;
+        font-family: var(--lato);
+        transition: .3s ease;
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+    .sidebar .brand {
+        margin-top: -15%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        padding-bottom: 20px;
+        box-sizing: content-box;
+    }
+    .sidebar .brand img {
+        margin-left: 35%;
+        width: 60%;
+        height: 75%;
+    }
+    .sidebar .sidee-menu {
+        width: 100%;
+        margin-top: -8px;
+    }
+    .sidebar .sidee-menu li {
+        height: 50px;
+        background: transparent;
+        margin-left: -5px;
+        margin-bottom: 7px;
+    }
+
+    .sidebar .sidee-menu li a {
+        padding: 3px 2px 3px 7px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        font-size: 20px;
+        color: var(--dark);
+        white-space: nowrap;
+        overflow-x: hidden;
+    }
+
+#logoMagasin {
+    width: 27px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    background-color: #efefef;
+    border-radius: 2px;
+}
+.menu-down-magasine {
+    margin-top: -107px;
+}
+} 
+
+/* @media screen and (min-width:600px) and (max-width: 700px) {
+	.height{
+        width: 380px;
+    }
+    .form{
+        width: 33%;
+    }
+
+    .btnAjoute{
+        margin-bottom: 110px;
+        position: absolute;
+        border: none;
+        padding: 7px;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: #46992d;
+        width: 130px;
+        transition: 0.1s ease ;
+    }
+    #ProductSlide{
+		margin-left: 0px;
+	}
+
+    .categ{
+        margin-top: 70px;
+        margin-left: 80px;
+    } 
+    .swiper-wrapper{
+    margin-left: -35px;
+  }
+    .right-align{
+    margin-left: 0px;
+} 
+.sidebar .brand {
+    margin-top: -15%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    padding-bottom: 20px;
+    box-sizing: content-box;
+}
+
+
+ 
+}  */
+
+/* @media screen and (min-width: 600px) and (max-width: 699px){
+
+	.height{
+        width: 40px;
+        height: 20vh;
+    }
+    .btnAjoute{
+        margin-bottom: 110px;
+        position: absolute;
+        border: none;
+        padding: 7px;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: #46992d;
+        width: 130px;
+        transition: 0.1s ease ;
+    }
+
+	#ProductSlide{
+		margin-left: -5px;
+	}
+
+    .categ{
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+    .swiper-wrapper{
+        margin-left: -35px;
+    }
+ 
+    .right-align{
+		margin-left: 0px;
+	} 
+}  */
+
+/* @media screen and (min-width:700px) and (max-width:800px){
+   #ProductSlide{
+        display: grid;
+        grid-template-columns: minmax(100px, 2fr);
+        color: blue;
+        margin-bottom: 30px;
+        width: 100%;
+        margin-left: 20px; 
+    }    
+    .categ{
+        margin-top: 70px;
+    }
+    h5{
+        margin-left:30px;
+    }
+
+    input{
+        margin-left: 45px;
+    }
+    
+    .swiper-slide {
+        width: 25%;
+    } 
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .height{
+        width: 380px;
+    }
+
+    .btnAjoute{
+        margin-bottom: 110px;
+        position: absolute;
+        border: none;
+        padding: 7px;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: #46992d;
+        width: 130px;
+        transition: 0.1s ease ;
+    }
+        #ProductSlide {
+            
+            margin-bottom: 30px;
+            width: 100%;
+           
+        }
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+    
+        .swiper-slide {
+            width: 100%;
+        }
+        .categ{
+            margin-top: 70px;
+            margin-left: 20px;
+        } 
+        .swiper-wrapper{
+        margin-left: -36px;
+        width: auto;
+      }
+        .right-align{
+        margin-left: 0px;
+    }
+}
+
+
+@media screen and (min-width:1500px) and (max-width:2350px){
+    .categ{
+        color:red;
+        font-size: 1.7rem;
+    }
+    .swiper-slide{
+        height:auto;
+        width: max-content;
+    }
+} */

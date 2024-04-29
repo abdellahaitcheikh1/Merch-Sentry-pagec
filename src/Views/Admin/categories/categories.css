@@ -1,0 +1,138 @@
+.form{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.height{
+    width: 1700px;
+    height: 30vh;
+}
+.form .form-control {
+    flex: 1; 
+    margin-right: 10%; 
+}
+.form .fa-search{
+
+    position: absolute;
+    top:20%;
+    left: 20%;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+    position: relative;
+    right: 37%;
+    padding: 2%;
+    border-left: 1% solid #d1d5db;
+
+}
+.left-pan{
+    padding-left: 7%;
+}
+
+.left-pan i{
+   
+   padding-left: 5%;
+   cursor: pointer;
+}
+
+.form-input{
+    height: 50%;
+    text-indent: 33%;
+    border-radius: 10%;
+}
+
+.form-input:focus{
+    
+    box-shadow: none;
+    border:none;
+}
+.btnAjoutee{
+    border: none;
+    font-size: 75%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    padding: 13% 8%;
+    color: #fff;
+    font-family: Montserrat; 
+    border-radius: 0.7rem;
+    background-color: #007ACC;
+    width: 177%;
+    transition: 0.1s ease ;
+    text-decoration: none;
+
+}
+.Box-info-product .ParantName .nameProduct{
+    font-family: Montserrat;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+	margin-top: -13%;
+	font-size: 80%;
+    margin-left: -8%;
+    width: 150%;
+}
+.Box-info-product .price{
+    font-family: Montserrat;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 70%;
+    width: 110%;
+    margin-top: 30%;
+    /* background-color: #00cc25; */
+
+}
+.btnAjoutee:hover{
+    transition: 0.2s ease ;
+    background-color: rgb(45, 125, 205);
+
+}
+.ProductSlide{
+    margin-top: -10%;
+}
+.ProductSlide .pMagazin{
+    margin-left: 10%;
+    color: #333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    font-family: Montserrat; 
+}
+.ProductSlide h5{
+    margin-top: 1%;
+    color: #333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    font-family: Montserrat; 
+}
+
+/* HERE */
+@media screen and (max-width: 600px) {
+	.height{
+        width: 380px;
+        height: 30vh;
+    }
+    .btnAjoute{
+        margin-bottom: 110px;
+        position: absolute;
+        border: none;
+        padding: 7px;
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: #5495d7;
+        width: 130px;
+        transition: 0.1s ease ;
+    
+    }
+	#ProductSlide{
+		margin-left: -5px;
+	}
+    .categ{
+        margin-top: 70px;
+        margin-left: 80px;
+    }
+  }

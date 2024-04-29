@@ -1,0 +1,65 @@
+.descriptione{
+    display: flex;
+    justify-content: space-around;
+}
+.desch4{
+    margin-left: 120px;
+
+}
+.sectionDesc{
+    margin-top: 50px;
+}
+.ajouterP{
+    background-color: #7fa87e;
+    color: white;
+    padding: 10px 25px 10px 25px ;
+    border-radius: 10px;
+}
+.paniercommercial .icon{
+    color: #FFF;
+    text-align: center;
+    font-size: 27px;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px 17px;
+    border-left: 6px solid #759A74;
+    border-radius: 61.49px 61.494px 61.494px 61.49px;
+    background: #7FA87E; 
+}
+.barTitle span{
+    margin-top: 20px;
+    margin-left: -2px;
+    background-color: #000000;
+    color: white;
+    height: 17px;
+    font-size: 10px;
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    border-radius: 100%;
+}
+.ItemsInfo h2{
+	font-weight: 600;
+} 
+.ItemsInfo .quantity{
+    margin-top: -30px;
+    margin-bottom: 50px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.ItemsInfo .quantity h6{
+    font-size: 20px;
+	font-weight: 600;
+}
+.ItemsInfo .chifre{
+	margin-left: 40px;
+	font-weight: 500;
+
+}
+.ItemsInfo .inputQ{
+    border: 1px solid rgb(208, 207, 207);
+    width: 100px;
+}
+.ItemsInfo{
+	margin-left: 170px;
+}

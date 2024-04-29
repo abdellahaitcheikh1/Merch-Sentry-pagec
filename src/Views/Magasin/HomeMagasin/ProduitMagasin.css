@@ -1,0 +1,133 @@
+#allItems{
+    margin-left: 40px;
+    border: 1px solid rgb(222, 222, 222);
+    margin-top: -100px;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 120px;
+    border-radius: 15px;
+}
+.contentMagasinP{
+    display: flex;
+    cursor: pointer;
+}
+.Itemimg{
+    border: solid 1px rgb(234, 234, 234);
+}
+.Itemimg p{
+    font-size: 15px; 
+    color: #fff;
+    height: 35px;
+    background-color: #7fa87e;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;  
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+.pu{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 10px;
+margin-left: 4px;
+font-style: normal;
+font-weight: 300;
+line-height: normal; 
+}
+.infoPM{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.txN{
+    text-decoration: none;
+}
+.infoPM p{
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    font-size: 22px;
+
+}
+.infoPM span{
+    position: absolute;
+    margin-top: -35px;
+    font-size: 17px;
+    color: #63a362;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    text-align: center;
+    font-family: Montserrat; 
+
+}
+
+.contentMagasinP img{
+    width: 200px;
+}
+.iconPoint{
+    margin-right: 10px;
+    color: #333;
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnVP{
+    margin-right: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnVP a{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #7fa87e;
+
+}
+.btnAjouteM{
+    border: none;
+    padding: 10px 7px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #7fa87e;
+    width: 180px;
+    transition: 0.1s ease ;
+    text-decoration: none;
+
+}
+.btnAjouteM:hover{
+    transition: 0.2s ease ;
+    background-color: #63a362;
+
+}
+.no-produit{
+    text-align: center;
+}
+.no-produit i{
+    font-size: 6rem;
+}
+.no-produit p{
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.no-produit .botton-remplir button{
+    color: #FFFFFF;
+    padding: 1.1%;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #7FA87E;
+}

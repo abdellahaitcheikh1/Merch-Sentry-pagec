@@ -1,0 +1,30 @@
+.inputForm{
+    margin-top: -50px;
+}
+.chart{
+    text-align: center;
+    margin-left: 150px;
+    
+
+}
+.marque h4{
+    color: #333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.texth4 p{
+    position: relative;
+    margin-left: 50px;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+
+}
+.form-control{
+    margin-top: 7px;
+}

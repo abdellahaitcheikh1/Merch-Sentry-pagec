@@ -1,0 +1,161 @@
+.title-i-client{
+    margin-top: 0.5%;
+    margin-bottom: 0.7%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Montserrat;
+    color: #6C512E;
+}
+.part-card{
+    margin-left: 150px;
+}
+.col-70 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .col-30 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+.part-items{
+    width: 100%;
+    margin-left: 50px;
+    background-color: aqua;
+}
+.equipement .bar-title-client .vp-client{
+    background: transparent;
+    color: black;
+    margin-top: -1px;
+    margin-left: -80px;
+    
+}
+.forme{
+    width: 100%;
+}
+.bar-title-client{
+    display: flex;
+    justify-content: space-between;
+}
+.Box-info-product-client .parant-name{
+    display: flex;
+    flex-direction: column;
+}
+.Box-info-product-client{
+    height: 4rem;
+	background: #333333;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-sizing: border-box;
+
+}
+.Box-info-product-client .parant-name .product-name{
+	color: #ffffff; 	
+	margin-top: -16%;
+	font-style: normal; 
+	font-family: Montserrat; 
+	margin-left:-13%;
+	font-style: normal;
+	font-size: 67%;
+	font-weight: 500;
+	width: 230%;
+	line-height: normal; 
+
+}
+.Box-info-product-client b{
+    color: rgb(255, 255, 255);
+
+}
+.Box-info-product-client .parant-name span{
+    color: rgb(76, 67, 67);
+}
+.Box-info-product-client .price{
+    color: rgb(255, 255, 255);
+    font-size: 0.68rem;
+	margin-left: 15%;
+	width: 180%;
+	font-style: normal;
+	line-height: normal;
+	margin-top: 17%;
+	font-family: Montserrat; 
+
+
+}
+.Box-info-product-client .price span{
+    color: #efefef;
+	font-family: Montserrat; 
+	font-size:60%;
+	font-weight: 300;
+
+
+
+}
+.card-visa{
+    background-color: #303030;
+    width: 120%;
+    color: #FFFFFF;
+    font-family: Myanmar Sans Pro;
+    line-height: 26.96px;
+    letter-spacing: 10%;
+    border-radius: 10px;
+    padding: 2%;
+}
+.card-visa .visa{
+    width: 20%;
+    display: flex;
+    float: right;
+    margin-top: -5%;
+    margin-right: 4%;
+}
+.sim-visa .sim{
+    margin-top: 15%;
+    width: 15%;
+    margin-left: 7%;
+}
+.num-card{
+    margin-top: 4%;
+    margin-left: 7%;
+}
+.num-card span{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-left: 4%;
+}
+.d-card{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+}
+.code-card{
+    margin-right: 20%;
+}
+.card-name{
+    margin-left: 9%;
+}
+.solde{
+    display: flex;
+    justify-content: space-between;
+}
+.card-client{
+    border: 1px solid black;
+    padding: 3%;
+}
+.card-client .card-content img{
+    width: 22%;
+}
+.card-client .card-content h4{
+    font-size: 0.6rem;
+}
+.card-client .card-content h4{
+    font-size: 0.6rem;
+}
+.card-client .card-content .button{
+    font-size: 0.6rem;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+}

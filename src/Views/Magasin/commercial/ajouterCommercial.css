@@ -1,0 +1,39 @@
+.container form{
+    margin-left: 50px;
+
+}
+.marque{
+    margin-bottom: 80px;
+    
+}
+.marque h4{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+form .row input{
+    height: 43px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+.btnAjouteCommercial{
+    text-align: center;
+    font-family: Montserrat;
+
+}
+.btnAjouteCommercial .buttonAjouter{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #7fa87e;
+    color: #fff;
+}

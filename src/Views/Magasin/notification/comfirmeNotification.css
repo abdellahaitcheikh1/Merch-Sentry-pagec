@@ -1,0 +1,26 @@
+.row .col #quantity{
+    width: 100px;
+
+}
+#info{
+    margin-left: 100px;
+}
+#desc #exampleFormControlTextarea1{
+    width: 80%;
+}
+.row .col #quantity ,#nproduit,#desc #exampleFormControlTextarea1{
+    background-color: rgb(224, 224, 224);
+}
+.confirmer{
+    text-align: center;
+}
+.confirmer button{
+    background-color: #7fa87e;
+    color: antiquewhite;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+.pd{
+    color: #7fa87e;
+    font-size: 13px;
+}

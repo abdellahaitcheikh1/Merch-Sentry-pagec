@@ -1,0 +1,48 @@
+@media screen and (min-width: 450px) and (max-width:600px){
+.form{
+    margin-top: auto;
+    display:flex;
+    width: 100px;
+}
+
+.tableInfos{
+    margin-top: auto;
+    margin-left:100px;
+    overflow-x: auto;
+    font-size: 16px;
+}
+.tableInfos .table tbody tr td {
+    padding: 1rem;
+  }
+
+}
+
+@media screen and (min-width:600px) and (max-width:699px){
+    .form{
+      
+    }
+
+}
+
+@media screen and (min-width:700px) and (max-width:800px){
+    .form{
+        margin-left: 38px;
+    }
+    .tableInfos{
+        margin-left: 40px;
+    }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width:1100px){
+
+}
+
+@media screen and (min-width:800px) and (max-width:1100px){
+    .form{
+        margin-left: 50px;
+    }
+    .tableInfos{
+        margin-left: 50px;
+    }
+} 

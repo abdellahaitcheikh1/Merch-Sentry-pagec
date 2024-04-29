@@ -1,0 +1,24 @@
+.btnEnvoye{
+    text-align: center;
+}
+.btnEnvoye button{
+    background-color: #7fa87e;
+    color: aliceblue;
+    padding: 13px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+#exampleFormControlTextarea1{
+    border: 1px solid rgb(199, 199, 199);
+}
+#infoDemande{
+    margin-left: 30px;
+}
+#qt{
+    width: 300px;
+}
+.btnEnvoye .button{
+    color: antiquewhite;
+    text-decoration: none
+}

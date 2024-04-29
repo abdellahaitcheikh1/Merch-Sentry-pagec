@@ -1,0 +1,125 @@
+.card img{
+    margin-top: -50px;
+    width: 200px;
+}
+.container h2{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 31.347px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.container .card{
+    box-shadow: rgba(181, 181, 181, 0.2) 0px 2px 8px 0px;
+    padding: 10px 20px;
+    border:1px solid rgb(230, 230, 230);
+    margin-left: 80px;
+}
+.card .quantite{
+    margin-left: 220px;
+    margin-top: 50px;
+    position: absolute;
+}
+.quantite label{
+    font-weight: 400;
+}
+.card input{
+    margin-left: 10px;
+    width: 80px;
+    border: 1px solid rgb(182, 182, 182);
+    color: black;
+}
+.infoPP{
+    margin-top: -80px;
+    display: flex;
+}
+.InfoPrp{
+    text-align: right;
+}
+.card .supprimer{
+    color: #D22A2A;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50.814px;
+    text-decoration: none;
+}
+.supprimer i{
+    color: #d72828;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500; 
+}
+.card h4{
+    margin-top: 50px;
+    color: #333;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.infoPP h5{
+    margin-left: 20px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+.total .suivi{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #7FA87E; 
+}
+.total{
+    box-shadow: rgba(133, 141, 148, 0.232) 0px 8px 24px;
+        display: flex;
+    padding: 30px;
+    border-radius: 35px;
+    justify-content: space-between;
+    margin-top: 70px;
+    width: 90%;
+    margin-left: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.total span{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.295px; 
+}
+.viderpanier .iconvide{
+    color: #D22A2A;
+    font-family: Montserrat;
+    font-size: 20.824px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: normal; 
+}
+.viderpanier p{
+    color: #898989;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}

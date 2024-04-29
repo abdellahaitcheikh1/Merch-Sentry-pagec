@@ -1,0 +1,40 @@
+.tableInfo{
+    margin-top: 80px;
+}
+.tableInfo .table th{
+    height: 50px;
+    text-align: center;
+    margin-top: -30px;
+    background-color: rgb(224, 224, 224);
+}
+.tableInfo .table td{
+    text-align: center;
+    
+}
+.remborser{
+    color: #7fa87e;
+}
+.echanger{
+    color: rgb(57, 57, 57);
+}
+.filtreElement{
+    width: 270px;    
+    display: flex;
+    float: right;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.btnFilterS{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+    padding: 12px 22px;
+    border-radius: 10px 0 0px 10px;
+
+}
+.btnFilterM{
+    text-decoration: none;
+    padding: 10px 20px;
+        color: black;
+}

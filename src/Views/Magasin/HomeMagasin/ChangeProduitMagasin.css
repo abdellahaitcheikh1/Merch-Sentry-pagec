@@ -1,0 +1,22 @@
+.barTitleM a{
+	font-family: Montserrat; 	
+	background: #7FA87E; 
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 10px 13px;
+	border: none;
+	color: #FFF;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+}
+.barTitleM{
+	margin-left: 50px;
+	margin-top: -30px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.buttonSuprimerM a{
+    color: #7fa87e;
+}

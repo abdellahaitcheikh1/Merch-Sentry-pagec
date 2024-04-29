@@ -1,0 +1,225 @@
+.magasin{
+    margin-top: -90px;
+    margin-bottom: 140px;
+
+}
+.inputForm{
+    margin-left: 70px;
+}
+.magasinInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.magasinInfo h5{
+    margin-left: 90px;
+    color: #333;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    }
+.magasinInfo img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.magasin .card{
+    border-radius: 15px;
+    padding: 27px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.location p{
+    color: #898989;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+.etoile{
+    color: yellow;
+}
+span{
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+
+}
+.voirPlus{
+    display: flex;
+    justify-content: right;
+}
+.col #nom{
+    border-color: rgb(206, 206, 206);
+    border-radius: 7px;
+    padding: 10px;
+    width: 400px;
+    margin-top: 10px;
+
+}
+.col-7 #tele{
+    border-color: rgb(206, 206, 206);
+    border-radius: 7px;
+    padding: 10px;
+    width: 600px;
+    margin-top: 10px;
+
+}
+.col-12  #inputAddress{
+    margin-top: 10px;
+    padding: 10px;
+    border-color: rgb(206, 206, 206);
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+.iconRetour i {
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 0 5px 0 5px;
+    border: 1px solid rgb(200, 200, 200);
+    font-size: 25px;
+}
+.marque{
+    margin-top: -30px;
+    margin-left: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.marque img {
+    width: 90px;
+    margin-right: 30px;
+}
+.btnChangeInfo{
+    border-radius: 12px;
+    background: #007ACC;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding: 13px 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.btnChangeInfo:hover{
+    background: #007ACC;
+
+}
+.row .col a{
+    border-radius: 12px;
+    background: #cc0081;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding: 10px 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;  
+}
+.detailBoxEdite{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    background-color: #333333;
+}
+.detailBoxEdite .type p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin-left: -10px;
+}
+.detailBoxEdite .price{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.detailBoxEdite .price .pu{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+.categorieSlide{
+    margin-top: -50px;
+}
+.barcategori{
+    display: flex;
+    justify-content: space-between;
+}
+.barcategori a{
+    color: rgb(36, 36, 36);
+}
+.inputs{
+    margin-left: 100px;
+}
+#ImportPhoto{
+    display: none;
+}
+.col .logomagasin{
+    width: 100px;
+}
+.textUp span{
+    font-size: 15px;
+    margin-left: -170px;
+    
+}
+.photoIploade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(176, 176, 176);
+    margin-left: 70px;
+    color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+.photoIploade span{
+    font-size: 30px;
+    color: rgb(168, 168, 168);
+
+}
+.col a{
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 70px;
+    background-color: #357ec8;
+    color: aliceblue;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.descmag{
+    color: #333;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.4%;
+}
+.textUp{
+    margin-top: 30px;
+}
