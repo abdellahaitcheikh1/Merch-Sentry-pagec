@@ -56,6 +56,8 @@ import MessageAddClient from "./Views/Admin/message/MessagAddClient";
 import AddArticle from "./Services/Magasin/AddArticle";
 import MessageAddArticleInMagasin from "./Views/Admin/message/MessageAddArticleInMagasin";
 import {HomeMagasinQuepic} from "./Views/Magasin/HomeMagasin/HomeMagasinQuepic";
+import HistoriqueCommercial from './Views/Commercial/Historique/HistoriqueCommercial';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -113,6 +115,8 @@ root.render(
 
     <Route path='/commercials/:id' index element={<HomeCommercial/>}/>
     <Route path='/commercials/:id/articles' index element={<AfficheProduitCommercial/>}/>
+    <Route path='/commercials/historique' index element={<HistoriqueCommercial/>}/>
+
 
     {/* -------------------------------- routes Visiteur -----------------------------*/}
 
