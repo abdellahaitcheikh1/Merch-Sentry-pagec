@@ -23,6 +23,7 @@ article {
     inset-inline: 0;
     cursor: pointer;
     content: "";
+    /* padding: ; */
   }
   
   /* basic article elements styling */
